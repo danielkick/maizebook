@@ -43,7 +43,7 @@ Download PDF Versions:
 # :::
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 #| include: false
 
 
@@ -120,7 +120,7 @@ k <- function(x){
 
 
 
-## [Friday, March 7, 2025](./program_schedule.html#friday-march-7-2025)
+<!-- ## [Friday, March 7, 2025](./program_schedule.html#friday-march-7-2025) -->
 
 
 <!-- ```{r echo=FALSE} -->
@@ -200,7 +200,7 @@ k <- function(x){
 
 
 
-## [Saturday, March 8, 2025](./program_schedule.html#saturday-march-8-2025)
+<!-- ## [Saturday, March 8, 2025](./program_schedule.html#saturday-march-8-2025) -->
 
 
 <!-- ```{r echo=FALSE} -->
@@ -264,7 +264,7 @@ k <- function(x){
 <!--   )) |> k() -->
 <!-- ``` -->
 
-## [Sunday, March 9, 2025](./program_schedule.html#sunday-march-9-2025)
+<!-- ## [Sunday, March 9, 2025](./program_schedule.html#sunday-march-9-2025) -->
 
 <!-- ```{r echo=FALSE} -->
 <!-- subset_M(filter( -->
@@ -322,7 +322,7 @@ k <- function(x){
 
 
 
-
+<!-- 
 ------------------------------------------------------------------------
 
 ::: {style="text-align: center"}
@@ -337,4 +337,4 @@ k <- function(x){
 
 ![](data/assets/000_Cover_Draft1_ConferenceDirect.png){fig-align="center" width="225"}
 
-
+ -->

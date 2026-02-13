@@ -8,7 +8,7 @@ title: "Schedule of Events"
 Talks will be held in the Grand Ballroom. Posters will be displayed in the Midway West.
 :::
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 #| include: false
 
 
@@ -77,7 +77,7 @@ k <- function(x){
 
 ### Optional Pre-Conference Workshops (1/2)
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day == "Wednesday, March 5, 2025", 
@@ -89,7 +89,7 @@ subset_M(filter(
 
 ### Optional Pre-Conference Workshops (2/2)
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Thursday, March 6, 2025", 
@@ -102,7 +102,7 @@ subset_M(filter(
 
 **Sherry Flint-Garcia**
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Thursday, March 6, 2025", 
@@ -113,7 +113,7 @@ subset_M(filter(
 
 
 ## Friday, March 7, 2025    
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Friday, March 7, 2025", 
@@ -127,7 +127,7 @@ subset_M(filter(
 
 **Hank Bass**
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Friday, March 7, 2025", 
@@ -141,7 +141,7 @@ subset_M(filter(
 
 **Brandi Sigmon**
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Friday, March 7, 2025", 
@@ -152,7 +152,7 @@ subset_M(filter(
 
 ### Lunch and Poster Session
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Friday, March 7, 2025", 
@@ -165,7 +165,7 @@ subset_M(filter(
 
 **Melissa Draves**
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Friday, March 7, 2025", 
@@ -180,7 +180,7 @@ subset_M(filter(
 
 **Andrea Eveland**
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Friday, March 7, 2025", 
@@ -191,7 +191,7 @@ subset_M(filter(
 
 
 ## Saturday, March 8, 2025
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Saturday, March 8, 2025", 
@@ -204,7 +204,7 @@ subset_M(filter(
 
 **Rubén Rellán Álvarez**
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Saturday, March 8, 2025", 
@@ -218,7 +218,7 @@ subset_M(filter(
 
 **Sarah Jensen**
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Saturday, March 8, 2025", 
@@ -230,7 +230,7 @@ subset_M(filter(
 
 ### Lunch, Poster Session, & Community Session
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Saturday, March 8, 2025", 
@@ -244,7 +244,7 @@ subset_M(filter(
 
 **Cinta Romay**
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Saturday, March 8, 2025", 
@@ -254,7 +254,7 @@ subset_M(filter(
 
 ## Sunday, March 9, 2025
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Sunday, March 9, 2025", 
@@ -268,7 +268,7 @@ subset_M(filter(
 
 **Katie Murphy**
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Sunday, March 9, 2025", 
@@ -281,7 +281,7 @@ subset_M(filter(
 
 **Frank Hochholdinger**
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Sunday, March 9, 2025", 
@@ -293,7 +293,7 @@ subset_M(filter(
 
 ### Optional Post-Conference Workshop
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 subset_M(filter(
   M, 
   Day ==  "Sunday, March 9, 2025", 
