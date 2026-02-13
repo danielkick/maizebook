@@ -15,8 +15,21 @@
     - [ ] program_map.qmd
     - [ ] program_poster_list.qmd
     - [ ] program_schedule.qmd
-    - [ ] program_sponsors.qmd
+    - [x] program_sponsors.qmd
 - [ ] Request updated info for custom pages
+    - [ ] 404.qmd
+    - [ ] about.qmd
+    - [ ] index.qmd
+    - [ ] launch.qmd
+    - [ ] program_authors_attendees.qmd
+    - [ ] program_awards.qmd
+    - [ ] program_general_information.qmd
+    - [ ] program_map.qmd
+    - [ ] program_poster_list.qmd
+    - [ ] program_schedule.qmd
+    - [ ] program_sponsors.qmd
+        - [ ] Are the sponsor the same?
+
 - [ ] Check generated pages
     - [ ] generated_keynote_list.qmd
     - [ ] generated_lightning_list.qmd
