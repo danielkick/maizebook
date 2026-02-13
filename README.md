@@ -3,10 +3,11 @@
 - [ ] Pre-preview checks
     - [ ] Confirm there are no instances of `eval=FALSE` in the qmds
     - [ ] Confirm there are no instances of `FIXME` or `TODO` in the qmds or ipynb
-- [ ] Fix author index    
+- [ ] Fix author index
 - [ ] Check custom pages
-    - [ ] 404.qmd
-    - [ ] about.qmd
+    - [x] 404.qmd
+    - [x] about.qmd
+        - removed
     - [ ] index.qmd
     - [ ] launch.qmd
     - [ ] program_authors_attendees.qmd
@@ -17,10 +18,11 @@
     - [ ] program_poster_list.qmd
     - [ ] program_schedule.qmd
     - [x] program_sponsors.qmd
+    - [ ] _quarto.yml
 - [ ] Request updated info for custom pages
-    - [ ] 404.qmd
-    - [ ] about.qmd
     - [ ] index.qmd
+        - [ ] pdf schedule
+        - [ ] pdf program
     - [ ] launch.qmd
     - [ ] program_authors_attendees.qmd
     - [ ] program_awards.qmd
@@ -29,6 +31,8 @@
     - [ ] program_schedule.qmd
     - [ ] program_sponsors.qmd
         - [ ] Are the sponsor the same?
+    - [ ] _quarto.yml
+        - [ ] I commented out feedback link. Is there a new link for 2026?
 
 - [ ] Check generated pages
     - [ ] generated_keynote_list.qmd
