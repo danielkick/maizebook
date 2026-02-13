@@ -1,0 +1,37 @@
+---
+title: "Authors and Attendees"
+---
+
+```{r}
+#| include: false
+# note: it seems that the best way to get this to work with my computer's permissions is to render this one page on windows and then render the rest. 
+```
+
+
+```{r echo=FALSE}
+#| include: false
+
+library(tidyverse)
+library(kableExtra)
+library(readxl)
+
+```
+
+
+## Author Index
+```{r echo=FALSE}
+read_xlsx('./data/MGM2025-Abstracts_v4.xlsx', sheet = 'Author Index') |>
+  kbl() |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+```
+
+
+## Attendee List
+```{r echo=FALSE}
+read_xlsx('./data/MGM2025-Abstracts_v4.xlsx', sheet = 'Attendee List') |>
+  kbl() |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+```
+
+
+

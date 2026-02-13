@@ -1,0 +1,11 @@
+---
+title: 'No maize here.'
+---
+
+![](https://upload.wikimedia.org/wikipedia/commons/2/23/Soybean_%28PSF%29.png){fig-align="center" width="250"}
+
+::: {style="text-align: center"}
+We're not sure what this is, but it certainly isn't maize.
+
+You might try the search bar and let us know if you can't find a page that should exist.
+:::

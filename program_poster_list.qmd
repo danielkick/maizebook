@@ -1,0 +1,112 @@
+---
+title: "Presentations and Posters"
+---
+
+```{r}
+#| include: false
+# note: it seems that the best way to get this to work with my computer's permissions is to render this one page on windows and then render the rest. 
+```
+
+::: {.callout-note appearance="simple" icon="false"}
+## Note:
+
+Click on the poster number in the Link column below to jump to the abstract.
+:::
+
+```{r echo=FALSE}
+#| include: false
+
+library(tidyverse)
+library(kableExtra)
+library(readxl)
+# 
+# M <- read.csv('./data/004_PosterList_Draft1.csv')
+# M_links <- read.csv('./generated/schedule_links.csv')
+# 
+# subset_M <- function(x = "Biochemical and Molecular Genetics"){
+#   out <- M |> 
+#     filter(Category == x) |> 
+#     left_join(rename(M_links, Poster.Number = Name), by = 'Poster.Number') |> 
+#     mutate(Poster.Number = cell_spec(Poster.Number, 'html', link = Header)) |>
+#     select(Poster.Number, Individual, Description) |>
+#     rename(Link = Poster.Number, Presenter = Individual) |>
+#     kable('html', escape = FALSE) |>
+#     kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+#   return(out)
+# }
+# Links need to match generated_poster_list.html sections
+# Link Presenter Description
+M <- read_xlsx('./data/MGM2025-Abstracts_v4.xlsx', sheet = 'Posters')
+M_links <- read.csv('./generated/schedule_links.csv')
+
+subset_M <- function(x = "<font color=\"#339966\">Cell and Developmental Biology </font>"){
+  out <- M |> 
+    rename(Category = CATEGORY) |> 
+    filter(Category == x) |>
+    rename(Poster.Number = POSTER) |> 
+    left_join(rename(M_links, Poster.Number = Name), by = 'Poster.Number') |> 
+
+    mutate(Poster.Number = cell_spec(Poster.Number, 'html', link = Header)) |>
+    mutate(Presenter = paste(PRESENTER_FIRST_NAME, PRESENTER_LAST_NAME, sep = ' ' )) |> 
+    rename(Title = TITLE) |>
+    select(Poster.Number, Presenter, Title) |>
+    rename(`P###` = Poster.Number) |>
+    kable('html', escape = FALSE) |>
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+  return(out)
+}
+```
+
+
+## Evolution and Population Genetics
+
+```{r echo=FALSE}
+subset_M(x = '<font color="#FF0066">Evolution and Population Genetics</font>')
+```
+
+
+## Biochemical and Molecular Genetics 
+
+```{r echo=FALSE}
+subset_M(x = '<font color="#336699">Biochemical and Molecular Genetics </font>')
+```
+
+## Cell and Developmental Biology
+
+```{r echo=FALSE}
+subset_M(x = '<font color="#339966">Cell and Developmental Biology </font>')
+```
+
+
+## Computational and Large-Scale Biology 
+
+```{r echo=FALSE}
+subset_M(x = '<font color="#663399">Computational and Large-Scale Biology </font>')
+```
+
+## Cytogenetics
+
+```{r echo=FALSE}
+subset_M(x = '<font color="#669933">Cytogenetics</font>')
+```
+
+## Education & Outreach
+
+```{r echo=FALSE}
+subset_M(x = '<font color="#993366">Education & Outreach</font>')
+```
+
+## Quantitative Genetics & Breeding
+
+```{r echo=FALSE}
+subset_M(x = '<font color="#996633">Quantitative Genetics & Breeding</font>')
+```
+
+
+## Transposons & Epigenetics 
+
+```{r echo=FALSE}
+subset_M(x = '<font color="#0066CC">Transposons & Epigenetics </font>')
+```
+
+

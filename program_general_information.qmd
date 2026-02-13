@@ -1,0 +1,235 @@
+---
+title: "General Information"
+---
+
+## Meeting Registration
+
+|  |  |
+|--|--|
+| Thursday: | 3:00 PM to 9:30 PM: Depot Registration Office |
+| Friday: | 7:30 AM to 12:30 PM: Depot Registration Office |
+
+## Meals
+
+All meals will be served buffet style in Midway West and Pegram areas; serving hours as listed in the program. Coffee, tea, and soft drinks are available at no charge during the beverage breaks.
+
+## Talks and Posters
+
+All Talks will be presented in the Grand Ballroom. 
+
+Posters will be presented in Midway West, adjacent to where the meals will be held.  Posters should be hung Thursday starting at 3 PM and stay up until Sunday morning, but must be removed by 9 AM on Sunday.  During poster sessions, presenters of odd number posters are asked to stand by their posters 1:30-3:00 PM on Friday and 3:00-4:30 PM on Saturday.  Presenters of even numbered posters should stand by their posters 3:00-4:30 PM on Friday and 1:30-3:00 PM on Saturday.
+
+The maize meeting is a forum for presentation and discussion of unpublished material. **Photographing or recording of talks and posters is [not]{.underline} allowed**. 
+
+## Health and Safety Policy
+
+The Maize Genetics Cooperation (MGC) is committed to the health and safety of all Cooperation members and
+
+attendees of the Annual Maize Genetics Meeting (MGM). In keeping with the United States Centers for Disease
+
+Control (CDC) guidelines, we have developed the following health & safety policy for the 2025 Maize Genetics
+
+Meeting. <https://www.maizegdb.org/mgc/maizemeeting/2025/health.php>
+
+We do not require masks to be worn during the meeting. However, please be sensitive to the immunocompromised and those practicing physical distancing.
+
+If you are feeling unwell, please stay in your hotel room and contact Tricia Simmons.
+
+Tricia’s Cell:  720-250-7033
+
+If it is an emergency, call 911.
+
+## Hospitality
+
+After the evening sessions on Thursday and Friday there will be informal socializing and poster gazing in the Midway, with refreshments and games provided from 9 PM - 11 PM and a cash bar until 12 AM. Additionally, from 9 PM - 10:30 PM we will have cornhole boards out for informal play on Thursday, and the initial rounds of a tournament on Friday. On Saturday evening there will be informal socializing in the Midway, with refreshments from 9 PM - Midnight, a cash bar from 11 PM - 12 AM, and the cornhole tournament finals from 10 PM - 12 AM.\
+\
+## Access to recorded sessions
+
+All talks and sessions will be recorded and made available to each meeting registrant. Registrants will receive an invitation email to view the recordings within 1-2 weeks after the meeting concludes from the Maize Genetics Cooperation (noreply-maize\@iastate.edu). If you do not receive the email by March 31st, please check your junk/spam folder. If you still haven’t received it, or you are having issues with the site where the videos are hosted, please email [john.portwood\@usda.gov](mailto:john.portwood@usda.gov).
+
+## Steering Committee
+
+Please share your suggestions and comments about the meeting with the 2025 Steering Committee
+
+-   Sherry Flint-Garcia, Chair (sherry.flint-garcia\@usda.gov)
+
+-   Frank Hochholdinger, co-Chair (hochhold\@uni-bonn.de)
+
+-   Ruben Rellan-Álvarez, Previous Chair (rrellan\@ncsu.edu)
+
+-   Oyenike Adeyemo (aoadeyemo\@unilag.edu.ng)
+
+-   Hank Bass (bass\@bio.fsu.edu)
+
+-   Keting Chen (kchen\@iastate.edu)
+
+-   Melissa Draves (madcfr\@missouri.edu)
+
+-   Sarah Jensen (sarah.jensen\@syngenta.com)
+
+-   Katie Murphy (kmurphy\@danforthcenter.org)
+
+-   Cinta Romay (mcr72\@cornell.edu)
+
+-   Sylvia Morais de Sousa Tinoco (sylvia.sousa\@embrapa.br)
+
+-   Graziana Taramino (graziana.taramino\@bayer.com)
+
+-   Feng Tian (ft55\@cau.edu.cn)
+
+-   Petra Wolters (petra.wolters\@corteva.com)
+
+Ex officio:
+
+-   Carson Andorf - MaizeGDB
+
+-   Erin Sparks - Treasurer
+
+-   Darwin Campbell – Planning / Audio Visual
+
+-   Marty Sachs - Local Host
+
+-   John Portwood - Logistics Coordinator
+
+Meeting planning:
+
+-   Tricia Simmons – Conference Direct
+
+-   Garrett Simmons – Conference Direct
+
+-   Frankie Palmer – Conference Direct
+
+## Acknowledgements
+
+Many thanks go to Carson Andorf, John Portwood, the MaizeGDB staff from the USDA-ARS, and Darwin Campbell (Iowa State University) for their tremendous efforts in organizing, assembling, and advertising the conference program. We also greatly thank Tricia Simmons, Garrett Simmons, Frankie Palmer, and their team at ConferenceDirect for helping to organize and implement the conference registration platform, handling meeting logistics with the venue staff, and dealing with many other issues. Special thanks are also extended to the Union Station staff for their help in organizing this conference. Thanks go to Sarah Jensen, Graziana Taramino, and Petra Wolters for their efforts in securing funding to offset meeting costs. Finally, many, many thanks go to the Steering Committee for organizing the 67th Maize Genetics Meeting
+
+## FAIR Data Management
+
+*…A Reminder from the MaizeGDB team*
+
+![](data/assets/002_AgBioData.png){fig-align="left" width="92"}
+
+MaizeGDB is a founding member of the AgBioData Consortium.  AgBioData is a consortium of agricultural biological databases with the mission of consolidating standards and best practices for acquiring, displaying, and reusing genomic, genetic, and breeding (GGB) data.
+
+Member databases of the AgBioData consortium follow the Findable, Accessible, Interoperable, and Reusable (FAIR) principles, enhancing the accessibility and reusability of large-scale agricultural research data. MaizeGDB consolidates vast amounts of published data, simplifying discovery and utilization for our community. Your commitment to FAIR principles ([go-fair.org](http://go-fair.org)) enables MaizeGDB and similar platforms to integrate and leverage even more data efficiently. Below are essential guidelines for applying FAIR data management practices to your generated data, as well as to the data you encounter in research papers and grant reviews.
+
+### Database Selection and Accession Reporting:
+
+Ensure your data, such as DNA/RNA/Protein sequences, genome assemblies, and annotations, are submitted to long-term repositories like NCBI. Always include accession numbers in your publication. For maize SNPs, submit them to EVA at EBI. Explore more repositories at [maizegdb.org/FAIRpractices](http://maizegdb.org/FAIRpractices) and consult journal guidelines for additional instructions.
+
+### Data Publication:
+
+Publish your data concurrently with your paper. For datasets not included with the article, secure a persistent identifier (e.g., DOI) from the data repository to reference in your paper. Datasets can be independently published in journals like microPublication, ensuring they are linked to the corresponding paper. Verify the presence and FAIR compliance of reported data during peer review.
+
+### Gene and Protein Identifier Usage:
+
+Use established identifiers for genes, gene models, and genomes. Avoid renaming existing genes. Look up gene symbols at MaizeGDB and use precise gene model IDs. For protein data, reference the correct ID from NCBI or UniProt, submitting new sequences to these repositories as necessary. Maize nomenclature guidelines: <https://www.maizegdb.org/nomenclature>
+
+### Metadata and File Format Standards:
+
+Attach comprehensive metadata to your datasets and adhere to accepted file formats. Treat metadata with the same rigor as experimental and analysis work. Incomplete or poorly described datasets compromise reusability, reproducibility, and overall research quality.
+
+### Machine-Readable Data Sets:
+
+Ensure your data is machine-readable, using permanent identifiers and correct terminology (e.g., using correct case for genetic loci, incorporating GO, PO, PATO terms). Validate your data against common, established machine-readable formats. 
+
+### Data Management Planning:
+
+Allocate sufficient time for meticulous data management, similar to the effort dedicated to other research aspects.
+
+### FAIR Data Standards:
+
+Here are some resources:[https://www.go-fair.org](https://www.go-fair.org/),<https://doi.org/10.1093/database/bay088>.
+
+**We are always happy to answer your questions on these issues!** <https://www.maizegdb.org/contact>
+
+
+
+## **What's NEW at MaizeGDB!**
+
+![](data/assets/002_MaizeGDB.png){fig-align="center" width="235"}
+
+In 2024, MaizeGDB expanded its pan-genomic resources\* for the representative B73 genome, all NAM founder lines, Pan-Andropogoneae, and other historically important lines. These resources now include:
+
+-   110 genomes, two are under the Toronto agreement, including the Pan-Andropogoneae genomes
+
+-   Over 1.5 million new gene model annotations
+
+-   New Pan-gene dataset, which includes 57 annotations
+
+-   Hundreds of new downloadable files
+
+-   391 target databases in BLAST
+
+-   Syntenome and reelGene tracks on the B73v5 genome browser
+
+-   400+ high-throughput sequencing data for over 80 tissues/conditions
+
+-   300+ traits linked to over 40,000 positions in the genome
+
+-   80+ million SNPs from EVA and Ensembl Plants
+
+-   Genotype data remapped to B73 v5 for 1,500 maize accessions
+
+-   Over 1 million predicted GO terms across 31 genomes
+
+-   Resources for 4 insertion mutation collections
+
+-   MaizeMine has been updated to include B73_v5 and the NAM founder lines
+
+-   SNPversity 2.0, which enables users to explore and visualize extensive variant datasets with ease\*\*
+
+-   Transposable elements, structural variation, regulatory sites, and more…
+
+**If you have questions on how to access/use these resources, contact us at** <https://www.maizegdb.org/contact>
+
+\*Cannon, EK et al. (2024) Enhanced Pan-Genomic Resources at the Maize Genetics and Genomics Database. Genetics. doi: [https://doi.org/10.1093/genetics/iyae036.](https://doi.org/10.1093/genetics/iyae036)
+
+\*\*Andorf CM et al. (2024) A unified VCF data set from nearly 1,500 diverse maize accessions and resources to explore the genomic landscape of maize. G3. doi: <https://doi.org/10.1093/g3journal/jkae281>
+
+**Thank you to the 2024 MaizeGDB Editorial Board Members!**
+
+-   Amruta Bapat, Washington University St. Louis
+
+-   Hank Bass, Florida State University
+
+-   Diana Escamilla Sanchez, Iowa State University
+
+-   Rohit Kumar, Clemson University
+
+-   Songyu Liu, China Agricultural University, China
+
+-   Ankita Mishra, Orissa University of Agriculture and Technology, India
+
+-   Aimee Uyehara, Stanford University (2nd Year!)
+
+
+
+## MaizeGDB has partnered with ***microPublication Biology!***
+
+![](data/assets/002_upub.png){fig-align="center"}
+
+
+***microPublication Biology*** **(Caltech Publishers) is a peer-reviewed, open-access journal that publishes single experiment results, which are incorporated directly into community knowledgebases like MaizeGDB**! 
+
+*microPublication Biology* gets your individual research findings, that might otherwise remain unpublished, out to the scientific community while providing credit to those who did the work.  Articles are small (one figure, few pages), peer-reviewed, assigned a DOI and are discoverable on [PMC](https://www.ncbi.nlm.nih.gov/pmc/), [PubMed](https://pubmed.ncbi.nlm.nih.gov/), [EuropePMC](http://europepmc.org/), and [Google Scholar](https://scholar.google.com/). 
+
+How it works: Each maize *microPublication Biology* submission will be vetted by MaizeGDB curators at the time of peer review to ensure data meets FAIR data standards. Upon acceptance, your article is curated into MaizeGDB which couples the publication with curation and discoverability in MaizeGDB. The cost to publish is only \$350.
+
+**Here are some recent maize publications:**
+
+Gustin JL, Zimmerman SA, and Sachs MM. (2025) Allelism of Uncharacterized Dwarf Mutants in Maize. <https://doi.org/10.17912/micropub.biology.001504>
+
+Reneau, J; Ouslander, N; Sparks, EE. (2024) Quantification of maize brace root formation after vertical stalk displacement. microPublication Biology. <https://doi.org/10.17912/micropub.biology.001189>
+
+Linders, KM; Santra, D; Schnable, JC; Sigmon, B. (2024) Variation in Leaf Chlorophyll Concentration in Response to Nitrogen Application Across Maize Hybrids in Contrasting Environments. microPublication Biology. <https://doi.org/10.17912/micropub.biology.001115>
+
+**For more information:**
+
+Visit the journal: <https://www.micropublication.org>   
+
+Questions can be sent to:
+
+Karen Yook, Executive Editor ([karen.yook\@micropublication.org](mailto:karen.yook@micropublication.org))
+
+Carson Andorf, Maize Science Officer ([carson.andorf\@usda.gov](mailto:carson.andorf@usda.gov))
