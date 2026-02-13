@@ -268,7 +268,7 @@ wheels = [
 ]
 
 [[package]]
-name = "maize2025"
+name = "maize-meeting"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
