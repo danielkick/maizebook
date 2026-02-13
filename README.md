@@ -3,8 +3,25 @@
 - [ ] Pre-preview checks
     - [ ] Confirm there are no instances of `eval=FALSE` in the qmds
     - [ ] Confirm there are no instances of `FIXME` or `TODO` in the qmds or ipynb
-- [ ] Request updated info on custom pages
-
+- [ ] Fix author index    
+- [ ] Check custom pages
+    - [ ] 404.qmd
+    - [ ] about.qmd
+    - [ ] index.qmd
+    - [ ] launch.qmd
+    - [ ] program_authors_attendees.qmd
+    - [ ] program_awards.qmd
+    - [ ] program_general_information.qmd
+    - [ ] program_map.qmd
+    - [ ] program_poster_list.qmd
+    - [ ] program_schedule.qmd
+    - [ ] program_sponsors.qmd
+- [ ] Request updated info for custom pages
+- [ ] Check generated pages
+    - [ ] generated_keynote_list.qmd
+    - [ ] generated_lightning_list.qmd
+    - [ ] generated_poster_list.qmd
+    - [ ] generated_talks.qmd
 
 ### Setup
 
@@ -12,7 +29,8 @@
 - Assumes uv (0.10.2)
 - Assumes R
     - kableExtra
-    - tidyverse    
+    - tidyverse
+    - readxl    
 
 ```zsh
 # preview to observe changes
