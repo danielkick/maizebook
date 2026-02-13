@@ -12,7 +12,8 @@
     - [ ] program_authors_attendees.qmd
     - [ ] program_awards.qmd
     - [ ] program_general_information.qmd
-    - [ ] program_map.qmd
+    - [x] program_map.qmd
+        - removed
     - [ ] program_poster_list.qmd
     - [ ] program_schedule.qmd
     - [x] program_sponsors.qmd
@@ -24,7 +25,6 @@
     - [ ] program_authors_attendees.qmd
     - [ ] program_awards.qmd
     - [ ] program_general_information.qmd
-    - [ ] program_map.qmd
     - [ ] program_poster_list.qmd
     - [ ] program_schedule.qmd
     - [ ] program_sponsors.qmd

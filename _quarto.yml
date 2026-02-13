@@ -30,8 +30,6 @@ website:
       #   href: launch.qmd
         
     right:
-      - text: Map
-        href: program_map.qmd
       - text: General Information
         href: program_general_information.qmd
       # - text: Awards
