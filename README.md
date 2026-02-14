@@ -12,9 +12,11 @@
     - [ ] program_awards.qmd
         - [ ] Don't have award information
     - [ ] program_general_information.qmd
+        - [ ] Need pdf with schedule -> `schedule.csv`
         - [ ] Need pdf with general info. This is from 2025
-    - [ ] program_poster_list.qmd
+    - [b] program_poster_list.qmd
         - [ ] Assumes `generated/schedule_links.csv`
+        - [ ] Assumes `generated/schedule.csv`
         - [ ] test `subset_M()`
     - [b] program_schedule.qmd
         - [ ] Need pdf with schedule
