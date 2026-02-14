@@ -1,7 +1,11 @@
 ---
-title: "67th Annual Maize Genetics Meeting"
-subtitle: ""
+title: "Maize Genetics Meeting"
+subtitle: "Digital Abstract Book"
 ---
+
+
+
+
 
 ::: {.callout-note appearance="simple" icon="false"}
 ## 
@@ -9,10 +13,27 @@ subtitle: ""
 Thank you for attending the Maize Genetics Meeting, we look forward to seeing you next year!
 :::
 
+<span style="color:red">TODO replace links:</span>
+
 ::: {style="text-align: center"}
 Download PDF Versions:
 [Schedule](./official/MGM2025Schedule.pdf) | [Abstract book](./official/2025Program.pdf)
 :::
+
+
+
+## February 26
+## February 27
+## February 28
+## March 1
+
+https://www.mgcmeeting.com/schedule-at-a-glance
+
+
+https://www.mgcmeeting.com/
+
+
+
 
 
 ```{r echo=FALSE}

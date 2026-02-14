@@ -1,30 +1,117 @@
 ---
 title: ""
+subtitle: "[Official Page](https://www.mgcmeeting.com/#:~:text=The maize community is grateful,sponsors:)"
 ---
 
 ::: {style="text-align: center"}
-## This conference received financial support from:
+## The maize community is grateful for the generous support from these sponsors:
 :::
 
-![](data/assets/sponsor_image2025.png){fig-align="center"}
+::: {style="text-align: center"}
 
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/1ff6b123-2085-42a5-b87a-edfa084dc5ef/00_USNSF_Logo_Lockup_stacked_RGB_1200ppi.png){fig-align="center" width=45% } 
+
+[NSF](https://www.nsf.gov/)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/17834e23-b3d0-4708-81f3-86f61e265dff/00_dfg_logo_englisch_blau_en.png){fig-align="center" width=45% } 
+
+[DFG](https://www.dfg.de/en)
+:::
+
+----
 
 ::: {style="text-align: center"}
-[NSF](http://www.nsf.org/)
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/900d352f-6380-43e8-8ccc-38b00caa0bf9/platinum_blue.png){fig-align="center" width=20% }
 
-[Corteva](https://www.corteva.us/)
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/07297649-6beb-4377-96bc-0f7b9e794182/bayer){fig-align="center" width=20% }
 
 [Bayer](http://www.bayer.com/)
 
-[MolBreeding Biotech Ltd](https://en.molbreeding.com/)
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/c69ccfe8-bf25-441f-8f5c-ab27fdeefa56/corteva){fig-align="center" width=20% }
 
-[Syngenta](http://www.syngenta.com/)
+[Corteva](https://www.corteva.us/)
+:::
 
-[KWS](https://www.kws.com/corp/en/)
+----
 
-[National Corn Growers Association](http://www.ncga.com/)
+::: {style="text-align: center"}
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/6cceebdf-fd3e-4b6a-9e5f-4ac1ca634376/mol+breeding){fig-align="center" width=20% }
 
-[Inari](https://inari.com/)
+[MolBreeding Biotech Ltd](https://www.molbreeding.com/)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/4a4d6682-9284-49c5-9c55-1f1e543fc410/2_Syngenta.png){fig-align="center" width=20% }
+
+[Syngenta](https://www.syngenta.com/)
+:::
+
+----
+
+::: {style="text-align: center"}
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/285b9a5b-514b-489a-9665-217cb2c183bd/3_BASF.png){fig-align="center" width=20% }
+
+[BASF](https://www.basf.com/)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/70786ce9-7bbf-4cef-942a-692f6bfd962c/3_BGI.png){fig-align="center" width=20% }
+
+[BGI](https://www.bgi.com/)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/78f8af8d-e258-44aa-bdbb-12eadf92151f/3_KWS.png){fig-align="center" width=20% }
+
+[KWS](https://www.kws.com/)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/cd1f8bce-3679-479b-92bc-a5432cf511fd/3_Limagrain.png){fig-align="center" width=20% }
+
+[Limagrain](https://www.limagrain.com/en)
+:::
+
+----
+
+::: {style="text-align: center"}
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/9a969afc-3689-4815-a53f-5ee0f1d096c5/4_Deutsche+Botanische+Gesellschaft.png){fig-align="center" width=20% }
+
+[Deutsche Botanische Gesellschaft](https://www.deutsche-botanische-gesellschaft.de/)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/a2d014cd-d803-435d-b601-f085d696a97d/4_dmk.png){fig-align="center" width=20% }
+
+[Deutsches Maiskomitee e.V.](https://www.maiskomitee.de/)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/480bfa6c-aae7-4cc5-b67d-d10084683b4a/4_Physiologia+Plantarum.png){fig-align="center" width=20% }
+
+[Physiologia Plantarum](https://onlinelibrary.wiley.com/journal/13993054)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/1d58cfd4-5646-47b7-ac54-f5131558786e/4_ThePlantJournal.png){fig-align="center" width=20% }
+
+[the plant journal](https://onlinelibrary.wiley.com/journal/1365313x)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/958a3420-e3c0-4619-9c9c-f69d1be4280d/4_PlantPhysiology.png){fig-align="center" width=20% }
+
+[Plant Physiology](https://academic.oup.com/plphys)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/4c4c9e80-4eb5-4e8d-bd69-29aa2f21f9c9/4_New-Phytologist---Foundation-Logo-%28Turquoise%29.png){fig-align="center" width=20% }
+
+[New Phytologist Foundation](https://www.newphytologist.org/)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/eda8afb1-b076-4c7f-b5a2-370f682ef6a6/4_JourExpBotany.png){fig-align="center" width=20% }
+
+[Journal of Experimental Botany](https://academic.oup.com/jxb)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/97020833-b5c5-43a7-80f6-829ff7e38190/4_ThePlantCell.png){fig-align="center" width=20% }
+
+[The Plant Cell](https://academic.oup.com/plcell)
+:::
+
+----
+
+::: {style="text-align: center"}
+Travel support provided by:
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/95cbcfb2-d140-4ffa-9af6-99bb22292bf9/99_x1500_ylpuo5w7k9l09uns.png){fig-align="center" width=20% }
+
+[Root & Shoot](https://rootandshoot.org/)
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/124f885a-133d-40a5-a107-9f7e9de155b3/99_FoundFiatPains.png){fig-align="center" width=20% }
+
+[Foundation fiat panis](https://www.stiftung-fiat-panis.de/en/)
 :::
 
 
@@ -32,8 +119,3 @@ title: ""
 ### We thank these sponsors for their generosity!
 :::
 
-<!-- ::: {style="text-align: center"} -->
-<!-- ## A special thank you for the in-kind support from the **USDA-ARS** -->
-<!-- ::: -->
-
-<!-- ![](data/assets/001_TOC_sponsors_in_kind.png){fig-align="center" width="186"} -->
