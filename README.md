@@ -6,14 +6,18 @@
 - [ ] Fix author index
 - [ ] Check custom pages
     - [ ] index.qmd
-    - [ ] program_authors_attendees.qmd
+        - [ ] 
+    - [x] program_authors_attendees.qmd
+        - [x] Updated table rendering 
     - [ ] program_awards.qmd
+        - [ ] Don't have award information
     - [ ] program_general_information.qmd
+        - [ ] Need pdf with general info. This is from 2025
     - [ ] program_poster_list.qmd
-    - [ ] program_schedule.qmd
-    - [x] program_keynote_speakers.qmd
-        - Updated.
-    - [x] program_sponsors.qmd
+        - [ ] Assumes `generated/schedule_links.csv`
+        - [ ] test `subset_M()`
+    - [b] program_schedule.qmd
+        - [ ] Need pdf with schedule
     - [ ] _quarto.yml
 - [ ] Request updated info for custom pages
     - [ ] index.qmd
@@ -24,7 +28,8 @@
     - [ ] program_general_information.qmd
     - [ ] program_poster_list.qmd
     - [ ] program_schedule.qmd
-    - [ ] program_keynote_speakers.qmd
+    - [x] program_keynote_speakers.qmd
+        - Updated 
     - [x] program_sponsors.qmd
         - [x] Are the sponsor the same?
             - No. Updated. 
@@ -41,10 +46,14 @@
 
 - Assumes quarto (1.8.27)
 - Assumes uv (0.10.2)
-- Assumes R
-    - kableExtra
-    - tidyverse
-    - readxl    
+- Assumes R (4.5.2)
+    - kableExtra (1.4.0)
+    - tidyverse (2.0.0)
+    - readxl (1.4.5)
+- Download workbook
+    - update sheet name "Author index" -> "Author Index"
+    - update sheet "Author index" with header columns to match "Attendee List"
+
 
 ```zsh
 # preview to observe changes

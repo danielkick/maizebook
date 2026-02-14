@@ -10,25 +10,23 @@ title: "Authors and Attendees"
 
 ```{r echo=FALSE}
 #| include: false
-
 library(tidyverse)
 library(kableExtra)
 library(readxl)
-
 ```
 
 
 ## Author Index
-```{r echo=FALSE, eval=FALSE}
-read_xlsx('./data/MGM2025-Abstracts_v4.xlsx', sheet = 'Author Index') |>
+```{r echo=FALSE}
+read_xlsx('./data/Abstracts\ -\ Web\ app.xlsx', sheet = 'Author Index', col_names = T) |>
   kbl() |>
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 ```
 
 
 ## Attendee List
-```{r echo=FALSE, eval=FALSE}
-read_xlsx('./data/MGM2025-Abstracts_v4.xlsx', sheet = 'Attendee List') |>
+```{r echo=FALSE}
+read_xlsx('./data/Abstracts\ -\ Web\ app.xlsx', sheet = 'Attendee List', col_names = T) |>
   kbl() |>
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 ```
