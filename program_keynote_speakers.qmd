@@ -1,0 +1,103 @@
+---
+title: "Meet the Speakers"
+subtitle: "[Official Page](https://www.mgcmeeting.com/#:~:text=Meet the,Speakers)"
+---
+
+::: {style="text-align: center"}
+## Yoselin Benitez-Alfonso
+:::
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/6acbbef2-e04e-4abf-8c3d-a9c11b6f2cff/Benitez-Alfonso_photo.png){fig-align="center" width=20% }
+
+::: {.callout-note collapse="true"}
+## Bio
+
+[Link](https://astbury.leeds.ac.uk/people/yoselin-benitez-alfonso/)
+
+Dr. Yoselin Benitez-Alfonso is Professor in Interdisciplinary Plant Sciences at the University of Leeds (UK). She was born in Cuba and graduated in Chemistry at the University of Cordoba, Spain. Yoselin did her PhD in plant biochemistry and molecular biology in Spain followed by postdoctoral research at Cold Spring Harbor Laboratory in New York (USA) and at the John Innes Centre (Norwich, UK). In 2017, she was appointed Lecturer at the University of Leeds, where she secured multiple funding including a UKRI Future Leaders Fellowship. Yoselin research group focuses on cell walls properties surrounding plant intercellular channels (i.e. plasmodesmata) with the goal to unlock knowledge for the development of new strategies for crop improvement and biomaterial development. Yoselin’s interdisciplinary research is supported by several networks and virtual centers including the NSF- funded ‘Plant Cell Atlas network’, the Astbury Centre for Structural Biology and the Bragg Centre for Material Research. She has published over 50 research articles which were cited >3300 times and is part of the advisory board for the journals ‘Current Biology’, ‘New Phytologist’ and ‘Trend in Plant Sciences’. She contributes to diverse funding panels including UKRI, ERC and the Royal Society. She advocates for equity, diversity and inclusion and last year, co-founded the Black in Plant Science Network (https://blackinplantscience.org/) dedicated to connect, celebrate and cultivate the next generation of plant scientists in UK. In 2023, Yoselin became the 66th Black Female Professor in the UK. She received the ‘Education and Academic Leader of the Year’ Forward Ladies Award and the UKRI Impact Award for ‘Advancing Research Culture’ among other accolades. 
+:::
+
+::: {style="text-align: center"}
+## Eileen Furlong
+:::
+
+::: {style="text-align: center"}
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/89f31ba3-bfe0-4d39-8a3d-dc65e33ab793/Furlong_photo.jpg?format=750w){fig-align="center" width=20% }
+:::
+
+::: {.callout-note collapse="true"}
+## Bio
+[Link](http://furlonglab.embl.de/)
+
+Eileen Furlong is head of the Genome Biology department and Senior Scientist at EMBL. 
+
+She studied biochemistry at University College Dublin, Ireland, where she obtained her Ph.D. and then transitioned to developmental biology during her postdoc at Stanford University, US.  She became a group leader at EMBL in Heidelberg in October 2002, and is head of the Genome Biology Department at EMBL since 2009.  She is a recipient of two ERC advanced grants, elected member of EMBO, the Academia Europaea, Leopoldina and a Fellow of the Royal Society (FRS), UK.
+
+Eileen is known for her work in uncovering different mechanisms of genome regulation, including understanding how developmental enhancers function and are organised in the three-dimensional nucleus.  Her research has pioneered genomic methods for use in developing embryos, which uncovered many new insights into how transcriptional networks give rise to diverse cell types.
+:::
+
+
+::: {style="text-align: center"}
+## Hilde Nelissen
+:::
+
+::: {style="text-align: center"}
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/9bdca7a7-a145-4081-8700-01260acc9ea4/Nelissen.png?format=750w){fig-align="center" width=20% }
+:::
+
+::: {.callout-note collapse="true"}
+## Bio
+[Link](https://www.nelissenlab.be/)
+
+Hilde Nelissen is Professor at Ghent University and Group Leader at the VIB-UGent Center for Plant Systems Biology, where she leads the Plant Growth Dynamics team. Her research explores how growth processes determine final plant organ size, with a focus on maize. Her team investigates the regulatory networks that control organ growth and yield, aiming to develop climate-resilient crops. As Adjunct Director of the center, Hilde promotes a collaborative and inclusive research environment that supports innovation in plant science.
+:::
+
+::: {style="text-align: center"}
+## Silvio Salvi
+:::
+
+::: {style="text-align: center"}
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/67e55a1a-b88f-4231-9ad9-4b64ea5b1eb8/Salvi_photo.jpg?format=750w){fig-align="center" width=20% }
+:::
+
+::: {.callout-note collapse="true"}
+## Bio
+[Link](https://www.unibo.it/sitoweb/silvio.salvi/en)
+
+Silvio Salvi is a Full Professor of Agricultural Genetics at the University of Bologna, Italy, since 2020. He earned his PhD in Molecular and Cellular Biotechnology from the same university. From 2007 to 2010, he worked at the Edmund Mach Foundation (FEM) Research Centre in Trento, where he led the apple molecular genetics program. He is a Senior Fellow of the Italian National Academy of Agriculture and recently served as President of the Italian Society of Agricultural Genetics (2023–2025). He chaired the 5th European Maize Meeting (2023) and the 26th EUCARPIA Maize and Sorghum Conference (2025). At the University of Bologna, he coordinates the master’s degree program in Plant Agricultural Biotechnology. His research focuses on the genetic and molecular control of agronomically important traits (e.g., plant development, and resistance to abiotic and biotic stress) in maize, barley, durum wheat, and biomass crops. Particular emphasis is placed on the genetics of flowering time and root architecture.
+:::
+
+::: {style="text-align: center"}
+## Arp Schnittger
+:::
+
+::: {style="text-align: center"}
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/35c4b9ad-9d01-48d1-a869-1b049246baa6/arp.jpg?format=750w){fig-align="center" width=20% }
+:::
+
+::: {.callout-note collapse="true"}
+## Bio
+[Link](https://www.biologie.uni-hamburg.de/en/forschung/entwicklungsbiologie.html)
+
+Arp Schnittger is a professor at the University of Hamburg, Germany, where he heads the Department of Developmental Biology. He studied biology at the University of Tübingen, Germany, and at the University of Washington in Seattle, USA. He obtained his Ph.D. in genetics in 2001 from the Center of Molecular Plant Biology (ZMBP) at the University of Tübingen. He then became a group leader and Volkswagen Foundation fellow at the University of Cologne, Germany, where he habilitated in botany in 2007. In the same year, he was appointed Directeur de recherche at the Centre national de la recherche scientifique (CNRS) and became a group leader at the Institut de Biologie Moléculaire des Plantes (IBMP) in Strasbourg, France. In 2009, he became head of the Department of Cell Biology at the IBMP, and in 2014, he moved to the University of Hamburg.
+
+His research focuses on controlling cell division, particularly during plant reproduction. Together with his team, he primarily studies these processes in Arabidopsis and maize.
+:::
+
+::: {style="text-align: center"}
+## Dr. Joseph Ecker
+The McClintock Prize Awardee
+:::
+
+::: {style="text-align: center"}
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/85747e8f-5219-403b-8aa7-4fd15817443e/Ecker-pict.png?format=1000w){fig-align="center" width=20% }
+:::
+
+::: {.callout-note collapse="true"}
+## Bio
+[Link](https://www.salk.edu/scientist/joseph-ecker/)
+
+Joseph Ecker is an Investigator of the Howard Hughes Medical Institute, a Professor and the International Council Chair in Genetics and Director of the Genomic Analysis Laboratory at the Salk Institute for Biological Studies. His research focuses on genomic and epigenomic gene regulation in mammals and plants and on the application of DNA sequencing technologies for genome-wide analysis of DNA methylation, transcription and gene function. He has served as a member of the council of advisors to the National Human Genome Research Institute and the US Departments of Energy and Agriculture, among others. Ecker is member of the US National Academies of Science, the American Academy of Arts and Sciences and is a Fellow of American Association for the Advancement of Sciences. His work has been recognized with a number of awards including, the John J. Carty award for the Advancement of Science from the National Academy, the George W. Beadle Award from the Genetics Society of America, and the Martin Gibbs Medal from the American Society of Plant Biologists.
+
+Joe will present his work at this year's Maize Genetics Meeting. The MGC will be presenting Early and Mid-Career, Emerson Lifetime, Leadership, and Cooperator awards at the conference.
+:::
