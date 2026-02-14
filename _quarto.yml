@@ -28,8 +28,6 @@ website:
         href: program_poster_list.qmd
       - text: Poster Abstracts
         href: generated_poster_list.qmd
-      # - text: Ref
-      #   href: launch.qmd
         
     right:
       - text: General Information

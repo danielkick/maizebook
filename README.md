@@ -5,32 +5,29 @@
     - [ ] Confirm there are no instances of `FIXME` or `TODO` in the qmds or ipynb
 - [ ] Fix author index
 - [ ] Check custom pages
-    - [x] 404.qmd
-    - [x] about.qmd
-        - removed
     - [ ] index.qmd
-    - [ ] launch.qmd
     - [ ] program_authors_attendees.qmd
     - [ ] program_awards.qmd
     - [ ] program_general_information.qmd
-    - [x] program_map.qmd
-        - removed
     - [ ] program_poster_list.qmd
     - [ ] program_schedule.qmd
+    - [x] program_keynote_speakers.qmd
+        - Updated.
     - [x] program_sponsors.qmd
     - [ ] _quarto.yml
 - [ ] Request updated info for custom pages
     - [ ] index.qmd
         - [ ] pdf schedule
         - [ ] pdf program
-    - [ ] launch.qmd
     - [ ] program_authors_attendees.qmd
     - [ ] program_awards.qmd
     - [ ] program_general_information.qmd
     - [ ] program_poster_list.qmd
     - [ ] program_schedule.qmd
-    - [ ] program_sponsors.qmd
-        - [ ] Are the sponsor the same?
+    - [ ] program_keynote_speakers.qmd
+    - [x] program_sponsors.qmd
+        - [x] Are the sponsor the same?
+            - No. Updated. 
     - [ ] _quarto.yml
         - [ ] I commented out feedback link. Is there a new link for 2026?
 
