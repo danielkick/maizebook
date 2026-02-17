@@ -10,14 +10,37 @@ Thank you for attending the Maize Genetics Meeting, we look forward to seeing yo
 ::: -->
 
 ::: {.callout-caution appearance="simple" icon="false" collapse="true"}
-## Known Issues
+## Pending Fixes
 
-- [ ] index (This page)
-  - [ ] PDF schedule
-  - [ ] PDF abstract book
-  - [ ] Links to program_schedule
-- [ ] program_schedule
-  - [ ] program_schedule
+- [ ] Get pdf with schedule
+- [ ] Need pdf with schedule -> `schedule.csv`
+- [ ] Extract award information
+
+Key fixes
+
+- [ ] ⚠ Home 🌽 `index.qmd`
+  - [ ] Link to pdf abstract book
+  - [ ] Link to pdf schedule
+  - [ ] Day by day schedule summary
+  - [ ] Verify links in headings work
+- [ ] ⚠ Schedule `program_schedule.qmd`
+  - [ ] Day by day schedule summary
+- [ ] ⚠ Poster Lookup `program_poster_list.qmd`
+  - [ ] Assumes `generated/schedule_links.csv`
+  - [ ] Assumes `generated/schedule.csv`
+  - [ ] test `subset_M()`
+- [ ] ⚠ Awards `program_awards.qmd`
+  - [ ] Need award info.
+- [ ] `_quarto.yml`
+  - [ ] Remove ⚠ from page links
+  - [ ] Updated feedback link?
+- [ ] Final qmd checks
+    - [ ] Confirm there are no instances of `eval=FALSE` in the qmds
+    - [ ] Confirm there are no instances of `FIXME` or `TODO` in the qmds
+
+Optional Fixes
+- [ ] fix dark mode 
+
 :::
 
 ::: {style="text-align: center"}
