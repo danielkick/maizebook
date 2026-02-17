@@ -1,0 +1,544 @@
+---
+title: "Lightning Talks"
+format:
+  html:
+    toc: true
+    toc-depth: 1
+---
+
+# Biochemical and Molecular Genetics
+
+
+## L1: Genetic interaction between GL15 and FDL1 modulates juvenile cuticle deposition and leaf permeability in maize
+<font color="#336699">Biochemical and Molecular Genetics </font>
+[Gabriella Consonni](mailto:gabriella.consonni@unimi.it) (Principal Investigator)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:giulia.castorina@unimi.it'>Castorina, Giulia</a><sup>1 3</sup><br><a href='mailto:frederic.domergue@u-bordeaux.fr'>Domergue, Frédéric</a><sup>2</sup><br><a href='mailto:gabriella.consonni@unimi.it'>Consonni, Gabriella</a><sup>1</sup><br>
+
+<sup>1</sup>Department of Agricultural and Environmental Sciences (DiSAA), Università degli Studi di Milano, 20133 Milan, Italy<br><sup>2</sup>Université de Bordeaux, CNRS, LBM, UMR 5200, F-33140 Villenave d&#39;Ornon, France<br><sup>3</sup>Present address: CREA, Research Centre for Genomics and Bioinformatics, 29017 Fiorenzuola, Italy<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+The plant cuticle is a hydrophobic layer produced by the epidermis of primary aerial tissues that serves as the primary barrier between the plant surface and the external environment, whose main function is to limit water loss. This study investigated the roles and interactions between the regulatory genes ZmFDL1 and ZmGL15 in modulating juvenile cuticle deposition and function in maize. Expression and lipid analyses, morphological studies, and permeability assays were performed on single and double mutants. Our results showed an additive effect of ZmFDL1 and ZmGL15 transcription factors on wax abundance and an epistatic effect of gl15-S on fdl1-1 in determining cutin deposition.ZmFDL1 has a key role in controlling juvenile cuticle deposition and preventing water loss, while the main role of ZmGL15 is to maintain a juvenile cuticle. Lack of ZmGL15 activity, as observed in the gl15-S mutant, results in the acquisition of a cuticle characterized by a higher cutin content, with increased ω-hydroxy fatty acids (FAs) as well as polyhydroxy FAs, and a lower wax content, with a decrease in both aldehydes and long chain-alcohols. These changes result in an increased water-holding capacity of the seedlings under drought stress conditions.Furthermore, gl15-S has an epistatic effect on the phenotype of the fdl1-1 mutant. In the double fdl1-1 gl15-S mutant, the absence of ZmGL15 activity mitigates the fdl1-1 morphological abnormalities and rescues the increased fdl1-1 cuticle-mediated leaf permeability.
+:::
+
+## L2: Identification and characterization of molecular drivers of nitrogen remobilization in maize during grain filling
+<font color="#336699">Biochemical and Molecular Genetics </font>
+[Alexa Park](mailto:alexan@tamu.edu) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:alexan@tamu.edu'>Park, Alexa N</a><sup>1</sup><br><a href='mailto:cody_kettler@tamu.edu'>Kettler, Cody</a><sup>1</sup><br><a href='mailto:joo29@cornell.edu'>Ojeda-Rivera, Jonathan Odilón</a><sup>2</sup><br><a href='mailto:mcr72@cornell.edu'>Romay, Cinta</a><sup>2</sup><br><a href='mailto:sakiko.okumoto@agnet.tamu.edu'>Okumoto, Sakiko</a><sup>1</sup><br><a href='mailto:seth.murray@ag.tamu.edu'>Murray, Seth</a><sup>1</sup><br>
+
+<sup>1</sup>Texas A&M University; USA; College Station, Texas, 77843<br><sup>2</sup>Cornell University; USA; Ithaca, New York, 14853<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+The maize grain is the primary nitrogen (N) sink, containing up to 70% of the total plant N at the end of the season. While some amount of grain N is crucial for seed viability, grain-N is eventually removed from the agricultural fields and fed to livestock, the process through which much of the N losses to the environment occur. Our vision for CERCA (Circular Economy that Reimagines Corn Agriculture) is to promote in-field nitrogen recycling, including allocating more N to the vegetative tissue instead of grains to enhance N retention in the field. Previous studies revealed that a few % decrease in grain N content is possible without compromising seed viability. To pinpoint molecular levers of N partitioning, we have generated RNA-seq profiles of CERCA hybrid tissues over the grain filling period. Concurrently, tissue-specific N content was quantified, allowing us to correlate gene expression patterns with remobilization patterns and identify the drivers of N remobilization during the grain filling period. We found that under the wet field conditions of 2024, the majority of N accumulating in the kernel was derived from ongoing N uptake and de novo assimilation. This is further supported by the overall leaf N assimilation activity correlating with peak of grain filling. Transcriptomic analyses revealed that amino acid transporters were enriched in kernel tissues before active grain filling, constant with roles establishing sink capacity, but showed low expression during active grain filling. In contrast, expression of these transporters increased in the source leaves during grain filling, indicating that active N accumulation during grain filling may be source driven. This presentation will discuss the methodologies employed, key findings, and their implications for future research and practical applications in maize agriculture.
+:::
+
+## L3: Understanding expression dynamics of flowering time genes from a gene network perspective
+<font color="#336699">Biochemical and Molecular Genetics </font>
+[Joseph DeTemple](mailto:josephdetemple@gmail.com) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:detemplj@iastate.edu'>DeTemple, Joseph M</a><sup>1</sup><br><a href='mailto:jhinrich@iastate.edu'>Hinrichsen, Jacob T</a><sup>1</sup><br><a href='mailto:ddli@iastate.edu'>Li, Dongdong</a><sup>1</sup><br><a href='mailto:gregorys@iastate.edu'>Schoenbaum, Gregory R</a><sup>1</sup><br><a href='mailto:jamie.orourke@usda.gov'>O&#39;Rourke, Jamie A</a><sup>1 2</sup><br><a href='mailto:michelle.graham@usda.gov'>Graham, Michelle A</a><sup>1 2</sup><br><a href='mailto:xianran.li@usda.gov'>Li, Xianran</a><sup>3</sup><br><a href='mailto:vollbrec@iastate.edu'>Vollbrecht, Erik</a><sup>4</sup><br><a href='mailto:mgmuszyn@hawaii.edu'>Muszynski, Michael</a><sup>5</sup><br><a href='mailto:jmyu@iastate.edu'>Yu, Jianming</a><sup>1</sup><br>
+
+<sup>1</sup>Department of Agronomy, Iowa State University, Ames, IA, US<br><sup>2</sup>USDA-ARS Corn Insects and Crop Genetics Research Unit, Ames, IA, US<br><sup>3</sup>USDA-ARS, Wheat Health, Genetics, and Quality Research, Pullman, WA, US<br><sup>4</sup>Department of Genetics, Development, and Cell Biology, Iowa State University, Ames, IA, US<br><sup>5</sup>Department of Tropical Plant and Soil Sciences, University of Hawai’i at Mānoa, Honolulu, HI, US<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Flowering time is an important adaptive trait for maize plants to respond to environmental signals like photoperiod. This trait is controlled by a network of genes that capture, process, and interpret these signals from leaves to the apical meristem. In this study, we set out to answer three questions about the genes within this network: 1) which genes are most important for explaining flowering time differences between genotypes, 2) which developmental stages are most critical for each gene, and 3) which timepoints are most important for capturing expression differences for each gene. To answer these questions, we sampled leaf tissue from four temperate (B73, Mo17, Oh43, and TX303) and four tropical (CML277, CML52, Ki3, and Tzi8) maize inbreds under long- and short-day conditions in growth chambers. To maximize our sampling space, we ran over 12,000 RT-qPCR reactions to determine expression of eight genes spread across the circadian clock and photoperiod pathways (cca1, cct1, col3, elf3.1, gi1, pebp8, prrtf1, and toc1) across three timepoints (morning, midday, and night) and across five v-stages (V2-V10). Data was modeled using a linear mixed model approach with a random effect for growth chamber and fixed effects for gene, genotype, photoperiod, timepoint, and v-stage. We find that the genes cct1 and cca1 have the highest effect when modeling expression, reinforcing their role as major flowering time regulators. Interestingly, we also found that the most predictive timepoints for each gene were generally not the timepoints with the highest expression. These findings provide new insights into the dynamics of the flowering time gene network and the connections between genetic variation, gene expression, and flowering time. Interpreting these patterns in the context of the overall flowering time gene network is critical for understanding how both newly discovered and classical genes interact in the genetic regulation of flowering time.
+:::
+
+## L4: Application of a ternary Agrobacterium-mediated transformation system coupled with morphogenesis regulators enables efficient genome editing in temperate and tropical maize
+<font color="#336699">Biochemical and Molecular Genetics </font>
+[Sophia Gerasimova](mailto:sofya.gerasimova@biozentrum.uni-halle.de) (Principal Investigator)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:sofya.gerasimova@biozentrum.uni-halle.de'>Gerasimova, Sophia V.</a><sup>1 2</sup><br>Pessoa, Mateus A.<sup>2</sup><br>Baiochi Riboldi, Lucas<sup>2</sup><br>Siqueira Pinto, Maísa<sup>2</sup><br>Nonato, Juliana V. A.<sup>2</sup><br>Hernandes Lopes, José<sup>2</sup><br>Bruno, Maria H. F.<sup>2</sup><br>Brant Monteiro, Patrícia<sup>2</sup><br>Kumlehn, Jochen<sup>4</sup><br>Arruda, Paulo<sup>2</sup><br>Yassitepe, Juliana E.C.T.<sup>2 3</sup><br>Dante, Ricardo A.<sup>2 3</sup><br>
+
+<sup>1</sup>Martin Luther University Halle-Wittenberg, Biozentrum; Halle (Saale), Germany 06120<br><sup>2</sup>Genomics for Climate Change Research Center, Unicamp; Campinas, SP, Brazil 13083-875<br><sup>3</sup>Embrapa Agricultura Digital; Campinas, SP, Brazil 13083-886<br><sup>4</sup>Leibniz Institute of Plant Genetics and Crop Plant Research (IPK); Gatersleben, Germany 06466<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Genome editing of tropical maize is limited by strong genotype dependence and low transformation efficiency, restricting its application in breeding programs. Many elite tropical lines remain recalcitrant to conventional Agrobacterium-mediated transformation methods. Here, we evaluated a ternary Agrobacterium-mediated transformation system coupled with morphogenic regulators as a platform for efficient multiplex genome editing in temperate and tropical maize genotypes. Genome editing constructs were delivered comprising a conventional binary vector including a plant selectable marker and a ternary vector carrying morphogenic regulator genes to enhance regeneration competence. Independent transformation experiments were performed across several maize genotypes, including B104 and three tropical inbred lines (CML360, CML444, and CML488). Multiple guide RNAs enabling single and multiplex genome editing were employed as test cases to assess editing efficiency, phenotypic outcomes, and plant recovery. Regenerated plants were screened by PCR to detect transgene presence and by Sanger sequencing to identify target-specific mutations. The ternary system consistently enabled regeneration of edited plants in genotypes that showed limited or no recovery using selection-based binary transformation. Both transgenic and edited but cas9-free plants were obtained. Edited plants exhibited a range of phenotypes consistent with the intended modifications. Importantly, a substantial proportion of plants generated via the ternary system survived to reproductive stages and produced progeny. Phenotypic evaluation of the M2 generation confirmed stable inheritance of edited traits in the absence of detectable transgene integration. These results demonstrate that the combination of a ternary Agrobacterium system with morphogenic regulators provides a robust and efficient platform for genome editing in temperate and tropical maize. This approach significantly increases efficiency, reduces genotype dependency, facilitates recovery of non-transgenic edited plants, and represents a practical and scalable strategy for trait improvement in tropical maize breeding.
+:::
+
+
+# Cell and Developmental Biology
+
+
+## L5: Spatiotemporal transcriptomics reveals ZmGRAS90 as an early determinant of maize aleurone and basal endosperm fate specification
+<font color="#339966">Cell and Developmental Biology </font>
+[Hao Wu](mailto:haowu2021@gmail.com) (Principal Investigator)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:1434345634@qq.com'>Cai, Xiaoyan</a><sup>1 2</sup><br><a href='mailto:yangshuaiqhu@163.com'>Yang, Shuai</a><sup>1 2</sup><br><a href='mailto:haowu@njau.edu.cn'>Wu, Hao</a><sup>1 2</sup><br>
+
+<sup>1</sup>State Key Laboratory of Crop Genetics & Germplasm Enhancement and Utilization,Nanjing Agricultural University, Nanjing, China<br><sup>2</sup>College of Agriculture, Nanjing Agricultural University, Nanjing, China<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Maize endosperm not only provides the nutrients for embryo development and germination, but also is an important calory source for human diets and animal feeds. Early endosperm development sets up tissue architecture essential for later nutrient biosynthesis and storage. However, most studies have analyzed the endosperm development during the grain-filling stage, but regulatory mechanisms initiating tissue differentiation following cellularization remain poorly understood. In this study, we profiled spatial transcriptomes at 4, 6 and 9 DAP endosperms in single-cell resolution. This captured the transition from cellularization (4 DAP) to early differentiation (6 DAP) and finally to a defined tissue state before grain-filling (9 DAP). Our analysis revealed dynamic cell fate specification at the endosperm periphery: from a single, uniform progenitor cell cluster at 4–6 DAP resolved into two distinct aleurone (AL) and basal endosperm transfer layer (BETL) clusters by 9 DAP. This suggests that AL and BETL lineages may originate from a common progenitor population whose identity may be established as early as the cellularization stage. Especially, a transcription factor ZmGRAS90 is identified likely as an early regulator of this fate decision. ZmGRAS90 expression initiates specifically across the peripheral layer at 4 DAP, preceding the activation of canonical AL and BETL marker genes, AL9 and BETL9. By 6 DAP, its expression maximum shifts and co-localizes with BETL9 in the emerging BETL. At 9 DAP, ZmGRAS90 expression becomes tightly restricted to the boundary domain between the developing BETL and AL. This spatiotemporal progression suggests that ZmGRAS90 may play a dual role: first in broadly priming peripheral cell fate, and later in defining the spatial position and facilitating the differentiation of BETL. Understanding and potentially tuning early-stage regulators could allow us to optimize the fundamental architecture of maize kernels, with the ultimate goal of building better grains.
+:::
+
+## L6: How to reproducibly pattern a meristem despite size variability
+<font color="#339966">Cell and Developmental Biology </font>
+[Cecilia Lara-Mondragón](mailto:cecilia.lara-mondragon@zmbp.uni-tuebingen.de) (Postdoc)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:cecilia.lara-mondragon@zmbp.uni-tuebingen.de'>Lara-Mondragón, Cecilia</a><sup>1</sup><br><a href='mailto:antje.feller@zmbp.uni-tuebingen.de'>Feller, Antje</a><sup>1</sup><br><a href='mailto:steffen.knauer@rpt.bwl.de'>Knauer, Steffen</a><sup>1</sup><br><a href='mailto:marja.timmermans@zmbp.uni-tuebingen.de'>Timmermans, Marja</a><sup>1</sup><br>
+
+<sup>1</sup>Center for Molecular Biology of Plants (ZMBP), University of Tübingen, Tübingen, Germany, 72076<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Maize domestication and selective breeding resulted in considerable morphodiversity, observable through the vegetative and reproductive phases across breeding stocks. At the microscopic level, such diversity is seen in the shape and size of the vegetative Shoot Apical Meristem (SAM), and this variation offers a unique system within which to investigate the effect of size in organ patterning. SAM morphodiversity was explored in 3D, revealing evidence for proportional pattern size-adjustment (scaling) of the SAM functional domains across inbred lines. To arrive at potential mechanism(s) underlying pattern scaling in the SAM, size measurements and RNA-seq were integrated to fit a linear model. This analysis identified a subset of genes with strong association to SAM volume. Among these candidates, the expression of known regulators of SAM homeostasis such as genes involved in cytokinin metabolism displayed opposite and complementary behavior as a function of SAM size, an observation corroborated in vitro. Our work suggests that SAM size regulation is a complex, layered process that may exhibit dose-dependent dynamics. Altogether, this work delves into a fundamental, yet largely unexplored question in plant developmental biology, namely how developmental patterns scale.
+:::
+
+## L7: Disrupted gamete interaction in maize gex2 mutants biases fertilization toward egg-cell-only fertilization and promotes heterofertilization
+<font color="#339966">Cell and Developmental Biology </font>
+[Andrea Calhau](mailto:andrea.calhau@ens-lyon.fr) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:andrea.calhau@ens-lyon.fr'>Calhau, Andrea R.M.</a><sup>1</sup><br>Flieg, Harrison<sup>2</sup><br>Duvernois-Berthet, Evelyne<sup>1</sup><br>Vejlupkova, Zuzana<sup>2</sup><br><a href='mailto:John.Fowler@oregonstate.edu'>Fowler, John</a><sup>2</sup><br><a href='mailto:thomas.widiez@ens-lyon.fr'>Widiez, Thomas</a><sup>1</sup><br>
+
+<sup>1</sup>Laboratoire Reproduction et Développement des Plantes, ENS de Lyon, UCB Lyon1, CNRS, INRAE, Lyon, France.<br><sup>2</sup>Oregon State University; United States; Corvallis, Oregon, 97331<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+The pollen grain delivers two sperm cells to the female embryo sac to accomplish double fertilization, a process involving two coordinated and distinct fusion events that initiate seed development. Although this process is fundamental for kernel formation, the molecular mechanisms that ensure male–female gamete interactions remain incompletely understood. Building on the identification of the sperm cell surface protein GAMETE EXPRESSED 2 (GEX2), which is required for gamete attachment in Arabidopsis, we investigated its function in maize using two gex2 mutant alleles that display reduced male transmission and elevated kernel abortion. By combining a fluorescent sperm cell marker line with a newly developed imaging method of the embryo sac, we gained unprecedented access to the earliest cellular events of double fertilization in maize, enabling assessment of the effects of the most severe gex2 allele. When gex2 mutant pollen was used, approximately 70% of embryo sacs contained unfused sperm cells, compared with ~8% in wild-type controls, indicating a severe defect in male-female gamete interaction. Notably, gex2 sperm cells resulted in elevated egg-cell single fertilization. Analysis of embryo and endosperm parentage in mature kernels from gex2 pollinations using an anthocyanin marker revealed a significantly increased rate of heterofertilization, in which the egg cell and central cell are fertilized by different pollen tubes. Consistent with the observed bias toward egg-cell fertilization, we found that ~90% of the heterofertilized kernels were associated with an embryo originating from gex2 fertilization. RNA-seq analysis reveals that the differing phenotypic severity of the two gex2 mutant alleles, as measured by transmission rate, likely arises from the production of distinct truncated GEX2 proteins. Collectively, these data provide cellular and molecular evidence supporting a critical role for GEX2-dependent male–female gamete recognition in ensuring proper and balanced double fertilization in maize.
+:::
+
+## L8: Effector-driven developmental reprogramming during Ustilago maydis–induced gall formation
+<font color="#339966">Cell and Developmental Biology </font>
+[Mamoona Khan](mailto:khanma@uni-bonn.de) (Postdoc)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:khanma@uni-bonn.de'>Khan, Mamoona</a><sup>1</sup><br>
+
+<sup>1</sup>Department of Plant Pathology, Institute of Crop Science and Resource Conservation (INRES), University of Bonn, Bonn 53113, Germany<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+The corn smut fungus Ustilago maydis induces gall formation on all aerial parts of the maize plant. Gall formation requires profound developmental reprogramming, yet the host pathways that enable this plasticity remain poorly defined. We utilized fungal effectors as targeted developmental perturbations to identify plant pathways capable of driving gall-like growth programs. By expressing individual U. maydis effectors in Arabidopsis thaliana, we uncovered fundamentally distinct developmental pathways that can induce proliferative, gall-like phenotypes. These pathways engage different regulatory modules and revealed that pathogen-driven growth can arise through multiple, mechanistically independent routes. One of the identified pathways operated through effector-mediated interference of the highly conserved TOPLESS/TOPLESS-RELATED family of transcriptional corepressors, leading to de-repression of an auxin-responsive transcriptional program associated with lateral root initiation. Effector expression induced pluripotent, callus-like growth in A. thaliana and activated developmental gene networks that strongly overlapped with lateral root formation in the host plant, Zea mays. Genetic analyses identified LATERAL ORGAN BOUNDARIES DOMAIN regulators as essential nodes in this response, and maize homologs of these genes modulated gall development in planta, linking effector activity to conserved developmental control mechanisms.
+:::
+
+## L9: Spatial regulation of cell wall remodeling shapes maize digestibility under drought
+<font color="#339966">Cell and Developmental Biology </font>
+[Ana López Malvar](mailto:ana.lopez-malvar@inrae.fr) (Postdoc)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:ana.lopez-malvar@inrae.fr'>López-Malvar, Ana</a><sup>1</sup><br><a href='mailto:maia.collombel@inrae.fr'>Collombel, Maia</a><sup>1</sup><br><a href='mailto:stephen.lima@inrae.fr'>Lima, Stephen</a><sup>1</sup><br><a href='mailto:sophie.guillaume.2@inrae.fr'>Guillaume, Sophie</a><sup>1</sup><br><a href='mailto:valerie.mechin@inrae.fr'>Mechin, Valerie</a><sup>2</sup><br><a href='mailto:matthieu.reymond@inrae.fr'>Reymond, Matthieu</a><sup>1</sup><br>
+
+<sup>1</sup>Université Paris-Saclay, INRAE, AgroParisTech, Institut Jean-Pierre Bourgin for Plant Sciences (IJPB), 78000, Versailles, France.<br><sup>2</sup>UMR AGAP Institute, University of Montpellier, CIRAD, INRAE, Institut Agro, Montpellier, France<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Cell wall composition and structure are central to maize response under drought, and understanding how they relate to digestibility has important implications for breeding. Although increases in cell wall digestibility have been described under drought, it remains unclear whether this response depends on the specific localization of cell wall remodeling across tissues. We therefore asked whether increases in cell wall digestibility are driven by modifications in particular tissues.Using a combined histological and biochemical analysis, we found that drought reduced lignification in all tissue types, indicating changes in tissue organization . These anatomical changes were tightly correlated with biochemical alterations and strongly associated with increased in vitro cell wall digestibility. Our results show that variation in p-coumaric acid (pCA) content and its spatial distribution is a key driver of digestibility plasticity in response to drought. To characterize this response, we analyzed rind and pith tissues separately across eight genotypes: four plastic lines that increased digestibility by decreasing pCA under water stress, and four stable lines that showed little or no variation in either digestibility or pCA content. We found that cell remodeling occurs in the rind of both stable and plastic lines, but in the pith only in plastic genotypes. This demonstrates that increased whole-plant digestibility under drought is driven by cell wall modifications in the pith. In plastic genotypes, this response involves decreased lignification and p-coumaroylation in the pith accompanied by a compensatory increase in ferulic and diferulic acid cross-linking. By linking tissue-specific remodeling with digestibility plasticity, our findings provide markers that can support breeding efforts for improved forage quality and drought response.
+:::
+
+## L10: Linking carbon metabolism to meiotic entry in maize anthers: From bulk to single-cell resolution
+<font color="#339966">Cell and Developmental Biology </font>
+[An Hsu](mailto:r13b21019@ntu.edu.tw) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:r13b21019@ntu.edu.tw'>Hsu, An</a><sup>1</sup><br><a href='mailto:chiayicheng@ntu.edu.tw'>Cheng, Chia-Yi</a><sup>1</sup><br><a href='mailto:rwang@as.edu.tw'>Wang, Chung-Ju Rachel</a><sup>2</sup><br>
+
+<sup>1</sup>Department of Life Science, National Taiwan University, Taipei, 106319, Taiwan (R.O.C)<br><sup>2</sup>Institute of Plant and Microbial Biology, Academia Sinica, Taipei, 115201, Taiwan (R.O.C)<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Anther development is pivotal for crop yield and plant breeding, involving coordinated cell division and differentiation that generate four specialized somatic layers enclosing germinal cells. Spatiotemporal interactions among these layers orchestrate germinal cell development from mitotic proliferation through meiosis and ultimately pollen formation. However, the mechanisms by which somatic layers coordinate and support the transition of germinal cells from mitosis to the meiotic program remain poorly understood. In this study,we analyzed published bulk RNA-seq and scRNA-seq datasets and identified significant upregulation of genes associated with carbon metabolism and energy production. Notably, the onset of this upregulation coincides with the transition to meiosis, rather than during the early stages of anther development characterized by extensive cell division. Supporting this finding, quantification of soluble sugars in whole anthers showed increased sucrose concentrations as anthers approached meiosis, suggesting a possible metabolic reprogramming involved in meiotic entry. Given that the anther is a sink organ for photosynthates, histological staining of transverse sections revealed abundant starch accumulation in the endothecium before meiosis begins, indicating its role as a local energy reserve. These observations suggest that carbohydrate dynamics in the anther may provide carbon sources or signaling cues to germinal cells. To further explore regulatory mechanisms, we constructed gene regulatory networks (GRNs) for meiocytes and whole anthers. The meiocyte single-cell GRN revealed putative metabolic pathway–associated regulons specifically active during the transition phase. In the whole-anther GRN, the putative transcription factors previously reported to be involved in anther meiotic progression, were highlighted as candidates regulators. Together, we propose that elevated energy metabolic activity may contribute to crosstalk and signaling between somatic niche cells and germinal cells during the mitosis-to-meiosis transition.
+:::
+
+
+# Computational and Large-Scale Biology
+
+
+## L11: Plastochron regulation in maize: Spatial transcriptomics reveals transcriptional changes in the plastochron1 mutant.
+<font color="#663399">Computational and Large-Scale Biology </font>
+[Lotte Van de Vreken](mailto:lotte.vandevreken@psb.vib-ugent.be) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:lotte.vandevreken@psb.vib-ugent.be'>Van de Vreken, Lotte</a><sup>1 2</sup><br><a href='mailto:stan.werbrouck@psb.vib-ugent.be'>Werbrouck, Stan</a><sup>1 2</sup><br><a href='mailto:kirin.demuynck@psb.vib-ugent.be'>Demuynck, Kirin</a><sup>1 2</sup><br><a href='mailto:hilde.nelissen@psb.vib-ugent.be'>Nelissen, Hilde</a><sup>1 2</sup><br>
+
+<sup>1</sup>Ghent University, Department of Plant Biotechnology and Bioinformatics, Technologiepark 927, 9052 Ghent, Belgium<br><sup>2</sup>VIB Center for Plant Systems Biology, Technologiepark 927, 9052 Ghent, Belgium<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+The maize plastochron1 (pla1) mutant exhibits a shortened plastochron (accelerated leaf initiation) and reduced plant growth. This remarkable phenotype suggests a role for PLA1 in regulating leaf initiation and growth in the maize shoot apical meristem (SAM). The SAM is a highly complex structure where stem cells gradually differentiate into plant organs in a spatially coordinated manner. However, the transcriptional mechanisms by which PLA1 influences these developmental processes remain unclear. To investigate how PLA1 affects plant architecture at the molecular level, we applied spatial transcriptomics to visualize the expression of 500 genes in wild-type and pla1 mutant shoot apices. Our analysis showed that PLA1 is expressed at the boundary between undifferentiated and differentiated cells, suggesting a role in regulating cell division and organ initiation. Developmental trajectory analysis tracing transcriptional changes from stem cells to differentiated cells revealed overlaps of PLA1 with stem cell markers such as Knotted1 and differentiation markers such as YABBY14, further supporting its regulatory function. Comparisons between wild-type and pla1 mutants revealed significant transcriptional changes, particularly in auxin metabolism, indicating an important role for PLA1 in (hormonal) regulation of the SAM. These findings visualize the spatial and temporal changes in the transcriptional regulation of pla1 mutant SAMs, showcasing spatial transcriptomics and its downstream data-analysis as a valuable tool for studying plant development.
+:::
+
+
+# Cytogenetics
+
+
+## L12: Genome-Wide investigation of recombination in the presence of maize B chromosomes
+<font color="#669933">Cytogenetics</font>
+[Malika Sharma](mailto:msb92@umsystem.edu) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:msb92@umsystem.edu'>Sharma, Malika</a><sup>1</sup><br><a href='mailto:yanghu@missouri.edu'>Yang, Hua</a><sup>1</sup><br><a href='mailto:jl4mc@missouri.edu'>Liu, Jian</a><sup>2</sup><br><a href='mailto:fbqc9@missouri.edu'>Boadu, Frimpong</a><sup>2</sup><br><a href='mailto:chengji@missouri.edu'>Cheng, Jianlin</a><sup>2</sup><br><a href='mailto:albertp@missouri.edu'>Albert, Patrice</a><sup>1</sup><br><a href='mailto:birchlerj@missouri.edu'>Birchler, James</a><sup>1</sup><br>
+
+<sup>1</sup>Division of Biological Sciences, University of Missouri, Columbia, MO 65211<br><sup>2</sup>Department of Electrical Engineering and Computer Science, University of Missouri, Columbia, MO 65211<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+B chromosomes (Bs) are supernumerary, dispensable chromosomes found in many species, including maize. Although not required for development, Bs in maize have been shown cytologically to increase meiotic recombination, particularly in heterochromatic regions. It has been proposed that the B chromosome evolved this effect to ensure its own segregation in meiosis given its smaller size and being heavily heterochromatic with the effect spilling over to the A chromosomes. To investigate this effect on the genome level we constructed high-resolution crossover (CO) maps from six reciprocal backcross maize populations generated from (B73/W22) × B73 crosses carrying 0, 2–3, or 6 Bs. Low-coverage sequencing and haplotype inference revealed dosage and sex-specific effects. In male meiosis, increasing B number elevated genome-wide CO frequency and promoted multi-CO bivalents, with rare high-CO class (6 COs) detected only in 6B males. In contrast, female meiosis did not show a significant change in recombination with increasing B dosage. These findings demonstrate that Bs reshape the recombination landscape in maize. Interestingly, the male specific effect might have evolved for proper meiotic segregation of the B immediately preceding the other aspects of its drive mechanism consisting of nondisjunction at the second pollen mitosis and preferential fertilization of the egg by the B containing sperm.
+:::
+
+## L13: Engineering a maize mini-B chromosome as a platform for site-specific gene integration
+<font color="#669933">Cytogenetics</font>
+[Jasnoor Singh](mailto:jstr6@missouri.edu) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:jstr6@missouri.edu'>Singh, Jasnoor</a><sup>1</sup><br><a href='mailto:nathanswyers@gmail.com'>Swyers, Nathan</a><sup>1</sup><br><a href='mailto:natnotgnat@gmail.com'>Graham, Nathaniel</a><sup>1</sup><br><a href='mailto:cody0065@umn.edu'>Cody, Jon</a><sup>1</sup><br><a href='mailto:gaoz@missouri.edu'>Gao, Zhi</a><sup>1</sup><br><a href='mailto:albertp@missouri.edu'>Albert, Patrice</a><sup>1</sup><br><a href='mailto:liuhu@missouri.edu'>Liu, Hua</a><sup>2</sup><br><a href='mailto:j.a.kelly@q.com'>Kelly, Jacob</a><sup>1</sup><br><a href='mailto:yangbi@missouri.edu'>Yang, Bing</a><sup>2</sup><br><a href='mailto:birchlerj@missouri.edu'>Birchler, James</a><sup>1</sup><br>
+
+<sup>1</sup>Division of Biological Sciences, University of Missouri, Columbia, Missouri 65211, USA<br><sup>2</sup>Division of Plant Science and Technology, Bond Life Sciences Center, University of Missouri, Columbia, Missouri 65211, USA<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+In maize, random transgenic integration can make gene stacking difficult, especially when combining several features into a single line. An alternate platform for targeted gene insertion and repeated trait stacking without interfering with endogenous loci is provided by engineered mini-chromosomes produced from maize B chromosomes. A telomere-mediated truncating construct, pNT1, was transformed into maize carrying B chromosomes and a truncated miniB was recovered with a terminal transgene carrying a landing pad for phiC31 Integrase site specific recombinase together with a GFP marker, which allows the minichromosome to be followed phenotypically. The pNT1 construct was designed together with donor amendment plasmids to conduct gene stacking. The recovered miniB was crossed to Cre recombinase to remove the Bar selection marker, which positioned the miniB for reuse of Bar selection during subsequent addition to the chromosome. In parallel, an Integrase construct was recovered for which the Bar selection marker could be excised with FLP recombinase and simultaneously activate a GFP gene. Exposure of the Integrase transformant to FLP removed Bar and activated GFP, which also allows the transgene to be followed phenotypically. The function of the Integrase was confirmed by callus bombardment of an inverted DsRed construct flanked by attP and attB sites that upon recombination will activate the gene, which was found to be the case. These results point to an improved mini-B chromosome as a platform that facilitates targeted cargo acceptance via phiC31-mediated recombination. This work lays the groundwork using synthetic chromosome platforms in maize for introduction of genes onto an independent chromosome with the ability for gene stacking.
+:::
+
+## L14: Cytogenetic analyses of mutants of class I and class II crossover regulators in maize
+<font color="#669933">Cytogenetics</font>
+[Seijiro Ono](mailto:seijiro.ono@uni-hamburg.de) (Postdoc)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:seijiro.ono@uni-hamburg.de'>Ono, Seijiro</a><sup>1</sup><br>Ono, Misato<sup>1</sup><br>van der Heide, Max<sup>1</sup><br><a href='mailto:arp.schnittger@uni-hamburg.de'>Schnittger, Arp</a><sup>1</sup><br>
+
+<sup>1</sup>Department of Developmental Biology, Institute for Plant Science and Microbiology, University of Hamburg, Ohnhorststr. 18, Hamburg, Germany, 22609<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Formation of crossovers (COs) is a fundamental meiotic process that enables the exchange of genetic material between homologous chromosomes. COs are essential not only for generating genetic diversity through the recombination of parental alleles, but also for ensuring fertility by physically linking homologous chromosomes to promote balanced segregation at metaphase I. Despite the agricultural importance of maize, the mechanisms by which COs are designated and regulated in this species remain poorly understood, and it is unclear to what extent models derived from other organisms apply to maize. We recently optimized maize genetic transformation methods, enabling systematic functional analysis of meiotic genes. To elucidate the formation, distribution, and regulation of COs in maize, we first targeted components of the class I CO pathway, defined by the ZMM proteins and responsible for interference-sensitive COs that dominate in many plant species. Surprisingly, all zmm mutants analyzed (hei10, zip4, mer3 and msh4) exhibited only semi‑fertile phenotypes and retained more than 50% of wild-type CO levels. Given previous estimates suggesting that approximately 80% of COs in wild-type maize are interference-sensitive and therefore expected to be class I, these findings suggest that maize possesses a unique compensatory mechanism that maintains CO number despite disruption of the ZMM pathway. To further investigate this phenomenon, we generated additional mutants affecting other potential CO regulators, including class II CO endonucleases and anti‑CO factors, and combined them with zmm mutations. Preliminary results from these higher‑order mutant analyses will be presented, and potential regulatory mechanisms underlying the distinctive CO fate determination system in maize will be discussed.
+:::
+
+
+# Evolution and Population Genetics
+
+
+## L15: Homologous chromosome interactions reshape chromatin accessibility contribute to hybrid vigor in maize
+<font color="#FF0066">Evolution and Population Genetics</font>
+[Tao Zhou](mailto:taozhou_1999@163.com) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:taozhou_1999@163.com'>Zhou, Tao</a><sup>1</sup><br>Zhang, Hongwei<sup>2</sup><br>Li, Lin<sup>1</sup><br>
+
+<sup>1</sup>National Key Laboratory of Crop Genetic Improvement, Huazhong Agricultural University, Wuhan 430070, China<br><sup>2</sup>State Key Laboratory of Crop Gene Resources and Breeding, National Key Facility for Crop Gene Resources and Genetic Improvement, Institute of Crop Sciences, Chinese Academy of Agricultural Sciences, Beijing, 100081, China<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Hybridization brings together parental chromosomes within a single nucleus, resulting in hybrid vigor, a widespread phenomenon in maize. Previous studies have largely focused on protein-coding sequences; however, how chromosome interactions contribute to hybrid vigor remains poorly understood. Here, we integrated population genetics with single-cell ATAC-seq and bulk RNA-seq analyses in both inbred and hybrid lines. We show that inbred genomes exhibit relatively rigid chromatin accessibility landscapes and constrained gene expression patterns, which limit their vigor under different conditions. In contrast, hybrid genomes display enhanced dynamic regulation of chromatin accessibility coupled with flexible gene expression. We identify genomic regions that gain increased capacity for dynamic chromatin accessibility regulation after hybridization in the Mo17×B73 compared to parental states. Analysis of H3K27ac and H3K4me3 Hi-ChIP data from Mo17×B73 hybrids reveals that the regulatory activity of these dynamically enhanced regions depends on physical interactions between parental homologous chromosomes. Using an artificial selection-derived progeny population from Mo17×B73 and functional validation, we demonstrate that these homologous chromosome interactions directly contribute to heterosis. In conclusion, interactions between homologous chromosomes drive dynamic chromatin accessibility, thereby enhancing vigor. Our findings uncover a regulatory mechanism underlying heterosis and provide a mechanistic basis for the widespread occurrence of hybridization in nature.
+:::
+
+## L16: Localized stimulation of meiotic crossovers through the juxtaposition of heterozygous and homozygous regions
+<font color="#FF0066">Evolution and Population Genetics</font>
+[Piotr Ziolkowski](mailto:pzio@amu.edu.pl) (Principal Investigator)
+
+::: {.callout-note collapse="true"}
+## Author List
+Mikhailov, Mikhail E.<sup>1</sup><br>Boideau, Franz<sup>2</sup><br>Szymanska-Lejman, Maja<sup>2</sup><br>Botnari, Vasile<sup>1</sup><br>Ziolkowski, Piotr A.<sup>2</sup><br>
+
+<sup>1</sup>Laboratory of Plant Resistance, Institute of Genetics, Physiology and Plant Protection, Moldova State University, Chisinau, Moldova<br><sup>2</sup>Laboratory of Genome Biology, Institute of Molecular Biology and Biotechnology, Adam Mickiewicz University, Poznan, Poland<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Meiotic crossovers reshuffle DNA between homologous chromosomes, ensuring faithful chromosome segregation and generating the genetic variation exploited in plant breeding. In Arabidopsis thaliana, it was recently shown that heterozygous segments embedded in an otherwise homozygous genome attract more crossovers than the same intervals in fully heterozygous F₁ hybrids. So far, this phenomenon has only been described in this predominantly self-fertilizing species, raising the question of whether it represents a more general feature of plant meiosis.Here, I will show that a comparable effect also operates in outcrossing maize. Using designed crosses that create spatially confined interhomolog polymorphism, we quantified recombination in defined genomic intervals in otherwise hybrid backgrounds. We find that local crossover frequency can increase by up to threefold compared with fully hybrid genomes. This stimulation is observed in both male and female meiosis and is strongest when the heterozygous segment fully spans the assayed interval, consistent with a local redistribution of crossovers rather than a genome-wide increase in their number.Because Arabidopsis and maize represent distantly related eudicot and monocot lineages, the shared response to juxtaposed heterozygous and homozygous regions points to a conserved mechanism that modulates where crossovers occur along chromosomes. Finally, I will discuss how this principle can be translated into breeding strategies: by strategically arranging blocks of heterozygosity and homozygosity, it should be possible to locally boost recombination, compact linkage blocks, and accelerate introgression of beneficial alleles from donor lines into elite germplasm. I will present a conceptual breeding scheme and potential practical implementations of this approach for crop improvement.
+:::
+
+## L17: Pan-genome and AI identify causal variants for maize highland adaptation
+<font color="#FF0066">Evolution and Population Genetics</font>
+[Wei-Yun Lai](mailto:wl748@cornell.edu) (Postdoc)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:wl748@cornell.edu'>Lai, Wei-Yun</a><sup>1</sup><br>Berthel, Ana<sup>1</sup><br>Casstevens, Terry<sup>1</sup><br>Costa-Neto, Germano<sup>1</sup><br>Franco, Jose A. V.<sup>2</sup><br>Hale, Charlie<sup>2</sup><br>Hsu, Sheng-Kai<sup>1</sup><br>Miller, Zachary R<sup>1</sup><br>Romay, M. Cinta<sup>1</sup><br>Stitzer, Michelle C<sup>1</sup><br>Johnson, Lynn C<sup>1</sup><br>Zhai, Jingjing<sup>1</sup><br>Buckler, Edward S<sup>1 2 3</sup><br>
+
+<sup>1</sup>Institute for Genomic Diversity, Cornell University, Ithaca, NY, USA 14853<br><sup>2</sup>Section of Plant Breeding and Genetics, Cornell University, Ithaca, NY USA 14853<br><sup>3</sup>USDA-ARS, Robert W. Holley Center for Agriculture and Health, Ithaca, NY, USA 14853<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Maize (Zea mays ssp. mays) was domesticated in tropical lowlands but later expanded into highland and temperate regions that impose strong cold stress during early development. Although highland landraces show enhanced seedling cold tolerance and accelerated development, the evolutionary origins and molecular basis of these adaptations remain unclear, in part due to marker sparsity and linkage disequilibrium. To overcome these limitations, we generated 17 high-quality long-read maize genomes capturing tropical diversity and combined them with existing assemblies to construct a Practical Haplotype Graph (PHG) of 80 diverse genomes. The choice of Zea mays ssp. huehuetenangensis, rather than B73, as the reference genome for the PHG significantly reduced reference bias during variant calling, yielding a total of ~250M SNPs. We leveraged this PHG to impute genome-wide genotypes for 3,300 locally adapted maize landraces from skim sequencing data. With this, we test two hypotheses: whether altitude-adaptive alleles reflect the evolutionary legacy of ancient whole-genome duplication (WGD) and introgression from highland teosinte, and whether adaptation primarily targets protein-coding variation rather than regulatory change. We observed an elevated proportion, up to 20%, of highland teosinte haplotypes in the imputed highland landraces. Environmental GWAS identified 454 loci associated with altitude adaptation. Contrary to the prevailing views emphasizing regulatory importance, we observed 3-fold stronger enrichment in coding than regulatory regions among these loci. Coding signals were further enriched 13-fold among syntenic duplicate genes, highlighting the role of ancient WGD in preserving protein variants optimized for diverse thermal regimes. Finally, integrating zero-shot scores from a plant DNA foundation model (PlantCAD) prioritized putative causal variants in 63% of the candidate genes, including HPC1, COP1L, SS7, and SUS6. Together, our results clarify the roles of WGD and protein optimization in maize adaptation and provide a scalable framework for identifying climate-resilient alleles.
+:::
+
+## L18: Convergent genome- and gene-level constraints shape repeated environmental adaptation in grasses
+<font color="#FF0066">Evolution and Population Genetics</font>
+[Sheng-Kai Hsu](mailto:sh2246@cornell.edu) (Postdoc)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:sh2246@cornell.edu'>Hsu, Sheng-Kai</a><sup>1</sup><br>Schulz, Aimee J<sup>2</sup><br>Hale, Charles O<sup>2</sup><br>Costa-Neto, Germano<sup>1</sup><br>Miller, Zachary R<sup>1</sup><br>Stitzer, Michelle C<sup>1</sup><br>Wrightman, Travis<sup>2</sup><br>Zhai, Jingjing<sup>1</sup><br>Brindisi, Lara<sup>1</sup><br>Oren, Elad<sup>1</sup><br>Luo, Yun<sup>1</sup><br>Konadu, Beatrice<sup>2</sup><br>Ojeda-Rivera, Jonathan O<sup>1</sup><br>AuBuchon-Elder, Taylor<sup>3</sup><br>Kellogg, Elizabeth A<sup>3 4</sup><br>Romay, M Cinta<sup>1</sup><br>Buckler, Edward S<sup>1 2 5</sup><br>
+
+<sup>1</sup>Institute for Genomic Diversity, Cornell University, Ithaca, NY, USA 14853<br><sup>2</sup>Section of Plant Breeding and Genetics, Cornell University, Ithaca, NY USA 14853<br><sup>3</sup>Donald Danforth Plant Science Center, St. Louis, MO, USA 63132<br><sup>4</sup>Arnold Arboretum of Harvard University, Boston, MA, USA 02130<br><sup>5</sup>USDA-ARS, Robert W. Holley Center for Agriculture and Health, Ithaca, NY, USA 14853<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Grasses (Poaceae) dominate terrestrial ecosystems and sustain global food security, yet the genomic principles enabling their repeated adaptation to extreme environments remain unresolved. Here, we combine dense phylogenomic sampling, global environmental data, and state-of-the-art nucleotide and protein foundation models to characterize the mutational targets underlying environmental adaptation in grasses. Analyzing 707 genomes from 569 species spanning 17 climate zones, we identify dozens of phylogenetically independent transitions into extreme temperature, water, and soil environments. These repeated adaptations are accompanied by convergent shifts in genome-scale molecular properties, including Nitrogen-to-Carbon balance and biosynthetic energetic cost of the proteome, revealing predictable biochemical constraints imposed by natural selection. At the gene level, through an AI-informed phylogenetic mixed modeling framework, we identified 160-89 conserved genes that repeatedly underlie adaptation to the unique axes of environmental challenges. Together, our results show that grass adaptation is channeled by layered constraints acting at genome-wide, pathway and gene-specific scales, producing predictable evolutionary trajectories across the Poaceae.
+:::
+
+
+# Quantitative Genetics & Breeding
+
+
+## L19: Do we need dedicated maize varieties for perennial groundcover systems?
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Memis Bilgici](mailto:bilgici@iastate.edu) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:bilgici@iastate.edu'>Bilgici, Memis</a><sup>1</sup><br><a href='mailto:thomasl@iastate.edu'>Lubberstedt, Thomas</a><sup>1</sup><br>
+
+<sup>1</sup>Iowa State University, Ames, Iowa, USA, 50011<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+When maize is cultivated in perennial ground cover (PGC) systems, we face challenges related to competition between cash and cover crops for light, nutrients, and water. Understanding how different maize hybrids respond to these conditions, as well as the interactions between genotypes (G), environment (E), and management (M), is critical for optimizing yield and ensuring long-term sustainability. Our experiments address the question of whether dedicated breeding of maize hybrids suitable for PGC systems is needed. We screened 99 experimental hybrids (ISU) and 2 Corteva check hybrids to explore ranking differences for grain yield under conventional versus perennial ground cover (PGC) systems. Experiments were conducted with two perennial ground cover species (untreated (mowed)), Kentucky Bluegrass (KBG) and Poa bulbosa (PB), near Ames. The ranking of our hybrids for maize grain yield and plant height was substantially different under conventional and PGC conditions. However, our trials are very limited in the number of environments and, at best, preliminary. To develop maize suitable for PGC systems, breeders should prioritize selecting genotypes/hybrids based on performance in PGC environments rather than conventional ones, focusing on grain yield. Our KBG PGC system reflects the worst-case scenario: treatments to suppress the PGC failed, and corn competes with green PGC.In this situation, there would be a need to breed specifically for at least KBG systems, as performance in conventional environments may not reliably predict performance in “green PGC.” However, summer dormant and during summer “brown” PGC like PB (or treated KBG) appeared more promising and similar to conventional experiments.
+:::
+
+## L20: From phenotypic tradition to genomic precision: Maize DUS 2.0
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Anurag Daware](mailto:anuragvasantrao.daware@uni-hohenheim.de) (Research Scientist)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:anuragvasantrao.daware@uni-hohenheim.de'>Daware, Anurag</a><sup>1</sup><br><a href='mailto:clemens.hacke@uni-hohenheim.de'>Hacke, Clemens</a><sup>1</sup><br><a href='mailto:pecsm@nebih.gov.hu'>Pécs, Márton</a><sup>2</sup><br><a href='mailto:arnaud.remay@geves.fr'>Remay, Arnaud</a><sup>3</sup><br><a href='mailto:philipp.starnberger@ages.at'>Starnberger, Philipp</a><sup>4</sup><br><a href='mailto:christina.schraml@ages.at'>Schraml, Christina</a><sup>4</sup><br><a href='mailto:karl.schmid@uni-hohenheim.de'>Schmid, Karl</a><sup>1</sup><br>
+
+<sup>1</sup>Institute of Plant Breeding, Seed Science and Population Genetics, University of Hohenheim, Stuttgart, Germany<br><sup>2</sup>National Food Chain Safety Office (NEBIH), Hungary<br><sup>3</sup>Groupe d’Etude et de contrôle des Variétés Et des Semences (GEVES), France<br><sup>4</sup>Austrian Agency for Health and Food Safety (AGES)<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Plant variety registration requires Distinctness, Uniformity, and Stability (DUS) testing based on multi-year phenotypic evaluations that are time-consuming, costly, and sensitive to environmental variation. To improve efficiency, the International Union for the Protection of New Varieties of Plants (UPOV) has proposed three molecular marker-based integration frameworks (BMT Models 1–3). However, their application in maize remains limited due to a lack of validated marker–trait associations and robust predictive models. Using historical DUS phenotypic data from 352 European maize hybrids combined with high-density genotyping, we performed genome-wide association studies and identified 18 robust QTLs associated with 12 DUS characters, providing candidate genes for diagnostic markers development, relevant to BMT Model 1. Besides, we also developed an XGBoost-based genomic prediction framework for DUS notes, achieving predictive accuracy of up to 0.87 for selected characters (mean accuracy 0.67 across traits), exceeding performance reported in previous BMT Model 2 studies. Independent validation using more than 1,700 maize accessions from the USDA National Plant Germplasm System (USDA-NPGS) demonstrated cross-population transferability of both marker-based and prediction-based approaches, underscoring the value of public genomic resources for DUS applications. Despite inherent limitations associated with historical DUS datasets, our results provide evidence that molecular markers can enhance the efficiency of maize DUS testing, reducing time and cost without compromising decision reliability.
+:::
+
+## L21: Single-cell transcriptomics reveals cell-type-specific signatures of heterosis in early roots of maize
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Danning Wang](mailto:danning.wang@tum.de) (Postdoc)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:danning.wang@tum.de'>Wang, Danning</a><sup>1 2</sup><br><a href='mailto:yzhou2@uni-bonn.de'>Zhou, Yaping</a><sup>3</sup><br><a href='mailto:chenxp2017@swu.edu.cn'>Chen, Xinping</a><sup>4</sup><br><a href='mailto:hochholdinger@uni-bonn.de'>Hochholdinger, Frank</a><sup>3</sup><br><a href='mailto:pengyu.yu@tum.de'>Yu, Peng</a><sup>1</sup><br>
+
+<sup>1</sup>Plant Genetics, School of Life Sciences, Technical University of Munich, Germany<br><sup>2</sup>Plant Breeding, School of Life Sciences, Technical University of Munich, Germany<br><sup>3</sup>Crop Functional Genomics, Institute of Crop Science and Resource Conservation, University of Bonn, Germany<br><sup>4</sup>College of Resources and Environment, and Academy of Agricultural Sciences, Southwest University, Chongqing, China<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Heterosis describes the enhanced growth and stress tolerance observed in hybrid plants relative to their parental lines. Crosses between genetically diverse inbred lines often result in longer primary roots, where enhanced root development plays a critical role in nutrient and water acquisition and strongly influences yield potential. Early root vigor drives rapid root system formation and is shaped by parental genetic diversity and the transcriptional regulation of key genes in maize. Single-cell technologies have been increasingly applied in plant research, providing unprecedented resolution to elucidate molecular mechanisms underlying responses to abiotic stresses. However, despite extensive studies of heterosis at the whole-organism and tissue levels, the cellular and molecular basis of heterosis at single-cell resolution remains largely unexplored. In this study, we investigated the cellular mechanisms underlying heterosis during early root development in maize by integrating single-cell RNA sequencing and spatial transcriptomics. To capture the genetic diversity of maize, the reference inbred line B73 was crossed with nine inbred lines representing three major heterotic groups: stiff-stalk, non–stiff-stalk, and tropical lines. Cell-level phenotyping revealed substantial variation in heterosis among hybrids, with crosses between B73 and non–stiff-stalk lines exhibiting significantly stronger heterotic effects compared to crosses from the other heterotic groups. By classifying genes into additive and non-additive expression patterns within each cell cluster, we observed a pronounced enrichment of non-additive genes in the outer root cell layers compared with inner layers, a pattern consistently detected in both single-cell and spatial transcriptomic datasets. Gene Ontology enrichment analysis further showed that these non-additive genes were predominantly associated with oxidative stress responses and related metabolic pathways. Overall, our findings provide the first single-cell and spatial transcriptomic evidence linking heterosis to specific cell layers during maize root development, highlighting the critical role of outer root tissues in driving heterotic vigor at the cellular level.
+:::
+
+## L22: A dynamic genotype-environment integration approach decodes the genetic basis of phenotypic plasticity in maize
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Pengfei Yin](mailto:yinpengfei1517@foxmail.com) (Postdoc)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:yinpengfei1517@foxmail.com'>Yin, Pengfei</a><sup>1</sup><br>Zhao, XiangYu<sup>1</sup><br>Ji, Shenghui<sup>1</sup><br>Guo, Jianghua<sup>1</sup><br>Guo, Tingting<sup>2</sup><br>Li, Kun<sup>1</sup><br>Li, Weiya<sup>1</sup><br>Xu, Gen<sup>1</sup><br>Li, Xiaowei<sup>1</sup><br>Zhang, Renyu<sup>1</sup><br>Cai, Lichun<sup>1</sup><br>Chen, Wenkang<sup>1</sup><br>Fang, Hui<sup>1</sup><br>Wang, Min<sup>1</sup><br>Xiao, Yingni<sup>1</sup><br>Yan, Jianbing<sup>2</sup><br>Li, Jiansheng<sup>1 3</sup><br><a href='mailto:yxiaohong@cau.edu.cn'>Yang, Xiaohong</a><sup>1 3 4</sup><br><a href='mailto:lizhi@henu.edu.cn'>Li, Zhi</a><sup>5</sup><br>
+
+<sup>1</sup>State Key Laboratory of Plant Environmental Resilience and National Maize Improvement Center of China, China Agricultural University, Beijing 100193, China.<br><sup>2</sup>National Key Laboratory of Crop Genetic Improvement, Huazhong Agricultural University, Wuhan, Hubei 430070, China.<br><sup>3</sup>Center for Crop Functional Genomics and Molecular Breeding, China Agricultural University, Beijing 100193, yinweoiChina.<br><sup>4</sup>Frontiers Science Center for Molecular Design Breeding, China Agricultural University, Beijing 100193, China.<br><sup>5</sup>State Key Laboratory of Crop Stress Adaptation and Improvement, School of Life Sciences, Henan University, Jinming avenue 1, Kaifeng 475004, China.<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Under rapid climate change and increasing global food demand, enhancing crop environmental adaptability has emerged as a critical goal of intelligent breeding. Phenotype plasticity, driven by genotype-by-environment interactions (G×E), determines the capacity of crops to respond to dynamic conditions. Elucidating the genetic basis of these interactions is fundamental to understanding the regulation of phenotypic plasticity and developing climate-resilient crops. In this study, we collected flowering-time and the corresponding environmental data from 10 recombinant inbred line (RIL) populations across 12 planting environments and developed a proportional-time alignment model to investigate the dynamic G×E effects underlying flowering time variation. Our analysis revealed a photothermal time sensitivity window spanning 35% to 50% of the total sowing to flowering period, coinciding with key reproductive transitions such as female and male inflorescence development. Single-population linkage mapping detected 127 additive and 62 epistatic loci. Additive effects explained 10.2%-43.8% of the phenotypic variation, whereas epistasis accounted for less than 3%, indicating that additive effects play the predominant role in the environmental regulation of flowering time. Genome-wide association studies (GWAS) further identified 532 loci associated with photothermal time responses and pinpointed key flowering-time regulatory genes, including ZmMADS69, ZmELF3.1, CONZ1, ZmMADS1. These core genes, along with their epistatic interactions, are crucial for integrating environmental signals to modulate flowering time plasticity. This study establishes a unified framework for dissecting the genetic architecture of maize flowering-time plasticity, and provides a conceptual guidance for breeding climate-resilient crops with broad environmental adaptability.
+:::
+
+## L23: Population-scale RNA sequencing reveals host genetic control of phyllosphere fungal communities
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Charles Colvin](mailto:ccolvinmmiv@gmail.com) (Undergraduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:ccolvinmmiv@gmail.com'>Colvin, Charles F</a><sup>1</sup><br><a href='mailto:sic3@psu.edu'>Chopra, Surinder</a><sup>1</sup><br>
+
+<sup>1</sup>Department of Plant Science; The Pennsylvania State University; University Park; Pennsylvania; United States; 16802<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Fungal communities inhabiting aboveground plant tissues influence plant health, disease outcomes, and crop productivity, yet the degree to which host genetics shapes these phyllosphere mycobiomes remains unclear. Most prior studies have relied on amplicon sequencing and have identified few reproducible host–fungal associations, in part due to technical biases and an inability to distinguish active fungi from dormant or dead cells. Here, we demonstrate that standard polyA-enriched RNA sequencing of field-collected leaf tissue captures sufficient fungal transcripts to robustly profile metabolically active phyllosphere fungal communities, without targeted microbial enrichment. Leveraging population-scale RNA-seq datasets from maize, sorghum, and soybean grown across three field environments (2,194 total samples), we quantified hundreds of fungal taxa despite fungal reads comprising a small fraction of total sequences. This approach revealed extensive host genetic control over fungal community composition within each crop. Genome-wide association analyses identified numerous host loci associated with the abundance of individual fungal taxa, and transcriptome-wide association analyses uncovered coordinated host gene expression responses linked to fungal abundance, including defense-related pathways. As an illustrative case study, host loci associated with fungal abundance included a previously uncharacterized CC-NLR gene in sorghum exhibiting presence–absence variation, highlighting the ability of this framework to uncover biologically meaningful immune loci linked to specific fungal taxa. Together, these results demonstrate that host genetics exerts strong and reproducible control over active phyllosphere fungal communities across multiple crop species. Population-scale RNA sequencing provides a scalable framework for studying plant–fungal interactions and establishes a foundation for treating microbiome-associated traits as genetically tractable targets in crop genetics and breeding.
+:::
+
+## L24: Quantitative assessment of heterosis and combining ability for strategic hybrid breeding in maize for silage
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Mythri Bikkasani](mailto:bikkasani-2114004@pau.edu) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:bikkasani-2114004@pau.edu'>Bikkasani, Mythri</a><sup>1</sup><br>Garg, Tosh<sup>1</sup><br>Sandhu, Surinder<sup>1</sup><br>Adapala, Gopikrishna<sup>2</sup><br>BS, Vivek<sup>3</sup><br>Vikal, Yogesh<sup>1</sup><br>
+
+<sup>1</sup>Punjab Agricultural University, Ludhiana, Punjab, India, 141004<br><sup>2</sup>International Crops Research Institute for the Semi-Arid Tropics, Patancheru, Hyderabad, Telangana, India, 502324<br><sup>3</sup>International Maize and Wheat Improvement Center, Patancheru, Hyderabad, Telangana, India, 502324<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Understanding combining ability and heterosis among diverse maize (Zea mays L.) germplasm is critical for improving hybrid performance for both grain yield and silage quality. In this study, 42 maize inbred lines representing tropical late-maturity, tropical early-maturity, temperate, and mixed tropical–temperate backgrounds were used to develop a multiple-hybrid population of 354 F₁ hybrids. Hybrids were generated using half-diallel and partial diallel designs within germplasm groups, along with North Carolina Design II (NCD-II) crosses involving tropical late × tropical early parents and tropical × temperate and mixed background parents. Parental lines and hybrids were evaluated in a single growing season across two locations for silage quality traits, including fiber components, crude protein, in vitro organic matter digestibility, and metabolizable energy. Significant genetic variation was observed among parents and hybrids for all traits, reflecting the broad genetic diversity of the germplasm. Estimates of general combining ability (GCA) identified inbred lines with consistent additive effects, while specific combining ability (SCA) revealed hybrid combinations with favorable non-additive interactions. Heterosis was evident for most traits and varied in magnitude across traits and environments, with tropical × temperate or mixed crosses generally showing higher average heterosis for grain yield components and energy-related silage traits than crosses within similar maturity groups. Kernel number–related traits contributed substantially to yield heterosis, while digestibility and energy traits exhibited notable hybrid vigor. Overall, the study demonstrates the potential of integrating diverse tropical and temperate maize germplasm to broaden the genetic base and enhance hybrid performance, providing useful insights for breeding strategies targeting simultaneous improvement of grain yield and silage quality.
+:::
+
+## L25: Temporal 2D–3D phenotyping reveals dynamic maize architectural development across the growth cycle
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Zhongjie Ji](mailto:zji7@unl.edu) (Postdoc)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:zji7@unl.edu'>Ji, Zhongjie</a><sup>1</sup><br><a href='mailto:yge2@unl.edu'>Ge, Yufeng</a><sup>1</sup><br><a href='mailto:schnable@unl.edu'>Schnable, James</a><sup>1</sup><br>
+
+<sup>1</sup>Center for Plant Science Innovation, University of Nebraska-Lincoln, Lincoln, NE, 68505<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+High throughput phenotyping can be used to measure lots of stuff, but the high cost of conducting experiments with automated imaging means that data often collected either from only a period of development (frequently missing early vegetative phase and post flowering grain fill and drydown), or only for a few genotypes. Here we developed a mini-diversity panel of maize genotypes and collecting imaging data across nearly the entire maize lifecycle (15–90 days after planting). We employed a voxel carving algorithm to generate 3D plant reconstructions and voxel representations from multi-angle imaging (ten side views plus one top view) 2D images. From both 2D images and 3D voxels, we extracted a comprehensive suite of dynamic traits over time, including plant height, leaf number, voxel-derived geometric features, leaf shape parameters obtained through skeletonization and biomass partitioning. We found strong agreement between greenhouse and field measurements, with 3D-derived leaf angle in the greenhouse strongly correlated with field-measured leaf angle, and flowering time showing similarly strong cross-environment correlations. In addition, voxel-derived plant volume was highly correlated with destructively measured dry biomass of leaf and stem, indicating that voxel volume serves as a robust indicator of biomass accumulation. These analyses captured temporal variation and genotypic differentiation in key architectural traits throughout development. The resulting dataset provides a valuable resource for studying maize growth dynamics and offers a robust foundation for future research on plant phenotyping, genetics, and crop improvement. We also extended the voxel carving approach to Goodman–Buckler diversity which will enable quantitative genetics analysis such as GWAS, TWAS and eQTL.
+:::
+
+## L26: qGSR2.02 confers recessive resistance to stalk rot and ear rot in maize
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Chuan Chen](mailto:chenchuan@nwafu.edu.cn) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:chenchuan@nwafu.edu.cn'>Chen, Chuan</a><sup>1 2 3</sup><br>Zhong, Ling<sup>1 2 3</sup><br>Zeng, Shirong<sup>1 2 3</sup><br>Zhao, Daixin<sup>1 2 3</sup><br>Zhang, Zhichao<sup>1 2 3</sup><br>Yu, Yao<sup>1 2 3</sup><br><a href='mailto:qyang@nwafu.edu.cn'>Yang, Qin</a><sup>1 2 3</sup><br>
+
+<sup>1</sup>College of Agronomy, Northwest A&F University; No. 3 Taicheng Road, Yangling, Shaanxi, China 712100<br><sup>2</sup>State Key Laboratory of Crop Stress Biology for Arid Areas; No. 3 Taicheng Road, Yangling, Shaanxi, China 712100<br><sup>3</sup>Key Laboratory of Maize Biology and Genetic Breeding in Arid Area of Northwest Region, Ministry of Agriculture; No. 3 Taicheng Road, Yangling, Shaanxi, China 712100<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Gibberella stalk rot (GSR) and Gibberella ear rot (GER), both caused by fungal pathogen Fusarium graminearum, pose a devastating threat to global maize production. We have previously identified a major QTL for GSR resistance in maize bin 2.02 using a recombinant inbred line population derived from a cross between KA105 (resistant parent) and HZ4 (susceptible parent), designated as qGSR2.02. In this study, we validated phenotypic effect of qGSR2.02 in field trials using near-isogenic lines (NILs) developed from a heterogeneous inbred family. KA105-derived allele at qGSR2.02 significantly reduced GSR disease severity index (DSI) by 13–22% compared to lines with HZ4 allele. No significant difference was observed between the heterozygotes and homozygous HZ4 plants, suggesting that KA105 allele acts recessively at qGSR2.02. We also tested GER resistance using the two NILs, and found that NILKA105 showed significantly higher GER resistance than NILHZ4. Using a large segregating population, we fine-mapped qGSR2.02 to a 7-kb interval (KA105 genome) through recombinant-derived progeny testing strategy. Only one WD40 repeat gene, ZmWD40, is annotated in the qGSR2.02 region in susceptible parent HZ4. No corresponding gene is predicted in the 7-kb region in KA105 genome. Since the resistance allele is recessive, we hypothesis that ZmWD40 might be the causal gene at qGSR2.02. A maize mutant with a transposon insertion in the 5’-UTR region of the ZmWD40 gene showed significantly enhanced GSR resistance compared with its wildtype lacking the insertion. We are also making transgenic overexpression lines and knock-out lines to validate the function of ZmWD40. The findings will deepen our understanding of maize stalk rot and ear rot resistance and provide valuable resources for breeding program.
+:::
+
+## L27: Phenotypic characterization of U.S. maize heirlooms
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Melissa Draves](mailto:madcfr@umsystem.edu) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:madcfr@umsystem.edu'>Draves, Melissa A</a><sup>1</sup><br><a href='mailto:jcummin5@ncsu.edu'>Cummings, Jordan M</a><sup>2</sup><br><a href='mailto:jacob.washburn@usda.gov'>Washburn, Jacob D</a><sup>3</sup><br><a href='mailto:jlgage@ncsu.edu'>Gage, Joseph L</a><sup>2 4</sup><br><a href='mailto:jim.holland@usda.gov'>Holland, James</a><sup>2 4 5</sup><br><a href='mailto:sherry.flint-garcia@usda.gov'>Flint-Garcia, Sherry</a><sup>3</sup><br>
+
+<sup>1</sup>University of Missouri; Division of Plant Science and Technology; Columbia, MO, USA 65211<br><sup>2</sup>North Carolina State University; Department of Crop and Soil Sciences; Raleigh, NC, USA 27695<br><sup>3</sup>USDA-ARS; Plant Genetics Research Unit; Columbia, MO, USA 65211<br><sup>4</sup>NC Plant Sciences Initiative; Raleigh, NC, USA 27606<br><sup>5</sup>USDA-ARS; Plant Science Research Unit; Raleigh, NC, USA 27695<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Hybrid maize is the most productive crop in the United States, producing millions of bushels per year and is used for food, feed, and fuel production. Prior to maize hybrids, open-pollinated heirloom populations (landraces) were primarily used in the US for subsistence farming and livestock feed. Heirlooms are phenotypically and genotypically diverse, with many populations harboring unique alleles that are not found in modern germplasm due to the rapid selection for high yield that drove hybrid production. However, heirlooms are relevant in specialty markets as many chefs, organic farmers, and smallholder growers are interested in marketing heirlooms as a natural culinary product. Outside of the United States, heirlooms have been intensively studied, with extensive monographs written about populations from Mexico, South America, and Europe. However, there are no comprehensive datasets on extant heirlooms from the United States. This study aims to fully phenotype 990 heirlooms, primarily housed at the North Central Regional Plant Introduction Station. Heirlooms were planted in a partially replicated design in the summer of 2024 and 2025 in Columbia, MO and Clayton, NC. Manual phenotypic measurements including flowering time, leaf and tassel architecture, plant heights, ear disease, tillering data, and harvest traits were collected throughout the growing season. Preliminary cluster analysis based on phenotypes indicates known trends in historical heirloom data including the north to south pattern of geographical origin and unique phenotypes represented in Southwestern US germplasm. Ongoing efforts include an automated imaging pipeline to collect area, shape, and color measurements on ears, cobs, and kernels, and prediction of kernel composition traits using near infrared spectroscopy. Ultimately, this project will produce a comprehensive, public data set that will fully describe heirloom populations and their potential use for novel culinary traits.
+:::
+
+## L28: Predicting biomass in drought-stressed young maize plants with machine learning using genomic and phenomic data
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Domagoj Simic](mailto:domagoj.simic@poljinos.hr) (Research Scientist)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:vlatko.galic@poljinos.hr'>Galić, Vlatko</a><sup>1</sup><br><a href='mailto:lovro.vukadinovic@poljinos.hr'>Vukadinović, Lovro</a><sup>1</sup><br><a href='mailto:antun.jambrovic@poljinos.hr'>Jambrović, Antun</a><sup>1</sup><br><a href='mailto:domagoj.simic@poljinos.hr'>Šimić, Domagoj</a><sup>1</sup><br>
+
+<sup>1</sup>Agricultural Institute Osijek; Juzno predgradje 17; HR-31000 Osijek, Croatia<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Fresh and dry weight are important agronomic traits in young maize plants, which vary greatly with age, genotype, and growing conditions. Fresh weight (FW) includes all water, while dry weight (DW) is the solid plant matter (biomass) left after the removing of water. However, biomass prediction is still challenging, although there are a number of genomic and phenomic methods that generate large amounts of data. This study used phenomic data from chlorophyll fluorescence (ChlF) and hyperspectral imaging collected from a diversity panel of maize inbreds grown in a controlled environment and challenged by progressive drought stress. All inbreds were genotyped using the Illumina MaizeSNP50 array. The objective of this study was to compare predictions of FW and DW made by four machine learning (ML) algorithms based on a set of genomic and phenomic data in maize seedlings. Analysis was conducted starting with the loading of the dataset and selection of multiple measurement domains. The feature set included Q values from population structure analysis, spectral measurements from the ultraviolet-visible and near-infrared regions, ChlF parameters, calculated spectral indices, and several categorical variables. All data underwent standardization before model training. The four ML models were Partial Least Squares Regression (PLSR), Extreme Gradient Boosting (XGBoost), Random Forest, and a Convolutional Neural Network with a Multi-Layer Perceptron (CNN-MLP). CNN-MLP, the deep learning approach, achieved the highest accuracy, where R2 (Root Mean Squared Error – RMSE) was 0.81 (66.72 g) for FW and 0.74 (0.49 g) for DW. PLSR ranked second, where R2 (RMSE) was 0.64 (128.30 g) for FW and 0.61 (0.73 g) for DW. The integration of ChlF and hyperspectral data in combination with genomic data is recommended for predicting biomass in maize seedlings under drought-stressed environments. It could help improve management practices and contribute to the advancement of maize breeding and selection.
+:::
+
+
+# Transposons & Epigenetics
+
+
+## L29: Characterization of two epigenetically regulated ABI3-VP1 transcription factors in Zea mays (maize)
+<font color="#0066CC">Transposons & Epigenetics </font>
+[Carly Blair](mailto:blairca3@msu.edu) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:blairca3@msu.edu'>Blair, Carly J</a><sup>1</sup><br><a href='mailto:baiochir@msu.edu'>Riboldi, Lucas B</a><sup>1</sup><br><a href='mailto:madzimat@msu.edu'>Madzima, Thelma F</a><sup>1</sup><br>
+
+<sup>1</sup>Michigan State University; East Lansing, Michigan, USA 48824<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Transcriptional regulation via epigenetic mechanisms is critical for proper plant function and development. In plants, the RNA-directed DNA methylation (RdDM) pathway has been shown to maintain genomic integrity by transcriptionally silencing transposable elements (TEs) and genes via cytosine methylation. In maize, mediator of paramutation 1 (mop1) is a RNA-dependent RNA polymerase that is crucial for RdDM pathway function, and mop1-1 mutant plants are deficient in cytosine methylation and transcriptional gene silencing. Large-scale disruption of the RdDM pathway results in a variety of developmental defects, and baseline dysregulation of several genes including two transcription factor (TF) paralogs designated transcriptional gene silencing 2 (tgs2) a and b. These proteins belong to the ABI3-VP1 TF family; characterized by involvement in seed maturation and response to the plant hormone abscisic acid (ABA). However, tgs2a and tgs2b show differential regulation in mop1-1 plants without exogenous ABA treatments. To characterize the functions of these two proximal genes, upstream regulators and predicted targets were identified using the Maize Gene Regulatory Network. Most of the resulting regulators and targets were unique between the two TFs, suggesting these genes have evolved specialized tissue-specific function. This idea is additionally supported by preliminary locus-specific bisulfite sequencing data showing differential RdDM-dependent methylation patterns at the transcriptional start sites of both TFs. To further characterize the function of these TFs, we identified UniformMu insertion stocks with insertions in 5’ untranslated region of tgs2b. Preliminary analyses suggest that tgs2b plays a role in early developmental patterning and organ formation. Notably, tgs2b mutants exhibit abnormal elongation of the ear shank after pollination, particularly in the internode regions, while overall ear size remains unaffected. Characterization of tgs2a and tgs2b is expected to provide new insights into how epigenetic regulation of TFs contributes to developmental gene networks in maize.
+:::
+
+## L30: Detecting activity of hopscotch family long terminal repeat retrotransposons in Zea mays
+<font color="#0066CC">Transposons & Epigenetics </font>
+[Patrick Gardner](mailto:gardnerp1@montclair.edu) (Graduate Student)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:gardnerp1@montclair.edu'>Gardner, Patrick</a><sup>1</sup><br><a href='mailto:taylor.isles@outlook.com'>Isles, Taylor</a><sup>2</sup><br><a href='mailto:meixiazhao@ufl.edu'>Zhao, Meixia</a><sup>3</sup><br><a href='mailto:duc@montclair.edu'>Du, Charles</a><sup>1</sup><br>
+
+<sup>1</sup>Department of Biology; Montclair State University; Montclair, NJ, US 07043<br><sup>2</sup>Department of Biological Sciences; University of Missouri; Columbia, MO, US 65211<br><sup>3</sup>Microbiology & Cell Science Department; University of Florida; Gainesville, FL, US 32611<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Long terminal repeat retrotransposons (LTRs) are a group of class 1 transposable elements that copy and reintegrate themselves throughout a genome, proliferating over time. This has resulted in LTRs composing a significant proportion of many eukaryotic genomes, from roughly 8% in humans, to as much as 75% in maize. The majority of LTR copies are degraded, from a combination of improper replication due to reverse-transcriptase’s lack of proofreading functionality, and mutations over many cell replication cycles. Resultingly, most LTRs in a given genome are nonfunctional, to the extent that some families of LTR retrotransposon lack any fully viable copies, and as a result no longer actively propagate. Previous research into retrotransposon-mediated mutations in maize pollen has suggested that the Hopscotch family of LTRs are still active. Additional examination, using whole genome sequencing data from the Du lab at Montclair State University, and the Zhao lab at the University of Florida, strengthens this suggestion, further indicating continued activity of Hopscotch LTRs in maize. This analysis involved mapping sets of paired-end reads to a conserved reference Hopscotch LTR sequence, and the two inbred line reference genomes each individual sequenced plant was a cross of, generating lists of Hopscotch insertion loci in those individuals. These lists were filtered against an index of prior Hopscotch insertion loci in each reference genome, assembled by mapping the reference Hopscotch sequence against both reference genomes at low coverage and moderate identity, limiting the list of mapped insertion loci to putatively novel sites. This process has yielded multiple potentially novel Hopscotch insertions, and while analysis is ongoing, these insertion loci may be validated as novel by performing the same analysis on the sequencing data of both parental plants. Any insertion locus not represented in either parental genome can reasonably be inferred to have occurred in the intervening generation.
+:::

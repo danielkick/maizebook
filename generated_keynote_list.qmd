@@ -1,0 +1,108 @@
+---
+title: "Keynotes"
+format:
+  html:
+    toc: true
+    toc-depth: 1
+---
+## KS1: Genome regulation: Going loopy studying enhancer promoter interactions - A view from metazoans
+<font color="#336699">Biochemical and Molecular Genetics </font>
+[Eileen Furlong](mailto:eileen.furlong@embl.org) (Principal Investigator)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:eileen.furlong@embl.org'>Furlong, Eileen</a><sup>1</sup><br>
+
+<sup>1</sup>Genome Biology Dept., European Molecular Biology Laboratory (EMBL), Heidelberg, Germany<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Gene expression is initiated by enhancers, which are non-coding elements that recruit transcription factors to regulate the initiation of gene expression at their target gene’s promoter.  As many enhancers are located upstream, downstream or in the introns of other genes, they need to come into physical proximity to their cognate target gene.  What controls the specificity, timing and regulation of these enhancer-promoter loops are current key questions.  I will discuss how we are combining genetic, opto-genetic, genomics and microscopy to dissect this during embryonic development1-3, to uncover general properties of genome regulation. <br>1. Ghavi-Helm Y, Jankowski A, Meiers S, et al.  (2019).  Highly rearranged chromosomes reveal uncoupling between genome topology and gene expression.  Nature Genetics, Aug;51(8):1272-1282 <br>2. Pollex T, et al.  (2023).  Chromatin gene-gene loops support the cross-regulation of genes with related function.  Mol Cell. S1097-2765(23)01042-0. doi: 10.1016/j.molcel.2023.12.0 <br>3. Pollex T, et al (2024).  Enhancer-promoter interactions become more instructive in the transition from cell fate specification to tissue differentiation.  Nature Genetics 11th March, 56, 686-696. doi.org/10.1038/s41588-024-01678-x<br><br>Keywords: Developmental enhancers, chromatin architecture, genome topology, enhancer-promoter looping, genetic perturbations, single cell genomics, embryonic development
+:::
+
+## KS2: The cell biology of genetics
+<font color="#339966">Cell and Developmental Biology </font>
+[Arp Schnittger](mailto:arp.schnittger@uni-hamburg.de) (Principal Investigator)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:arp.schnittger@uni-hamburg.de'>Schnittger, Arp</a><sup>1</sup><br>
+
+<sup>1</sup>Department of Developmental Biology, University of Hamburg, Germany<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Meiosis is fundamental to sexual reproduction by reducing the genomic content so that genome size is maintained over generations after the fusion of two gametes during fertilization. Importantly, meiosis is also a major driving force of genetic diversity through two key events. First, parental chromosomes are assorted into new, yet complete, sets. Second, homologous chromosomes exchange DNA fragments through crossovers, leading to new allele combinations. Thus, meiosis is the foundation of genetics and with that central to evolution as well as crop improvement.<br>To accomplish these events, chromosomes undergo a precisely coordinated choreography. However, the dynamic regulation of chromosomes in complex genomes such as maize remains incompletely understood. To investigate the cell biology of meiosis, we have developed a live‑cell imaging system to follow both female and male meiosis in maize, building on an imaging setup previously established for Arabidopsis. Using fluorescently tagged meiotic proteins and optimized imaging conditions, we captured chromosome movements, synapsis dynamics, and spindle architecture in living meiocytes with unprecedented temporal and spatial resolution. Comparing these datasets with our analyses in Arabidopsis reveals unexpected variability in chromosomal behavior.<br>Complementary genetic analyses of mutants affecting meiotic progression and recombination identify both conserved functions and novel regulatory patterns specific to maize. Together, our findings provide a comprehensive framework for understanding how meiosis is robustly executed in a crop genome of high complexity. This work establishes maize as a powerful model for dissecting the molecular choreography of meiosis and opens new opportunities for manipulating recombination to accelerate plant breeding.
+:::
+
+## KS3: Towards a blueprint for growth regulation
+<font color="#339966">Cell and Developmental Biology </font>
+[Hilde Nelissen](mailto:hilde.nelissen@psb.vib-ugent.be) (Principal Investigator)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:hilde.nelissen@psb.vib-ugentt.be'>Nelissen, Hilde</a><sup>1</sup><br>
+
+<sup>1</sup>VIB-UGent Center for Plant Systems Biology<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Plant growth underlies the formation of most plant organs through the tightly coordinated regulation of cell division and cell expansion, while also driving key developmental transitions throughout the life cycle. As one of the earliest and most sensitive processes affected by abiotic stress, growth plays a central role in shaping stress responses, yield potential, and plant architecture, traits of major importance for crop breeding. Growth regulation operates across multiple spatial and temporal scales: cell division and expansion are precisely coordinated within individual organs, such as leaves, and are integrated across organs to ensure balanced development of the whole plant. Moreover, plant growth is inherently multigenic, emerging from complex gene regulatory networks that respond dynamically to developmental and environmental cues. Together, these features highlight both the plasticity and the vulnerability of growth-related processes. While plant growth offers substantial potential for genetic modulation, constitutive perturbations frequently result in pleiotropic and undesirable effects. This underscores the need for a deeper understanding of the intricate, multigenic regulation of growth across cellular, organ, and organismal levels and under diverse environmental conditions. Such knowledge is essential to move beyond single-gene approaches and toward the rational fine-tuning of gene regulatory networks, ultimately enabling the design of growth “ideonetworks” that optimize performance, resilience, and yield in changing environments.
+:::
+
+## KS4: To clone or not to clone QTLs: 20 years on - progress, pitfalls, and future directions
+<font color="#996633">Quantitative Genetics & Breeding</font>
+[Silvio Salvi](mailto:silvio.salvi@unibo.it) (Principal Investigator)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:silvio.salvi@unibo.it'>Salvi, Silvio</a><sup>1</sup><br>
+
+<sup>1</sup>Department of Agricultural and Food Sciences, University of Bologna, Italy, I-40127<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Quantitative genetic variation underlies most agronomic traits in crop species. Understanding the molecular basis of genotype–quantitative phenotype relationships is therefore essential to identify the genes and biochemical, developmental, and regulatory pathways that control complex traits, and to guide targeted genetic engineering or genome editing interventions. Molecular insights into quantitative variation also contribute to improving genomic prediction for selection programs and to the cataloguing and valorization of genetic diversity. More than 20 years after the first quantitative trait loci (QTLs) were dissected through labor-intensive positional cloning, the integration of new genomic methodologies has made QTL cloning increasingly tractable. Results revealed a far more complex molecular landscape than originally anticipated, encompassing coding and regulatory variation, copy-number differences, structural rearrangements, and epigenetic effects. In this keynote, I will discuss how the cloning of maize QTLs—including examples from our work on flowering time and plant architecture—has improved our understanding of the genetic architecture of quantitative traits and is contributing to the development of better-adapted and more productive crops.
+:::
+
+## KS5: Bridging plant communication and inclusive community networks
+<font color="#993366">Education & Outreach</font>
+[Yoselin Benitez-Alfonso](mailto:Y.Benitez-Alfonso@leeds.ac.uk) (Principal Investigator)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:Y.Benitez-Alfonso@leeds.ac.uk'>BENITEZ-ALFONSO, YOSELIN</a><sup>1</sup><br>
+
+<sup>1</sup>University of Leeds, UK<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+The research in our group focuses on the properties of cell walls surrounding plant intercellular channels (plasmodesmata), with the aim of unlocking knowledge that can drive new strategies for crop improvement and biomaterial development. In this talk, I will bring together our findings on plasmodesmata regulation with our efforts to build communities of influence that support minoritized ethnicities within UK Plant Sciences. I will share insights into the challenges and successes encountered during my two years as chair of the Black in Plant Science network. In addition, I will reflect on my personal journey—from an undergraduate student in Cuba to a full Professor at the University of Leeds—highlighting the crucial role played by allies and the wider research community. Finally, I will outline our upcoming work on both fronts: advancing understanding of plasmodesmata communication and strengthening the Black in Plant Science network.
+:::
+
+## M1: Single-Cell and Spatial Genomics of Plant 
+<font color="#339966">Cell and Developmental Biology </font>
+[Joeseph Ecker](mailto:ecker@salk.edu) (Principal Investigator)
+
+::: {.callout-note collapse="true"}
+## Author List
+<a href='mailto:ecker@salk.edu'>Ecker, Joe</a><sup>1</sup><br>
+
+<sup>1</sup>Genomic Analysis Laboratory, Salk Institute for Biological Studies, La Jolla, CA, USA<br>
+:::
+
+::: {.callout-note collapse="true"}
+## Abstract
+
+Plant development, adaptation, and immunity require continuous integration of hormonal, environmental, and pathogenic cues. Because plants lack specialized or mobile immune cells, these processes must be carried out by resident cell types through flexible and coordinated changes in cellular state. How such states are deployed and repurposed throughout the plant life cycle remains poorly understood.<br>Here, we present a life-cycle–wide cellular framework for Arabidopsis thaliana that integrates single-nucleus, spatial transcriptomic, and multiomic analyses across development. This framework reveals extensive molecular diversity within cell types and identifies transient, reusable cellular states that recur across organs and developmental stages.<br>Using this foundation, we show that growth, stress responses, and immunity arise through selective retuning of these transcriptional states. Hormone-driven asymmetric growth, drought-induced restriction of leaf development, and pathogen-triggered immune responses each involve distinct, yet related state transitions coordinated across tissues. Together, these findings support a unifying view in which dynamic cell states provide the regulatory basis for plant plasticity, enabling robust development, environmental adaptation, and defense.
+:::
