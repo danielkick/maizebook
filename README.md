@@ -59,6 +59,6 @@
 
 ```zsh
 # preview to observe changes
-cd maize-meeting
-quarto preview ../maize-meeting
+cd maizebook
+quarto preview ../maizebook
 ```
