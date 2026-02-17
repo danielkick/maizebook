@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lightning Talks</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d496715cb688a7e1dd488a18866eacde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">⚠ Home 🌽</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./program_schedule.html"> 
+<span class="menu-text">⚠ Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./generated_talks.html"> 
+<span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./program_keynote_speakers.html"> 
+<span class="menu-text">Bios</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./generated_keynote_list.html"> 
+<span class="menu-text">Keynotes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./generated_lightning_list.html" aria-current="page"> 
+<span class="menu-text">Lightning</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./generated_poster_list.html"> 
+<span class="menu-text">Posters</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./program_poster_list.html"> 
+<span class="menu-text">⚠ Poster Lookup</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./program_awards.html"> 
+<span class="menu-text">⚠ Awards</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./program_authors_attendees.html"> 
+<span class="menu-text">Authors &amp; Attendees</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./program_sponsors.html"> 
+<span class="menu-text">Sponsors</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#biochemical-and-molecular-genetics" id="toc-biochemical-and-molecular-genetics" class="nav-link active" data-scroll-target="#biochemical-and-molecular-genetics">Biochemical and Molecular Genetics</a></li>
+  <li><a href="#cell-and-developmental-biology" id="toc-cell-and-developmental-biology" class="nav-link" data-scroll-target="#cell-and-developmental-biology">Cell and Developmental Biology</a></li>
+  <li><a href="#computational-and-large-scale-biology" id="toc-computational-and-large-scale-biology" class="nav-link" data-scroll-target="#computational-and-large-scale-biology">Computational and Large-Scale Biology</a></li>
+  <li><a href="#cytogenetics" id="toc-cytogenetics" class="nav-link" data-scroll-target="#cytogenetics">Cytogenetics</a></li>
+  <li><a href="#evolution-and-population-genetics" id="toc-evolution-and-population-genetics" class="nav-link" data-scroll-target="#evolution-and-population-genetics">Evolution and Population Genetics</a></li>
+  <li><a href="#quantitative-genetics-breeding" id="toc-quantitative-genetics-breeding" class="nav-link" data-scroll-target="#quantitative-genetics-breeding">Quantitative Genetics &amp; Breeding</a></li>
+  <li><a href="#transposons-epigenetics" id="toc-transposons-epigenetics" class="nav-link" data-scroll-target="#transposons-epigenetics">Transposons &amp; Epigenetics</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lightning Talks</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="biochemical-and-molecular-genetics" class="level1">
+<h1>Biochemical and Molecular Genetics</h1>
+<section id="l1-genetic-interaction-between-gl15-and-fdl1-modulates-juvenile-cuticle-deposition-and-leaf-permeability-in-maize" class="level2">
+<h2 class="anchored" data-anchor-id="l1-genetic-interaction-between-gl15-and-fdl1-modulates-juvenile-cuticle-deposition-and-leaf-permeability-in-maize">L1: Genetic interaction between GL15 and FDL1 modulates juvenile cuticle deposition and leaf permeability in maize</h2>
+<p><font color="#336699">Biochemical and Molecular Genetics </font> <a href="mailto:gabriella.consonni@unimi.it">Gabriella Consonni</a> (Principal Investigator)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:giulia.castorina@unimi.it">Castorina, Giulia</a><sup>1 3</sup><br><a href="mailto:frederic.domergue@u-bordeaux.fr">Domergue, Frédéric</a><sup>2</sup><br><a href="mailto:gabriella.consonni@unimi.it">Consonni, Gabriella</a><sup>1</sup><br></p>
+<p><sup>1</sup>Department of Agricultural and Environmental Sciences (DiSAA), Università degli Studi di Milano, 20133 Milan, Italy<br><sup>2</sup>Université de Bordeaux, CNRS, LBM, UMR 5200, F-33140 Villenave d'Ornon, France<br><sup>3</sup>Present address: CREA, Research Centre for Genomics and Bioinformatics, 29017 Fiorenzuola, Italy<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The plant cuticle is a hydrophobic layer produced by the epidermis of primary aerial tissues that serves as the primary barrier between the plant surface and the external environment, whose main function is to limit water loss. This study investigated the roles and interactions between the regulatory genes ZmFDL1 and ZmGL15 in modulating juvenile cuticle deposition and function in maize. Expression and lipid analyses, morphological studies, and permeability assays were performed on single and double mutants. Our results showed an additive effect of ZmFDL1 and ZmGL15 transcription factors on wax abundance and an epistatic effect of gl15-S on fdl1-1 in determining cutin deposition.ZmFDL1 has a key role in controlling juvenile cuticle deposition and preventing water loss, while the main role of ZmGL15 is to maintain a juvenile cuticle. Lack of ZmGL15 activity, as observed in the gl15-S mutant, results in the acquisition of a cuticle characterized by a higher cutin content, with increased ω-hydroxy fatty acids (FAs) as well as polyhydroxy FAs, and a lower wax content, with a decrease in both aldehydes and long chain-alcohols. These changes result in an increased water-holding capacity of the seedlings under drought stress conditions.Furthermore, gl15-S has an epistatic effect on the phenotype of the fdl1-1 mutant. In the double fdl1-1 gl15-S mutant, the absence of ZmGL15 activity mitigates the fdl1-1 morphological abnormalities and rescues the increased fdl1-1 cuticle-mediated leaf permeability.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l2-identification-and-characterization-of-molecular-drivers-of-nitrogen-remobilization-in-maize-during-grain-filling" class="level2">
+<h2 class="anchored" data-anchor-id="l2-identification-and-characterization-of-molecular-drivers-of-nitrogen-remobilization-in-maize-during-grain-filling">L2: Identification and characterization of molecular drivers of nitrogen remobilization in maize during grain filling</h2>
+<p><font color="#336699">Biochemical and Molecular Genetics </font> <a href="mailto:alexan@tamu.edu">Alexa Park</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:alexan@tamu.edu">Park, Alexa N</a><sup>1</sup><br><a href="mailto:cody_kettler@tamu.edu">Kettler, Cody</a><sup>1</sup><br><a href="mailto:joo29@cornell.edu">Ojeda-Rivera, Jonathan Odilón</a><sup>2</sup><br><a href="mailto:mcr72@cornell.edu">Romay, Cinta</a><sup>2</sup><br><a href="mailto:sakiko.okumoto@agnet.tamu.edu">Okumoto, Sakiko</a><sup>1</sup><br><a href="mailto:seth.murray@ag.tamu.edu">Murray, Seth</a><sup>1</sup><br></p>
+<p><sup>1</sup>Texas A&amp;M University; USA; College Station, Texas, 77843<br><sup>2</sup>Cornell University; USA; Ithaca, New York, 14853<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The maize grain is the primary nitrogen (N) sink, containing up to 70% of the total plant N at the end of the season. While some amount of grain N is crucial for seed viability, grain-N is eventually removed from the agricultural fields and fed to livestock, the process through which much of the N losses to the environment occur. Our vision for CERCA (Circular Economy that Reimagines Corn Agriculture) is to promote in-field nitrogen recycling, including allocating more N to the vegetative tissue instead of grains to enhance N retention in the field. Previous studies revealed that a few % decrease in grain N content is possible without compromising seed viability. To pinpoint molecular levers of N partitioning, we have generated RNA-seq profiles of CERCA hybrid tissues over the grain filling period. Concurrently, tissue-specific N content was quantified, allowing us to correlate gene expression patterns with remobilization patterns and identify the drivers of N remobilization during the grain filling period. We found that under the wet field conditions of 2024, the majority of N accumulating in the kernel was derived from ongoing N uptake and de novo assimilation. This is further supported by the overall leaf N assimilation activity correlating with peak of grain filling. Transcriptomic analyses revealed that amino acid transporters were enriched in kernel tissues before active grain filling, constant with roles establishing sink capacity, but showed low expression during active grain filling. In contrast, expression of these transporters increased in the source leaves during grain filling, indicating that active N accumulation during grain filling may be source driven. This presentation will discuss the methodologies employed, key findings, and their implications for future research and practical applications in maize agriculture.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l3-understanding-expression-dynamics-of-flowering-time-genes-from-a-gene-network-perspective" class="level2">
+<h2 class="anchored" data-anchor-id="l3-understanding-expression-dynamics-of-flowering-time-genes-from-a-gene-network-perspective">L3: Understanding expression dynamics of flowering time genes from a gene network perspective</h2>
+<p><font color="#336699">Biochemical and Molecular Genetics </font> <a href="mailto:josephdetemple@gmail.com">Joseph DeTemple</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:detemplj@iastate.edu">DeTemple, Joseph M</a><sup>1</sup><br><a href="mailto:jhinrich@iastate.edu">Hinrichsen, Jacob T</a><sup>1</sup><br><a href="mailto:ddli@iastate.edu">Li, Dongdong</a><sup>1</sup><br><a href="mailto:gregorys@iastate.edu">Schoenbaum, Gregory R</a><sup>1</sup><br><a href="mailto:jamie.orourke@usda.gov">O'Rourke, Jamie A</a><sup>1 2</sup><br><a href="mailto:michelle.graham@usda.gov">Graham, Michelle A</a><sup>1 2</sup><br><a href="mailto:xianran.li@usda.gov">Li, Xianran</a><sup>3</sup><br><a href="mailto:vollbrec@iastate.edu">Vollbrecht, Erik</a><sup>4</sup><br><a href="mailto:mgmuszyn@hawaii.edu">Muszynski, Michael</a><sup>5</sup><br><a href="mailto:jmyu@iastate.edu">Yu, Jianming</a><sup>1</sup><br></p>
+<p><sup>1</sup>Department of Agronomy, Iowa State University, Ames, IA, US<br><sup>2</sup>USDA-ARS Corn Insects and Crop Genetics Research Unit, Ames, IA, US<br><sup>3</sup>USDA-ARS, Wheat Health, Genetics, and Quality Research, Pullman, WA, US<br><sup>4</sup>Department of Genetics, Development, and Cell Biology, Iowa State University, Ames, IA, US<br><sup>5</sup>Department of Tropical Plant and Soil Sciences, University of Hawai’i at Mānoa, Honolulu, HI, US<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Flowering time is an important adaptive trait for maize plants to respond to environmental signals like photoperiod. This trait is controlled by a network of genes that capture, process, and interpret these signals from leaves to the apical meristem. In this study, we set out to answer three questions about the genes within this network: 1) which genes are most important for explaining flowering time differences between genotypes, 2) which developmental stages are most critical for each gene, and 3) which timepoints are most important for capturing expression differences for each gene. To answer these questions, we sampled leaf tissue from four temperate (B73, Mo17, Oh43, and TX303) and four tropical (CML277, CML52, Ki3, and Tzi8) maize inbreds under long- and short-day conditions in growth chambers. To maximize our sampling space, we ran over 12,000 RT-qPCR reactions to determine expression of eight genes spread across the circadian clock and photoperiod pathways (cca1, cct1, col3, elf3.1, gi1, pebp8, prrtf1, and toc1) across three timepoints (morning, midday, and night) and across five v-stages (V2-V10). Data was modeled using a linear mixed model approach with a random effect for growth chamber and fixed effects for gene, genotype, photoperiod, timepoint, and v-stage. We find that the genes cct1 and cca1 have the highest effect when modeling expression, reinforcing their role as major flowering time regulators. Interestingly, we also found that the most predictive timepoints for each gene were generally not the timepoints with the highest expression. These findings provide new insights into the dynamics of the flowering time gene network and the connections between genetic variation, gene expression, and flowering time. Interpreting these patterns in the context of the overall flowering time gene network is critical for understanding how both newly discovered and classical genes interact in the genetic regulation of flowering time.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l4-application-of-a-ternary-agrobacterium-mediated-transformation-system-coupled-with-morphogenesis-regulators-enables-efficient-genome-editing-in-temperate-and-tropical-maize" class="level2">
+<h2 class="anchored" data-anchor-id="l4-application-of-a-ternary-agrobacterium-mediated-transformation-system-coupled-with-morphogenesis-regulators-enables-efficient-genome-editing-in-temperate-and-tropical-maize">L4: Application of a ternary Agrobacterium-mediated transformation system coupled with morphogenesis regulators enables efficient genome editing in temperate and tropical maize</h2>
+<p><font color="#336699">Biochemical and Molecular Genetics </font> <a href="mailto:sofya.gerasimova@biozentrum.uni-halle.de">Sophia Gerasimova</a> (Principal Investigator)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:sofya.gerasimova@biozentrum.uni-halle.de">Gerasimova, Sophia V.</a><sup>1 2</sup><br>Pessoa, Mateus A.<sup>2</sup><br>Baiochi Riboldi, Lucas<sup>2</sup><br>Siqueira Pinto, Maísa<sup>2</sup><br>Nonato, Juliana V. A.<sup>2</sup><br>Hernandes Lopes, José<sup>2</sup><br>Bruno, Maria H. F.<sup>2</sup><br>Brant Monteiro, Patrícia<sup>2</sup><br>Kumlehn, Jochen<sup>4</sup><br>Arruda, Paulo<sup>2</sup><br>Yassitepe, Juliana E.C.T.<sup>2 3</sup><br>Dante, Ricardo A.<sup>2 3</sup><br></p>
+<p><sup>1</sup>Martin Luther University Halle-Wittenberg, Biozentrum; Halle (Saale), Germany 06120<br><sup>2</sup>Genomics for Climate Change Research Center, Unicamp; Campinas, SP, Brazil 13083-875<br><sup>3</sup>Embrapa Agricultura Digital; Campinas, SP, Brazil 13083-886<br><sup>4</sup>Leibniz Institute of Plant Genetics and Crop Plant Research (IPK); Gatersleben, Germany 06466<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Genome editing of tropical maize is limited by strong genotype dependence and low transformation efficiency, restricting its application in breeding programs. Many elite tropical lines remain recalcitrant to conventional Agrobacterium-mediated transformation methods. Here, we evaluated a ternary Agrobacterium-mediated transformation system coupled with morphogenic regulators as a platform for efficient multiplex genome editing in temperate and tropical maize genotypes. Genome editing constructs were delivered comprising a conventional binary vector including a plant selectable marker and a ternary vector carrying morphogenic regulator genes to enhance regeneration competence. Independent transformation experiments were performed across several maize genotypes, including B104 and three tropical inbred lines (CML360, CML444, and CML488). Multiple guide RNAs enabling single and multiplex genome editing were employed as test cases to assess editing efficiency, phenotypic outcomes, and plant recovery. Regenerated plants were screened by PCR to detect transgene presence and by Sanger sequencing to identify target-specific mutations. The ternary system consistently enabled regeneration of edited plants in genotypes that showed limited or no recovery using selection-based binary transformation. Both transgenic and edited but cas9-free plants were obtained. Edited plants exhibited a range of phenotypes consistent with the intended modifications. Importantly, a substantial proportion of plants generated via the ternary system survived to reproductive stages and produced progeny. Phenotypic evaluation of the M2 generation confirmed stable inheritance of edited traits in the absence of detectable transgene integration. These results demonstrate that the combination of a ternary Agrobacterium system with morphogenic regulators provides a robust and efficient platform for genome editing in temperate and tropical maize. This approach significantly increases efficiency, reduces genotype dependency, facilitates recovery of non-transgenic edited plants, and represents a practical and scalable strategy for trait improvement in tropical maize breeding.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="cell-and-developmental-biology" class="level1">
+<h1>Cell and Developmental Biology</h1>
+<section id="l5-spatiotemporal-transcriptomics-reveals-zmgras90-as-an-early-determinant-of-maize-aleurone-and-basal-endosperm-fate-specification" class="level2">
+<h2 class="anchored" data-anchor-id="l5-spatiotemporal-transcriptomics-reveals-zmgras90-as-an-early-determinant-of-maize-aleurone-and-basal-endosperm-fate-specification">L5: Spatiotemporal transcriptomics reveals ZmGRAS90 as an early determinant of maize aleurone and basal endosperm fate specification</h2>
+<p><font color="#339966">Cell and Developmental Biology </font> <a href="mailto:haowu2021@gmail.com">Hao Wu</a> (Principal Investigator)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:1434345634@qq.com">Cai, Xiaoyan</a><sup>1 2</sup><br><a href="mailto:yangshuaiqhu@163.com">Yang, Shuai</a><sup>1 2</sup><br><a href="mailto:haowu@njau.edu.cn">Wu, Hao</a><sup>1 2</sup><br></p>
+<p><sup>1</sup>State Key Laboratory of Crop Genetics &amp; Germplasm Enhancement and Utilization,Nanjing Agricultural University, Nanjing, China<br><sup>2</sup>College of Agriculture, Nanjing Agricultural University, Nanjing, China<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Maize endosperm not only provides the nutrients for embryo development and germination, but also is an important calory source for human diets and animal feeds. Early endosperm development sets up tissue architecture essential for later nutrient biosynthesis and storage. However, most studies have analyzed the endosperm development during the grain-filling stage, but regulatory mechanisms initiating tissue differentiation following cellularization remain poorly understood. In this study, we profiled spatial transcriptomes at 4, 6 and 9 DAP endosperms in single-cell resolution. This captured the transition from cellularization (4 DAP) to early differentiation (6 DAP) and finally to a defined tissue state before grain-filling (9 DAP). Our analysis revealed dynamic cell fate specification at the endosperm periphery: from a single, uniform progenitor cell cluster at 4–6 DAP resolved into two distinct aleurone (AL) and basal endosperm transfer layer (BETL) clusters by 9 DAP. This suggests that AL and BETL lineages may originate from a common progenitor population whose identity may be established as early as the cellularization stage. Especially, a transcription factor ZmGRAS90 is identified likely as an early regulator of this fate decision. ZmGRAS90 expression initiates specifically across the peripheral layer at 4 DAP, preceding the activation of canonical AL and BETL marker genes, AL9 and BETL9. By 6 DAP, its expression maximum shifts and co-localizes with BETL9 in the emerging BETL. At 9 DAP, ZmGRAS90 expression becomes tightly restricted to the boundary domain between the developing BETL and AL. This spatiotemporal progression suggests that ZmGRAS90 may play a dual role: first in broadly priming peripheral cell fate, and later in defining the spatial position and facilitating the differentiation of BETL. Understanding and potentially tuning early-stage regulators could allow us to optimize the fundamental architecture of maize kernels, with the ultimate goal of building better grains.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l6-how-to-reproducibly-pattern-a-meristem-despite-size-variability" class="level2">
+<h2 class="anchored" data-anchor-id="l6-how-to-reproducibly-pattern-a-meristem-despite-size-variability">L6: How to reproducibly pattern a meristem despite size variability</h2>
+<p><font color="#339966">Cell and Developmental Biology </font> <a href="mailto:cecilia.lara-mondragon@zmbp.uni-tuebingen.de">Cecilia Lara-Mondragón</a> (Postdoc)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:cecilia.lara-mondragon@zmbp.uni-tuebingen.de">Lara-Mondragón, Cecilia</a><sup>1</sup><br><a href="mailto:antje.feller@zmbp.uni-tuebingen.de">Feller, Antje</a><sup>1</sup><br><a href="mailto:steffen.knauer@rpt.bwl.de">Knauer, Steffen</a><sup>1</sup><br><a href="mailto:marja.timmermans@zmbp.uni-tuebingen.de">Timmermans, Marja</a><sup>1</sup><br></p>
+<p><sup>1</sup>Center for Molecular Biology of Plants (ZMBP), University of Tübingen, Tübingen, Germany, 72076<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Maize domestication and selective breeding resulted in considerable morphodiversity, observable through the vegetative and reproductive phases across breeding stocks. At the microscopic level, such diversity is seen in the shape and size of the vegetative Shoot Apical Meristem (SAM), and this variation offers a unique system within which to investigate the effect of size in organ patterning. SAM morphodiversity was explored in 3D, revealing evidence for proportional pattern size-adjustment (scaling) of the SAM functional domains across inbred lines. To arrive at potential mechanism(s) underlying pattern scaling in the SAM, size measurements and RNA-seq were integrated to fit a linear model. This analysis identified a subset of genes with strong association to SAM volume. Among these candidates, the expression of known regulators of SAM homeostasis such as genes involved in cytokinin metabolism displayed opposite and complementary behavior as a function of SAM size, an observation corroborated in vitro. Our work suggests that SAM size regulation is a complex, layered process that may exhibit dose-dependent dynamics. Altogether, this work delves into a fundamental, yet largely unexplored question in plant developmental biology, namely how developmental patterns scale.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l7-disrupted-gamete-interaction-in-maize-gex2-mutants-biases-fertilization-toward-egg-cell-only-fertilization-and-promotes-heterofertilization" class="level2">
+<h2 class="anchored" data-anchor-id="l7-disrupted-gamete-interaction-in-maize-gex2-mutants-biases-fertilization-toward-egg-cell-only-fertilization-and-promotes-heterofertilization">L7: Disrupted gamete interaction in maize gex2 mutants biases fertilization toward egg-cell-only fertilization and promotes heterofertilization</h2>
+<p><font color="#339966">Cell and Developmental Biology </font> <a href="mailto:andrea.calhau@ens-lyon.fr">Andrea Calhau</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:andrea.calhau@ens-lyon.fr">Calhau, Andrea R.M.</a><sup>1</sup><br>Flieg, Harrison<sup>2</sup><br>Duvernois-Berthet, Evelyne<sup>1</sup><br>Vejlupkova, Zuzana<sup>2</sup><br><a href="mailto:John.Fowler@oregonstate.edu">Fowler, John</a><sup>2</sup><br><a href="mailto:thomas.widiez@ens-lyon.fr">Widiez, Thomas</a><sup>1</sup><br></p>
+<p><sup>1</sup>Laboratoire Reproduction et Développement des Plantes, ENS de Lyon, UCB Lyon1, CNRS, INRAE, Lyon, France.<br><sup>2</sup>Oregon State University; United States; Corvallis, Oregon, 97331<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The pollen grain delivers two sperm cells to the female embryo sac to accomplish double fertilization, a process involving two coordinated and distinct fusion events that initiate seed development. Although this process is fundamental for kernel formation, the molecular mechanisms that ensure male–female gamete interactions remain incompletely understood. Building on the identification of the sperm cell surface protein GAMETE EXPRESSED 2 (GEX2), which is required for gamete attachment in Arabidopsis, we investigated its function in maize using two gex2 mutant alleles that display reduced male transmission and elevated kernel abortion. By combining a fluorescent sperm cell marker line with a newly developed imaging method of the embryo sac, we gained unprecedented access to the earliest cellular events of double fertilization in maize, enabling assessment of the effects of the most severe gex2 allele. When gex2 mutant pollen was used, approximately 70% of embryo sacs contained unfused sperm cells, compared with ~8% in wild-type controls, indicating a severe defect in male-female gamete interaction. Notably, gex2 sperm cells resulted in elevated egg-cell single fertilization. Analysis of embryo and endosperm parentage in mature kernels from gex2 pollinations using an anthocyanin marker revealed a significantly increased rate of heterofertilization, in which the egg cell and central cell are fertilized by different pollen tubes. Consistent with the observed bias toward egg-cell fertilization, we found that ~90% of the heterofertilized kernels were associated with an embryo originating from gex2 fertilization. RNA-seq analysis reveals that the differing phenotypic severity of the two gex2 mutant alleles, as measured by transmission rate, likely arises from the production of distinct truncated GEX2 proteins. Collectively, these data provide cellular and molecular evidence supporting a critical role for GEX2-dependent male–female gamete recognition in ensuring proper and balanced double fertilization in maize.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l8-effector-driven-developmental-reprogramming-during-ustilago-maydisinduced-gall-formation" class="level2">
+<h2 class="anchored" data-anchor-id="l8-effector-driven-developmental-reprogramming-during-ustilago-maydisinduced-gall-formation">L8: Effector-driven developmental reprogramming during Ustilago maydis–induced gall formation</h2>
+<p><font color="#339966">Cell and Developmental Biology </font> <a href="mailto:khanma@uni-bonn.de">Mamoona Khan</a> (Postdoc)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:khanma@uni-bonn.de">Khan, Mamoona</a><sup>1</sup><br></p>
+<p><sup>1</sup>Department of Plant Pathology, Institute of Crop Science and Resource Conservation (INRES), University of Bonn, Bonn 53113, Germany<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The corn smut fungus Ustilago maydis induces gall formation on all aerial parts of the maize plant. Gall formation requires profound developmental reprogramming, yet the host pathways that enable this plasticity remain poorly defined. We utilized fungal effectors as targeted developmental perturbations to identify plant pathways capable of driving gall-like growth programs. By expressing individual U. maydis effectors in Arabidopsis thaliana, we uncovered fundamentally distinct developmental pathways that can induce proliferative, gall-like phenotypes. These pathways engage different regulatory modules and revealed that pathogen-driven growth can arise through multiple, mechanistically independent routes. One of the identified pathways operated through effector-mediated interference of the highly conserved TOPLESS/TOPLESS-RELATED family of transcriptional corepressors, leading to de-repression of an auxin-responsive transcriptional program associated with lateral root initiation. Effector expression induced pluripotent, callus-like growth in A. thaliana and activated developmental gene networks that strongly overlapped with lateral root formation in the host plant, Zea mays. Genetic analyses identified LATERAL ORGAN BOUNDARIES DOMAIN regulators as essential nodes in this response, and maize homologs of these genes modulated gall development in planta, linking effector activity to conserved developmental control mechanisms.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l9-spatial-regulation-of-cell-wall-remodeling-shapes-maize-digestibility-under-drought" class="level2">
+<h2 class="anchored" data-anchor-id="l9-spatial-regulation-of-cell-wall-remodeling-shapes-maize-digestibility-under-drought">L9: Spatial regulation of cell wall remodeling shapes maize digestibility under drought</h2>
+<p><font color="#339966">Cell and Developmental Biology </font> <a href="mailto:ana.lopez-malvar@inrae.fr">Ana López Malvar</a> (Postdoc)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:ana.lopez-malvar@inrae.fr">López-Malvar, Ana</a><sup>1</sup><br><a href="mailto:maia.collombel@inrae.fr">Collombel, Maia</a><sup>1</sup><br><a href="mailto:stephen.lima@inrae.fr">Lima, Stephen</a><sup>1</sup><br><a href="mailto:sophie.guillaume.2@inrae.fr">Guillaume, Sophie</a><sup>1</sup><br><a href="mailto:valerie.mechin@inrae.fr">Mechin, Valerie</a><sup>2</sup><br><a href="mailto:matthieu.reymond@inrae.fr">Reymond, Matthieu</a><sup>1</sup><br></p>
+<p><sup>1</sup>Université Paris-Saclay, INRAE, AgroParisTech, Institut Jean-Pierre Bourgin for Plant Sciences (IJPB), 78000, Versailles, France.<br><sup>2</sup>UMR AGAP Institute, University of Montpellier, CIRAD, INRAE, Institut Agro, Montpellier, France<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Cell wall composition and structure are central to maize response under drought, and understanding how they relate to digestibility has important implications for breeding. Although increases in cell wall digestibility have been described under drought, it remains unclear whether this response depends on the specific localization of cell wall remodeling across tissues. We therefore asked whether increases in cell wall digestibility are driven by modifications in particular tissues.Using a combined histological and biochemical analysis, we found that drought reduced lignification in all tissue types, indicating changes in tissue organization . These anatomical changes were tightly correlated with biochemical alterations and strongly associated with increased in vitro cell wall digestibility. Our results show that variation in p-coumaric acid (pCA) content and its spatial distribution is a key driver of digestibility plasticity in response to drought. To characterize this response, we analyzed rind and pith tissues separately across eight genotypes: four plastic lines that increased digestibility by decreasing pCA under water stress, and four stable lines that showed little or no variation in either digestibility or pCA content. We found that cell remodeling occurs in the rind of both stable and plastic lines, but in the pith only in plastic genotypes. This demonstrates that increased whole-plant digestibility under drought is driven by cell wall modifications in the pith. In plastic genotypes, this response involves decreased lignification and p-coumaroylation in the pith accompanied by a compensatory increase in ferulic and diferulic acid cross-linking. By linking tissue-specific remodeling with digestibility plasticity, our findings provide markers that can support breeding efforts for improved forage quality and drought response.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l10-linking-carbon-metabolism-to-meiotic-entry-in-maize-anthers-from-bulk-to-single-cell-resolution" class="level2">
+<h2 class="anchored" data-anchor-id="l10-linking-carbon-metabolism-to-meiotic-entry-in-maize-anthers-from-bulk-to-single-cell-resolution">L10: Linking carbon metabolism to meiotic entry in maize anthers: From bulk to single-cell resolution</h2>
+<p><font color="#339966">Cell and Developmental Biology </font> <a href="mailto:r13b21019@ntu.edu.tw">An Hsu</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:r13b21019@ntu.edu.tw">Hsu, An</a><sup>1</sup><br><a href="mailto:chiayicheng@ntu.edu.tw">Cheng, Chia-Yi</a><sup>1</sup><br><a href="mailto:rwang@as.edu.tw">Wang, Chung-Ju Rachel</a><sup>2</sup><br></p>
+<p><sup>1</sup>Department of Life Science, National Taiwan University, Taipei, 106319, Taiwan (R.O.C)<br><sup>2</sup>Institute of Plant and Microbial Biology, Academia Sinica, Taipei, 115201, Taiwan (R.O.C)<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Anther development is pivotal for crop yield and plant breeding, involving coordinated cell division and differentiation that generate four specialized somatic layers enclosing germinal cells. Spatiotemporal interactions among these layers orchestrate germinal cell development from mitotic proliferation through meiosis and ultimately pollen formation. However, the mechanisms by which somatic layers coordinate and support the transition of germinal cells from mitosis to the meiotic program remain poorly understood. In this study,we analyzed published bulk RNA-seq and scRNA-seq datasets and identified significant upregulation of genes associated with carbon metabolism and energy production. Notably, the onset of this upregulation coincides with the transition to meiosis, rather than during the early stages of anther development characterized by extensive cell division. Supporting this finding, quantification of soluble sugars in whole anthers showed increased sucrose concentrations as anthers approached meiosis, suggesting a possible metabolic reprogramming involved in meiotic entry. Given that the anther is a sink organ for photosynthates, histological staining of transverse sections revealed abundant starch accumulation in the endothecium before meiosis begins, indicating its role as a local energy reserve. These observations suggest that carbohydrate dynamics in the anther may provide carbon sources or signaling cues to germinal cells. To further explore regulatory mechanisms, we constructed gene regulatory networks (GRNs) for meiocytes and whole anthers. The meiocyte single-cell GRN revealed putative metabolic pathway–associated regulons specifically active during the transition phase. In the whole-anther GRN, the putative transcription factors previously reported to be involved in anther meiotic progression, were highlighted as candidates regulators. Together, we propose that elevated energy metabolic activity may contribute to crosstalk and signaling between somatic niche cells and germinal cells during the mitosis-to-meiosis transition.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="computational-and-large-scale-biology" class="level1">
+<h1>Computational and Large-Scale Biology</h1>
+<section id="l11-plastochron-regulation-in-maize-spatial-transcriptomics-reveals-transcriptional-changes-in-the-plastochron1-mutant." class="level2">
+<h2 class="anchored" data-anchor-id="l11-plastochron-regulation-in-maize-spatial-transcriptomics-reveals-transcriptional-changes-in-the-plastochron1-mutant.">L11: Plastochron regulation in maize: Spatial transcriptomics reveals transcriptional changes in the plastochron1 mutant.</h2>
+<p><font color="#663399">Computational and Large-Scale Biology </font> <a href="mailto:lotte.vandevreken@psb.vib-ugent.be">Lotte Van de Vreken</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:lotte.vandevreken@psb.vib-ugent.be">Van de Vreken, Lotte</a><sup>1 2</sup><br><a href="mailto:stan.werbrouck@psb.vib-ugent.be">Werbrouck, Stan</a><sup>1 2</sup><br><a href="mailto:kirin.demuynck@psb.vib-ugent.be">Demuynck, Kirin</a><sup>1 2</sup><br><a href="mailto:hilde.nelissen@psb.vib-ugent.be">Nelissen, Hilde</a><sup>1 2</sup><br></p>
+<p><sup>1</sup>Ghent University, Department of Plant Biotechnology and Bioinformatics, Technologiepark 927, 9052 Ghent, Belgium<br><sup>2</sup>VIB Center for Plant Systems Biology, Technologiepark 927, 9052 Ghent, Belgium<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The maize plastochron1 (pla1) mutant exhibits a shortened plastochron (accelerated leaf initiation) and reduced plant growth. This remarkable phenotype suggests a role for PLA1 in regulating leaf initiation and growth in the maize shoot apical meristem (SAM). The SAM is a highly complex structure where stem cells gradually differentiate into plant organs in a spatially coordinated manner. However, the transcriptional mechanisms by which PLA1 influences these developmental processes remain unclear. To investigate how PLA1 affects plant architecture at the molecular level, we applied spatial transcriptomics to visualize the expression of 500 genes in wild-type and pla1 mutant shoot apices. Our analysis showed that PLA1 is expressed at the boundary between undifferentiated and differentiated cells, suggesting a role in regulating cell division and organ initiation. Developmental trajectory analysis tracing transcriptional changes from stem cells to differentiated cells revealed overlaps of PLA1 with stem cell markers such as Knotted1 and differentiation markers such as YABBY14, further supporting its regulatory function. Comparisons between wild-type and pla1 mutants revealed significant transcriptional changes, particularly in auxin metabolism, indicating an important role for PLA1 in (hormonal) regulation of the SAM. These findings visualize the spatial and temporal changes in the transcriptional regulation of pla1 mutant SAMs, showcasing spatial transcriptomics and its downstream data-analysis as a valuable tool for studying plant development.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="cytogenetics" class="level1">
+<h1>Cytogenetics</h1>
+<section id="l12-genome-wide-investigation-of-recombination-in-the-presence-of-maize-b-chromosomes" class="level2">
+<h2 class="anchored" data-anchor-id="l12-genome-wide-investigation-of-recombination-in-the-presence-of-maize-b-chromosomes">L12: Genome-Wide investigation of recombination in the presence of maize B chromosomes</h2>
+<p><font color="#669933">Cytogenetics</font> <a href="mailto:msb92@umsystem.edu">Malika Sharma</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:msb92@umsystem.edu">Sharma, Malika</a><sup>1</sup><br><a href="mailto:yanghu@missouri.edu">Yang, Hua</a><sup>1</sup><br><a href="mailto:jl4mc@missouri.edu">Liu, Jian</a><sup>2</sup><br><a href="mailto:fbqc9@missouri.edu">Boadu, Frimpong</a><sup>2</sup><br><a href="mailto:chengji@missouri.edu">Cheng, Jianlin</a><sup>2</sup><br><a href="mailto:albertp@missouri.edu">Albert, Patrice</a><sup>1</sup><br><a href="mailto:birchlerj@missouri.edu">Birchler, James</a><sup>1</sup><br></p>
+<p><sup>1</sup>Division of Biological Sciences, University of Missouri, Columbia, MO 65211<br><sup>2</sup>Department of Electrical Engineering and Computer Science, University of Missouri, Columbia, MO 65211<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>B chromosomes (Bs) are supernumerary, dispensable chromosomes found in many species, including maize. Although not required for development, Bs in maize have been shown cytologically to increase meiotic recombination, particularly in heterochromatic regions. It has been proposed that the B chromosome evolved this effect to ensure its own segregation in meiosis given its smaller size and being heavily heterochromatic with the effect spilling over to the A chromosomes. To investigate this effect on the genome level we constructed high-resolution crossover (CO) maps from six reciprocal backcross maize populations generated from (B73/W22) × B73 crosses carrying 0, 2–3, or 6 Bs. Low-coverage sequencing and haplotype inference revealed dosage and sex-specific effects. In male meiosis, increasing B number elevated genome-wide CO frequency and promoted multi-CO bivalents, with rare high-CO class (6 COs) detected only in 6B males. In contrast, female meiosis did not show a significant change in recombination with increasing B dosage. These findings demonstrate that Bs reshape the recombination landscape in maize. Interestingly, the male specific effect might have evolved for proper meiotic segregation of the B immediately preceding the other aspects of its drive mechanism consisting of nondisjunction at the second pollen mitosis and preferential fertilization of the egg by the B containing sperm.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l13-engineering-a-maize-mini-b-chromosome-as-a-platform-for-site-specific-gene-integration" class="level2">
+<h2 class="anchored" data-anchor-id="l13-engineering-a-maize-mini-b-chromosome-as-a-platform-for-site-specific-gene-integration">L13: Engineering a maize mini-B chromosome as a platform for site-specific gene integration</h2>
+<p><font color="#669933">Cytogenetics</font> <a href="mailto:jstr6@missouri.edu">Jasnoor Singh</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:jstr6@missouri.edu">Singh, Jasnoor</a><sup>1</sup><br><a href="mailto:nathanswyers@gmail.com">Swyers, Nathan</a><sup>1</sup><br><a href="mailto:natnotgnat@gmail.com">Graham, Nathaniel</a><sup>1</sup><br><a href="mailto:cody0065@umn.edu">Cody, Jon</a><sup>1</sup><br><a href="mailto:gaoz@missouri.edu">Gao, Zhi</a><sup>1</sup><br><a href="mailto:albertp@missouri.edu">Albert, Patrice</a><sup>1</sup><br><a href="mailto:liuhu@missouri.edu">Liu, Hua</a><sup>2</sup><br><a href="mailto:j.a.kelly@q.com">Kelly, Jacob</a><sup>1</sup><br><a href="mailto:yangbi@missouri.edu">Yang, Bing</a><sup>2</sup><br><a href="mailto:birchlerj@missouri.edu">Birchler, James</a><sup>1</sup><br></p>
+<p><sup>1</sup>Division of Biological Sciences, University of Missouri, Columbia, Missouri 65211, USA<br><sup>2</sup>Division of Plant Science and Technology, Bond Life Sciences Center, University of Missouri, Columbia, Missouri 65211, USA<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In maize, random transgenic integration can make gene stacking difficult, especially when combining several features into a single line. An alternate platform for targeted gene insertion and repeated trait stacking without interfering with endogenous loci is provided by engineered mini-chromosomes produced from maize B chromosomes. A telomere-mediated truncating construct, pNT1, was transformed into maize carrying B chromosomes and a truncated miniB was recovered with a terminal transgene carrying a landing pad for phiC31 Integrase site specific recombinase together with a GFP marker, which allows the minichromosome to be followed phenotypically. The pNT1 construct was designed together with donor amendment plasmids to conduct gene stacking. The recovered miniB was crossed to Cre recombinase to remove the Bar selection marker, which positioned the miniB for reuse of Bar selection during subsequent addition to the chromosome. In parallel, an Integrase construct was recovered for which the Bar selection marker could be excised with FLP recombinase and simultaneously activate a GFP gene. Exposure of the Integrase transformant to FLP removed Bar and activated GFP, which also allows the transgene to be followed phenotypically. The function of the Integrase was confirmed by callus bombardment of an inverted DsRed construct flanked by attP and attB sites that upon recombination will activate the gene, which was found to be the case. These results point to an improved mini-B chromosome as a platform that facilitates targeted cargo acceptance via phiC31-mediated recombination. This work lays the groundwork using synthetic chromosome platforms in maize for introduction of genes onto an independent chromosome with the ability for gene stacking.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l14-cytogenetic-analyses-of-mutants-of-class-i-and-class-ii-crossover-regulators-in-maize" class="level2">
+<h2 class="anchored" data-anchor-id="l14-cytogenetic-analyses-of-mutants-of-class-i-and-class-ii-crossover-regulators-in-maize">L14: Cytogenetic analyses of mutants of class I and class II crossover regulators in maize</h2>
+<p><font color="#669933">Cytogenetics</font> <a href="mailto:seijiro.ono@uni-hamburg.de">Seijiro Ono</a> (Postdoc)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:seijiro.ono@uni-hamburg.de">Ono, Seijiro</a><sup>1</sup><br>Ono, Misato<sup>1</sup><br>van der Heide, Max<sup>1</sup><br><a href="mailto:arp.schnittger@uni-hamburg.de">Schnittger, Arp</a><sup>1</sup><br></p>
+<p><sup>1</sup>Department of Developmental Biology, Institute for Plant Science and Microbiology, University of Hamburg, Ohnhorststr. 18, Hamburg, Germany, 22609<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Formation of crossovers (COs) is a fundamental meiotic process that enables the exchange of genetic material between homologous chromosomes. COs are essential not only for generating genetic diversity through the recombination of parental alleles, but also for ensuring fertility by physically linking homologous chromosomes to promote balanced segregation at metaphase I. Despite the agricultural importance of maize, the mechanisms by which COs are designated and regulated in this species remain poorly understood, and it is unclear to what extent models derived from other organisms apply to maize. We recently optimized maize genetic transformation methods, enabling systematic functional analysis of meiotic genes. To elucidate the formation, distribution, and regulation of COs in maize, we first targeted components of the class I CO pathway, defined by the ZMM proteins and responsible for interference-sensitive COs that dominate in many plant species. Surprisingly, all zmm mutants analyzed (hei10, zip4, mer3 and msh4) exhibited only semi‑fertile phenotypes and retained more than 50% of wild-type CO levels. Given previous estimates suggesting that approximately 80% of COs in wild-type maize are interference-sensitive and therefore expected to be class I, these findings suggest that maize possesses a unique compensatory mechanism that maintains CO number despite disruption of the ZMM pathway. To further investigate this phenomenon, we generated additional mutants affecting other potential CO regulators, including class II CO endonucleases and anti‑CO factors, and combined them with zmm mutations. Preliminary results from these higher‑order mutant analyses will be presented, and potential regulatory mechanisms underlying the distinctive CO fate determination system in maize will be discussed.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="evolution-and-population-genetics" class="level1">
+<h1>Evolution and Population Genetics</h1>
+<section id="l15-homologous-chromosome-interactions-reshape-chromatin-accessibility-contribute-to-hybrid-vigor-in-maize" class="level2">
+<h2 class="anchored" data-anchor-id="l15-homologous-chromosome-interactions-reshape-chromatin-accessibility-contribute-to-hybrid-vigor-in-maize">L15: Homologous chromosome interactions reshape chromatin accessibility contribute to hybrid vigor in maize</h2>
+<p><font color="#FF0066">Evolution and Population Genetics</font> <a href="mailto:taozhou_1999@163.com">Tao Zhou</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:taozhou_1999@163.com">Zhou, Tao</a><sup>1</sup><br>Zhang, Hongwei<sup>2</sup><br>Li, Lin<sup>1</sup><br></p>
+<p><sup>1</sup>National Key Laboratory of Crop Genetic Improvement, Huazhong Agricultural University, Wuhan 430070, China<br><sup>2</sup>State Key Laboratory of Crop Gene Resources and Breeding, National Key Facility for Crop Gene Resources and Genetic Improvement, Institute of Crop Sciences, Chinese Academy of Agricultural Sciences, Beijing, 100081, China<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-30" class="callout-30-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Hybridization brings together parental chromosomes within a single nucleus, resulting in hybrid vigor, a widespread phenomenon in maize. Previous studies have largely focused on protein-coding sequences; however, how chromosome interactions contribute to hybrid vigor remains poorly understood. Here, we integrated population genetics with single-cell ATAC-seq and bulk RNA-seq analyses in both inbred and hybrid lines. We show that inbred genomes exhibit relatively rigid chromatin accessibility landscapes and constrained gene expression patterns, which limit their vigor under different conditions. In contrast, hybrid genomes display enhanced dynamic regulation of chromatin accessibility coupled with flexible gene expression. We identify genomic regions that gain increased capacity for dynamic chromatin accessibility regulation after hybridization in the Mo17×B73 compared to parental states. Analysis of H3K27ac and H3K4me3 Hi-ChIP data from Mo17×B73 hybrids reveals that the regulatory activity of these dynamically enhanced regions depends on physical interactions between parental homologous chromosomes. Using an artificial selection-derived progeny population from Mo17×B73 and functional validation, we demonstrate that these homologous chromosome interactions directly contribute to heterosis. In conclusion, interactions between homologous chromosomes drive dynamic chromatin accessibility, thereby enhancing vigor. Our findings uncover a regulatory mechanism underlying heterosis and provide a mechanistic basis for the widespread occurrence of hybridization in nature.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l16-localized-stimulation-of-meiotic-crossovers-through-the-juxtaposition-of-heterozygous-and-homozygous-regions" class="level2">
+<h2 class="anchored" data-anchor-id="l16-localized-stimulation-of-meiotic-crossovers-through-the-juxtaposition-of-heterozygous-and-homozygous-regions">L16: Localized stimulation of meiotic crossovers through the juxtaposition of heterozygous and homozygous regions</h2>
+<p><font color="#FF0066">Evolution and Population Genetics</font> <a href="mailto:pzio@amu.edu.pl">Piotr Ziolkowski</a> (Principal Investigator)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-31-contents" aria-controls="callout-31" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-31" class="callout-31-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Mikhailov, Mikhail E.<sup>1</sup><br>Boideau, Franz<sup>2</sup><br>Szymanska-Lejman, Maja<sup>2</sup><br>Botnari, Vasile<sup>1</sup><br>Ziolkowski, Piotr A.<sup>2</sup><br></p>
+<p><sup>1</sup>Laboratory of Plant Resistance, Institute of Genetics, Physiology and Plant Protection, Moldova State University, Chisinau, Moldova<br><sup>2</sup>Laboratory of Genome Biology, Institute of Molecular Biology and Biotechnology, Adam Mickiewicz University, Poznan, Poland<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-32-contents" aria-controls="callout-32" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-32" class="callout-32-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Meiotic crossovers reshuffle DNA between homologous chromosomes, ensuring faithful chromosome segregation and generating the genetic variation exploited in plant breeding. In Arabidopsis thaliana, it was recently shown that heterozygous segments embedded in an otherwise homozygous genome attract more crossovers than the same intervals in fully heterozygous F₁ hybrids. So far, this phenomenon has only been described in this predominantly self-fertilizing species, raising the question of whether it represents a more general feature of plant meiosis.Here, I will show that a comparable effect also operates in outcrossing maize. Using designed crosses that create spatially confined interhomolog polymorphism, we quantified recombination in defined genomic intervals in otherwise hybrid backgrounds. We find that local crossover frequency can increase by up to threefold compared with fully hybrid genomes. This stimulation is observed in both male and female meiosis and is strongest when the heterozygous segment fully spans the assayed interval, consistent with a local redistribution of crossovers rather than a genome-wide increase in their number.Because Arabidopsis and maize represent distantly related eudicot and monocot lineages, the shared response to juxtaposed heterozygous and homozygous regions points to a conserved mechanism that modulates where crossovers occur along chromosomes. Finally, I will discuss how this principle can be translated into breeding strategies: by strategically arranging blocks of heterozygosity and homozygosity, it should be possible to locally boost recombination, compact linkage blocks, and accelerate introgression of beneficial alleles from donor lines into elite germplasm. I will present a conceptual breeding scheme and potential practical implementations of this approach for crop improvement.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l17-pan-genome-and-ai-identify-causal-variants-for-maize-highland-adaptation" class="level2">
+<h2 class="anchored" data-anchor-id="l17-pan-genome-and-ai-identify-causal-variants-for-maize-highland-adaptation">L17: Pan-genome and AI identify causal variants for maize highland adaptation</h2>
+<p><font color="#FF0066">Evolution and Population Genetics</font> <a href="mailto:wl748@cornell.edu">Wei-Yun Lai</a> (Postdoc)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-33-contents" aria-controls="callout-33" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-33" class="callout-33-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:wl748@cornell.edu">Lai, Wei-Yun</a><sup>1</sup><br>Berthel, Ana<sup>1</sup><br>Casstevens, Terry<sup>1</sup><br>Costa-Neto, Germano<sup>1</sup><br>Franco, Jose A. V.<sup>2</sup><br>Hale, Charlie<sup>2</sup><br>Hsu, Sheng-Kai<sup>1</sup><br>Miller, Zachary R<sup>1</sup><br>Romay, M. Cinta<sup>1</sup><br>Stitzer, Michelle C<sup>1</sup><br>Johnson, Lynn C<sup>1</sup><br>Zhai, Jingjing<sup>1</sup><br>Buckler, Edward S<sup>1 2 3</sup><br></p>
+<p><sup>1</sup>Institute for Genomic Diversity, Cornell University, Ithaca, NY, USA 14853<br><sup>2</sup>Section of Plant Breeding and Genetics, Cornell University, Ithaca, NY USA 14853<br><sup>3</sup>USDA-ARS, Robert W. Holley Center for Agriculture and Health, Ithaca, NY, USA 14853<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-34-contents" aria-controls="callout-34" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-34" class="callout-34-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Maize (Zea mays ssp. mays) was domesticated in tropical lowlands but later expanded into highland and temperate regions that impose strong cold stress during early development. Although highland landraces show enhanced seedling cold tolerance and accelerated development, the evolutionary origins and molecular basis of these adaptations remain unclear, in part due to marker sparsity and linkage disequilibrium. To overcome these limitations, we generated 17 high-quality long-read maize genomes capturing tropical diversity and combined them with existing assemblies to construct a Practical Haplotype Graph (PHG) of 80 diverse genomes. The choice of Zea mays ssp. huehuetenangensis, rather than B73, as the reference genome for the PHG significantly reduced reference bias during variant calling, yielding a total of ~250M SNPs. We leveraged this PHG to impute genome-wide genotypes for 3,300 locally adapted maize landraces from skim sequencing data. With this, we test two hypotheses: whether altitude-adaptive alleles reflect the evolutionary legacy of ancient whole-genome duplication (WGD) and introgression from highland teosinte, and whether adaptation primarily targets protein-coding variation rather than regulatory change. We observed an elevated proportion, up to 20%, of highland teosinte haplotypes in the imputed highland landraces. Environmental GWAS identified 454 loci associated with altitude adaptation. Contrary to the prevailing views emphasizing regulatory importance, we observed 3-fold stronger enrichment in coding than regulatory regions among these loci. Coding signals were further enriched 13-fold among syntenic duplicate genes, highlighting the role of ancient WGD in preserving protein variants optimized for diverse thermal regimes. Finally, integrating zero-shot scores from a plant DNA foundation model (PlantCAD) prioritized putative causal variants in 63% of the candidate genes, including HPC1, COP1L, SS7, and SUS6. Together, our results clarify the roles of WGD and protein optimization in maize adaptation and provide a scalable framework for identifying climate-resilient alleles.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l18-convergent-genome--and-gene-level-constraints-shape-repeated-environmental-adaptation-in-grasses" class="level2">
+<h2 class="anchored" data-anchor-id="l18-convergent-genome--and-gene-level-constraints-shape-repeated-environmental-adaptation-in-grasses">L18: Convergent genome- and gene-level constraints shape repeated environmental adaptation in grasses</h2>
+<p><font color="#FF0066">Evolution and Population Genetics</font> <a href="mailto:sh2246@cornell.edu">Sheng-Kai Hsu</a> (Postdoc)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-35" class="callout-35-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:sh2246@cornell.edu">Hsu, Sheng-Kai</a><sup>1</sup><br>Schulz, Aimee J<sup>2</sup><br>Hale, Charles O<sup>2</sup><br>Costa-Neto, Germano<sup>1</sup><br>Miller, Zachary R<sup>1</sup><br>Stitzer, Michelle C<sup>1</sup><br>Wrightman, Travis<sup>2</sup><br>Zhai, Jingjing<sup>1</sup><br>Brindisi, Lara<sup>1</sup><br>Oren, Elad<sup>1</sup><br>Luo, Yun<sup>1</sup><br>Konadu, Beatrice<sup>2</sup><br>Ojeda-Rivera, Jonathan O<sup>1</sup><br>AuBuchon-Elder, Taylor<sup>3</sup><br>Kellogg, Elizabeth A<sup>3 4</sup><br>Romay, M Cinta<sup>1</sup><br>Buckler, Edward S<sup>1 2 5</sup><br></p>
+<p><sup>1</sup>Institute for Genomic Diversity, Cornell University, Ithaca, NY, USA 14853<br><sup>2</sup>Section of Plant Breeding and Genetics, Cornell University, Ithaca, NY USA 14853<br><sup>3</sup>Donald Danforth Plant Science Center, St.&nbsp;Louis, MO, USA 63132<br><sup>4</sup>Arnold Arboretum of Harvard University, Boston, MA, USA 02130<br><sup>5</sup>USDA-ARS, Robert W. Holley Center for Agriculture and Health, Ithaca, NY, USA 14853<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-36" class="callout-36-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Grasses (Poaceae) dominate terrestrial ecosystems and sustain global food security, yet the genomic principles enabling their repeated adaptation to extreme environments remain unresolved. Here, we combine dense phylogenomic sampling, global environmental data, and state-of-the-art nucleotide and protein foundation models to characterize the mutational targets underlying environmental adaptation in grasses. Analyzing 707 genomes from 569 species spanning 17 climate zones, we identify dozens of phylogenetically independent transitions into extreme temperature, water, and soil environments. These repeated adaptations are accompanied by convergent shifts in genome-scale molecular properties, including Nitrogen-to-Carbon balance and biosynthetic energetic cost of the proteome, revealing predictable biochemical constraints imposed by natural selection. At the gene level, through an AI-informed phylogenetic mixed modeling framework, we identified 160-89 conserved genes that repeatedly underlie adaptation to the unique axes of environmental challenges. Together, our results show that grass adaptation is channeled by layered constraints acting at genome-wide, pathway and gene-specific scales, producing predictable evolutionary trajectories across the Poaceae.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="quantitative-genetics-breeding" class="level1">
+<h1>Quantitative Genetics &amp; Breeding</h1>
+<section id="l19-do-we-need-dedicated-maize-varieties-for-perennial-groundcover-systems" class="level2">
+<h2 class="anchored" data-anchor-id="l19-do-we-need-dedicated-maize-varieties-for-perennial-groundcover-systems">L19: Do we need dedicated maize varieties for perennial groundcover systems?</h2>
+<p><font color="#996633">Quantitative Genetics &amp; Breeding</font> <a href="mailto:bilgici@iastate.edu">Memis Bilgici</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-37-contents" aria-controls="callout-37" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-37" class="callout-37-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:bilgici@iastate.edu">Bilgici, Memis</a><sup>1</sup><br><a href="mailto:thomasl@iastate.edu">Lubberstedt, Thomas</a><sup>1</sup><br></p>
+<p><sup>1</sup>Iowa State University, Ames, Iowa, USA, 50011<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-38-contents" aria-controls="callout-38" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-38" class="callout-38-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>When maize is cultivated in perennial ground cover (PGC) systems, we face challenges related to competition between cash and cover crops for light, nutrients, and water. Understanding how different maize hybrids respond to these conditions, as well as the interactions between genotypes (G), environment (E), and management (M), is critical for optimizing yield and ensuring long-term sustainability. Our experiments address the question of whether dedicated breeding of maize hybrids suitable for PGC systems is needed. We screened 99 experimental hybrids (ISU) and 2 Corteva check hybrids to explore ranking differences for grain yield under conventional versus perennial ground cover (PGC) systems. Experiments were conducted with two perennial ground cover species (untreated (mowed)), Kentucky Bluegrass (KBG) and Poa bulbosa (PB), near Ames. The ranking of our hybrids for maize grain yield and plant height was substantially different under conventional and PGC conditions. However, our trials are very limited in the number of environments and, at best, preliminary. To develop maize suitable for PGC systems, breeders should prioritize selecting genotypes/hybrids based on performance in PGC environments rather than conventional ones, focusing on grain yield. Our KBG PGC system reflects the worst-case scenario: treatments to suppress the PGC failed, and corn competes with green PGC.In this situation, there would be a need to breed specifically for at least KBG systems, as performance in conventional environments may not reliably predict performance in “green PGC.” However, summer dormant and during summer “brown” PGC like PB (or treated KBG) appeared more promising and similar to conventional experiments.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l20-from-phenotypic-tradition-to-genomic-precision-maize-dus-2.0" class="level2">
+<h2 class="anchored" data-anchor-id="l20-from-phenotypic-tradition-to-genomic-precision-maize-dus-2.0">L20: From phenotypic tradition to genomic precision: Maize DUS 2.0</h2>
+<p><font color="#996633">Quantitative Genetics &amp; Breeding</font> <a href="mailto:anuragvasantrao.daware@uni-hohenheim.de">Anurag Daware</a> (Research Scientist)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-39-contents" aria-controls="callout-39" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-39" class="callout-39-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:anuragvasantrao.daware@uni-hohenheim.de">Daware, Anurag</a><sup>1</sup><br><a href="mailto:clemens.hacke@uni-hohenheim.de">Hacke, Clemens</a><sup>1</sup><br><a href="mailto:pecsm@nebih.gov.hu">Pécs, Márton</a><sup>2</sup><br><a href="mailto:arnaud.remay@geves.fr">Remay, Arnaud</a><sup>3</sup><br><a href="mailto:philipp.starnberger@ages.at">Starnberger, Philipp</a><sup>4</sup><br><a href="mailto:christina.schraml@ages.at">Schraml, Christina</a><sup>4</sup><br><a href="mailto:karl.schmid@uni-hohenheim.de">Schmid, Karl</a><sup>1</sup><br></p>
+<p><sup>1</sup>Institute of Plant Breeding, Seed Science and Population Genetics, University of Hohenheim, Stuttgart, Germany<br><sup>2</sup>National Food Chain Safety Office (NEBIH), Hungary<br><sup>3</sup>Groupe d’Etude et de contrôle des Variétés Et des Semences (GEVES), France<br><sup>4</sup>Austrian Agency for Health and Food Safety (AGES)<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-40-contents" aria-controls="callout-40" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-40" class="callout-40-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Plant variety registration requires Distinctness, Uniformity, and Stability (DUS) testing based on multi-year phenotypic evaluations that are time-consuming, costly, and sensitive to environmental variation. To improve efficiency, the International Union for the Protection of New Varieties of Plants (UPOV) has proposed three molecular marker-based integration frameworks (BMT Models 1–3). However, their application in maize remains limited due to a lack of validated marker–trait associations and robust predictive models. Using historical DUS phenotypic data from 352 European maize hybrids combined with high-density genotyping, we performed genome-wide association studies and identified 18 robust QTLs associated with 12 DUS characters, providing candidate genes for diagnostic markers development, relevant to BMT Model 1. Besides, we also developed an XGBoost-based genomic prediction framework for DUS notes, achieving predictive accuracy of up to 0.87 for selected characters (mean accuracy 0.67 across traits), exceeding performance reported in previous BMT Model 2 studies. Independent validation using more than 1,700 maize accessions from the USDA National Plant Germplasm System (USDA-NPGS) demonstrated cross-population transferability of both marker-based and prediction-based approaches, underscoring the value of public genomic resources for DUS applications. Despite inherent limitations associated with historical DUS datasets, our results provide evidence that molecular markers can enhance the efficiency of maize DUS testing, reducing time and cost without compromising decision reliability.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l21-single-cell-transcriptomics-reveals-cell-type-specific-signatures-of-heterosis-in-early-roots-of-maize" class="level2">
+<h2 class="anchored" data-anchor-id="l21-single-cell-transcriptomics-reveals-cell-type-specific-signatures-of-heterosis-in-early-roots-of-maize">L21: Single-cell transcriptomics reveals cell-type-specific signatures of heterosis in early roots of maize</h2>
+<p><font color="#996633">Quantitative Genetics &amp; Breeding</font> <a href="mailto:danning.wang@tum.de">Danning Wang</a> (Postdoc)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-41-contents" aria-controls="callout-41" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-41" class="callout-41-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:danning.wang@tum.de">Wang, Danning</a><sup>1 2</sup><br><a href="mailto:yzhou2@uni-bonn.de">Zhou, Yaping</a><sup>3</sup><br><a href="mailto:chenxp2017@swu.edu.cn">Chen, Xinping</a><sup>4</sup><br><a href="mailto:hochholdinger@uni-bonn.de">Hochholdinger, Frank</a><sup>3</sup><br><a href="mailto:pengyu.yu@tum.de">Yu, Peng</a><sup>1</sup><br></p>
+<p><sup>1</sup>Plant Genetics, School of Life Sciences, Technical University of Munich, Germany<br><sup>2</sup>Plant Breeding, School of Life Sciences, Technical University of Munich, Germany<br><sup>3</sup>Crop Functional Genomics, Institute of Crop Science and Resource Conservation, University of Bonn, Germany<br><sup>4</sup>College of Resources and Environment, and Academy of Agricultural Sciences, Southwest University, Chongqing, China<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-42-contents" aria-controls="callout-42" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-42" class="callout-42-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Heterosis describes the enhanced growth and stress tolerance observed in hybrid plants relative to their parental lines. Crosses between genetically diverse inbred lines often result in longer primary roots, where enhanced root development plays a critical role in nutrient and water acquisition and strongly influences yield potential. Early root vigor drives rapid root system formation and is shaped by parental genetic diversity and the transcriptional regulation of key genes in maize. Single-cell technologies have been increasingly applied in plant research, providing unprecedented resolution to elucidate molecular mechanisms underlying responses to abiotic stresses. However, despite extensive studies of heterosis at the whole-organism and tissue levels, the cellular and molecular basis of heterosis at single-cell resolution remains largely unexplored. In this study, we investigated the cellular mechanisms underlying heterosis during early root development in maize by integrating single-cell RNA sequencing and spatial transcriptomics. To capture the genetic diversity of maize, the reference inbred line B73 was crossed with nine inbred lines representing three major heterotic groups: stiff-stalk, non–stiff-stalk, and tropical lines. Cell-level phenotyping revealed substantial variation in heterosis among hybrids, with crosses between B73 and non–stiff-stalk lines exhibiting significantly stronger heterotic effects compared to crosses from the other heterotic groups. By classifying genes into additive and non-additive expression patterns within each cell cluster, we observed a pronounced enrichment of non-additive genes in the outer root cell layers compared with inner layers, a pattern consistently detected in both single-cell and spatial transcriptomic datasets. Gene Ontology enrichment analysis further showed that these non-additive genes were predominantly associated with oxidative stress responses and related metabolic pathways. Overall, our findings provide the first single-cell and spatial transcriptomic evidence linking heterosis to specific cell layers during maize root development, highlighting the critical role of outer root tissues in driving heterotic vigor at the cellular level.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l22-a-dynamic-genotype-environment-integration-approach-decodes-the-genetic-basis-of-phenotypic-plasticity-in-maize" class="level2">
+<h2 class="anchored" data-anchor-id="l22-a-dynamic-genotype-environment-integration-approach-decodes-the-genetic-basis-of-phenotypic-plasticity-in-maize">L22: A dynamic genotype-environment integration approach decodes the genetic basis of phenotypic plasticity in maize</h2>
+<p><font color="#996633">Quantitative Genetics &amp; Breeding</font> <a href="mailto:yinpengfei1517@foxmail.com">Pengfei Yin</a> (Postdoc)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-43-contents" aria-controls="callout-43" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-43" class="callout-43-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:yinpengfei1517@foxmail.com">Yin, Pengfei</a><sup>1</sup><br>Zhao, XiangYu<sup>1</sup><br>Ji, Shenghui<sup>1</sup><br>Guo, Jianghua<sup>1</sup><br>Guo, Tingting<sup>2</sup><br>Li, Kun<sup>1</sup><br>Li, Weiya<sup>1</sup><br>Xu, Gen<sup>1</sup><br>Li, Xiaowei<sup>1</sup><br>Zhang, Renyu<sup>1</sup><br>Cai, Lichun<sup>1</sup><br>Chen, Wenkang<sup>1</sup><br>Fang, Hui<sup>1</sup><br>Wang, Min<sup>1</sup><br>Xiao, Yingni<sup>1</sup><br>Yan, Jianbing<sup>2</sup><br>Li, Jiansheng<sup>1 3</sup><br><a href="mailto:yxiaohong@cau.edu.cn">Yang, Xiaohong</a><sup>1 3 4</sup><br><a href="mailto:lizhi@henu.edu.cn">Li, Zhi</a><sup>5</sup><br></p>
+<p><sup>1</sup>State Key Laboratory of Plant Environmental Resilience and National Maize Improvement Center of China, China Agricultural University, Beijing 100193, China.<br><sup>2</sup>National Key Laboratory of Crop Genetic Improvement, Huazhong Agricultural University, Wuhan, Hubei 430070, China.<br><sup>3</sup>Center for Crop Functional Genomics and Molecular Breeding, China Agricultural University, Beijing 100193, yinweoiChina.<br><sup>4</sup>Frontiers Science Center for Molecular Design Breeding, China Agricultural University, Beijing 100193, China.<br><sup>5</sup>State Key Laboratory of Crop Stress Adaptation and Improvement, School of Life Sciences, Henan University, Jinming avenue 1, Kaifeng 475004, China.<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-44-contents" aria-controls="callout-44" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-44" class="callout-44-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Under rapid climate change and increasing global food demand, enhancing crop environmental adaptability has emerged as a critical goal of intelligent breeding. Phenotype plasticity, driven by genotype-by-environment interactions (G×E), determines the capacity of crops to respond to dynamic conditions. Elucidating the genetic basis of these interactions is fundamental to understanding the regulation of phenotypic plasticity and developing climate-resilient crops. In this study, we collected flowering-time and the corresponding environmental data from 10 recombinant inbred line (RIL) populations across 12 planting environments and developed a proportional-time alignment model to investigate the dynamic G×E effects underlying flowering time variation. Our analysis revealed a photothermal time sensitivity window spanning 35% to 50% of the total sowing to flowering period, coinciding with key reproductive transitions such as female and male inflorescence development. Single-population linkage mapping detected 127 additive and 62 epistatic loci. Additive effects explained 10.2%-43.8% of the phenotypic variation, whereas epistasis accounted for less than 3%, indicating that additive effects play the predominant role in the environmental regulation of flowering time. Genome-wide association studies (GWAS) further identified 532 loci associated with photothermal time responses and pinpointed key flowering-time regulatory genes, including ZmMADS69, ZmELF3.1, CONZ1, ZmMADS1. These core genes, along with their epistatic interactions, are crucial for integrating environmental signals to modulate flowering time plasticity. This study establishes a unified framework for dissecting the genetic architecture of maize flowering-time plasticity, and provides a conceptual guidance for breeding climate-resilient crops with broad environmental adaptability.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l23-population-scale-rna-sequencing-reveals-host-genetic-control-of-phyllosphere-fungal-communities" class="level2">
+<h2 class="anchored" data-anchor-id="l23-population-scale-rna-sequencing-reveals-host-genetic-control-of-phyllosphere-fungal-communities">L23: Population-scale RNA sequencing reveals host genetic control of phyllosphere fungal communities</h2>
+<p><font color="#996633">Quantitative Genetics &amp; Breeding</font> <a href="mailto:ccolvinmmiv@gmail.com">Charles Colvin</a> (Undergraduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-45-contents" aria-controls="callout-45" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-45" class="callout-45-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:ccolvinmmiv@gmail.com">Colvin, Charles F</a><sup>1</sup><br><a href="mailto:sic3@psu.edu">Chopra, Surinder</a><sup>1</sup><br></p>
+<p><sup>1</sup>Department of Plant Science; The Pennsylvania State University; University Park; Pennsylvania; United States; 16802<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-46-contents" aria-controls="callout-46" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-46" class="callout-46-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Fungal communities inhabiting aboveground plant tissues influence plant health, disease outcomes, and crop productivity, yet the degree to which host genetics shapes these phyllosphere mycobiomes remains unclear. Most prior studies have relied on amplicon sequencing and have identified few reproducible host–fungal associations, in part due to technical biases and an inability to distinguish active fungi from dormant or dead cells. Here, we demonstrate that standard polyA-enriched RNA sequencing of field-collected leaf tissue captures sufficient fungal transcripts to robustly profile metabolically active phyllosphere fungal communities, without targeted microbial enrichment. Leveraging population-scale RNA-seq datasets from maize, sorghum, and soybean grown across three field environments (2,194 total samples), we quantified hundreds of fungal taxa despite fungal reads comprising a small fraction of total sequences. This approach revealed extensive host genetic control over fungal community composition within each crop. Genome-wide association analyses identified numerous host loci associated with the abundance of individual fungal taxa, and transcriptome-wide association analyses uncovered coordinated host gene expression responses linked to fungal abundance, including defense-related pathways. As an illustrative case study, host loci associated with fungal abundance included a previously uncharacterized CC-NLR gene in sorghum exhibiting presence–absence variation, highlighting the ability of this framework to uncover biologically meaningful immune loci linked to specific fungal taxa. Together, these results demonstrate that host genetics exerts strong and reproducible control over active phyllosphere fungal communities across multiple crop species. Population-scale RNA sequencing provides a scalable framework for studying plant–fungal interactions and establishes a foundation for treating microbiome-associated traits as genetically tractable targets in crop genetics and breeding.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l24-quantitative-assessment-of-heterosis-and-combining-ability-for-strategic-hybrid-breeding-in-maize-for-silage" class="level2">
+<h2 class="anchored" data-anchor-id="l24-quantitative-assessment-of-heterosis-and-combining-ability-for-strategic-hybrid-breeding-in-maize-for-silage">L24: Quantitative assessment of heterosis and combining ability for strategic hybrid breeding in maize for silage</h2>
+<p><font color="#996633">Quantitative Genetics &amp; Breeding</font> <a href="mailto:bikkasani-2114004@pau.edu">Mythri Bikkasani</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-47-contents" aria-controls="callout-47" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-47" class="callout-47-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:bikkasani-2114004@pau.edu">Bikkasani, Mythri</a><sup>1</sup><br>Garg, Tosh<sup>1</sup><br>Sandhu, Surinder<sup>1</sup><br>Adapala, Gopikrishna<sup>2</sup><br>BS, Vivek<sup>3</sup><br>Vikal, Yogesh<sup>1</sup><br></p>
+<p><sup>1</sup>Punjab Agricultural University, Ludhiana, Punjab, India, 141004<br><sup>2</sup>International Crops Research Institute for the Semi-Arid Tropics, Patancheru, Hyderabad, Telangana, India, 502324<br><sup>3</sup>International Maize and Wheat Improvement Center, Patancheru, Hyderabad, Telangana, India, 502324<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-48-contents" aria-controls="callout-48" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-48" class="callout-48-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Understanding combining ability and heterosis among diverse maize (Zea mays L.) germplasm is critical for improving hybrid performance for both grain yield and silage quality. In this study, 42 maize inbred lines representing tropical late-maturity, tropical early-maturity, temperate, and mixed tropical–temperate backgrounds were used to develop a multiple-hybrid population of 354 F₁ hybrids. Hybrids were generated using half-diallel and partial diallel designs within germplasm groups, along with North Carolina Design II (NCD-II) crosses involving tropical late × tropical early parents and tropical × temperate and mixed background parents. Parental lines and hybrids were evaluated in a single growing season across two locations for silage quality traits, including fiber components, crude protein, in vitro organic matter digestibility, and metabolizable energy. Significant genetic variation was observed among parents and hybrids for all traits, reflecting the broad genetic diversity of the germplasm. Estimates of general combining ability (GCA) identified inbred lines with consistent additive effects, while specific combining ability (SCA) revealed hybrid combinations with favorable non-additive interactions. Heterosis was evident for most traits and varied in magnitude across traits and environments, with tropical × temperate or mixed crosses generally showing higher average heterosis for grain yield components and energy-related silage traits than crosses within similar maturity groups. Kernel number–related traits contributed substantially to yield heterosis, while digestibility and energy traits exhibited notable hybrid vigor. Overall, the study demonstrates the potential of integrating diverse tropical and temperate maize germplasm to broaden the genetic base and enhance hybrid performance, providing useful insights for breeding strategies targeting simultaneous improvement of grain yield and silage quality.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l25-temporal-2d3d-phenotyping-reveals-dynamic-maize-architectural-development-across-the-growth-cycle" class="level2">
+<h2 class="anchored" data-anchor-id="l25-temporal-2d3d-phenotyping-reveals-dynamic-maize-architectural-development-across-the-growth-cycle">L25: Temporal 2D–3D phenotyping reveals dynamic maize architectural development across the growth cycle</h2>
+<p><font color="#996633">Quantitative Genetics &amp; Breeding</font> <a href="mailto:zji7@unl.edu">Zhongjie Ji</a> (Postdoc)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-49-contents" aria-controls="callout-49" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-49" class="callout-49-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:zji7@unl.edu">Ji, Zhongjie</a><sup>1</sup><br><a href="mailto:yge2@unl.edu">Ge, Yufeng</a><sup>1</sup><br><a href="mailto:schnable@unl.edu">Schnable, James</a><sup>1</sup><br></p>
+<p><sup>1</sup>Center for Plant Science Innovation, University of Nebraska-Lincoln, Lincoln, NE, 68505<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-50-contents" aria-controls="callout-50" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-50" class="callout-50-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>High throughput phenotyping can be used to measure lots of stuff, but the high cost of conducting experiments with automated imaging means that data often collected either from only a period of development (frequently missing early vegetative phase and post flowering grain fill and drydown), or only for a few genotypes. Here we developed a mini-diversity panel of maize genotypes and collecting imaging data across nearly the entire maize lifecycle (15–90 days after planting). We employed a voxel carving algorithm to generate 3D plant reconstructions and voxel representations from multi-angle imaging (ten side views plus one top view) 2D images. From both 2D images and 3D voxels, we extracted a comprehensive suite of dynamic traits over time, including plant height, leaf number, voxel-derived geometric features, leaf shape parameters obtained through skeletonization and biomass partitioning. We found strong agreement between greenhouse and field measurements, with 3D-derived leaf angle in the greenhouse strongly correlated with field-measured leaf angle, and flowering time showing similarly strong cross-environment correlations. In addition, voxel-derived plant volume was highly correlated with destructively measured dry biomass of leaf and stem, indicating that voxel volume serves as a robust indicator of biomass accumulation. These analyses captured temporal variation and genotypic differentiation in key architectural traits throughout development. The resulting dataset provides a valuable resource for studying maize growth dynamics and offers a robust foundation for future research on plant phenotyping, genetics, and crop improvement. We also extended the voxel carving approach to Goodman–Buckler diversity which will enable quantitative genetics analysis such as GWAS, TWAS and eQTL.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l26-qgsr2.02-confers-recessive-resistance-to-stalk-rot-and-ear-rot-in-maize" class="level2">
+<h2 class="anchored" data-anchor-id="l26-qgsr2.02-confers-recessive-resistance-to-stalk-rot-and-ear-rot-in-maize">L26: qGSR2.02 confers recessive resistance to stalk rot and ear rot in maize</h2>
+<p><font color="#996633">Quantitative Genetics &amp; Breeding</font> <a href="mailto:chenchuan@nwafu.edu.cn">Chuan Chen</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-51-contents" aria-controls="callout-51" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-51" class="callout-51-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:chenchuan@nwafu.edu.cn">Chen, Chuan</a><sup>1 2 3</sup><br>Zhong, Ling<sup>1 2 3</sup><br>Zeng, Shirong<sup>1 2 3</sup><br>Zhao, Daixin<sup>1 2 3</sup><br>Zhang, Zhichao<sup>1 2 3</sup><br>Yu, Yao<sup>1 2 3</sup><br><a href="mailto:qyang@nwafu.edu.cn">Yang, Qin</a><sup>1 2 3</sup><br></p>
+<p><sup>1</sup>College of Agronomy, Northwest A&amp;F University; No.&nbsp;3 Taicheng Road, Yangling, Shaanxi, China 712100<br><sup>2</sup>State Key Laboratory of Crop Stress Biology for Arid Areas; No.&nbsp;3 Taicheng Road, Yangling, Shaanxi, China 712100<br><sup>3</sup>Key Laboratory of Maize Biology and Genetic Breeding in Arid Area of Northwest Region, Ministry of Agriculture; No.&nbsp;3 Taicheng Road, Yangling, Shaanxi, China 712100<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-52-contents" aria-controls="callout-52" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-52" class="callout-52-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Gibberella stalk rot (GSR) and Gibberella ear rot (GER), both caused by fungal pathogen Fusarium graminearum, pose a devastating threat to global maize production. We have previously identified a major QTL for GSR resistance in maize bin 2.02 using a recombinant inbred line population derived from a cross between KA105 (resistant parent) and HZ4 (susceptible parent), designated as qGSR2.02. In this study, we validated phenotypic effect of qGSR2.02 in field trials using near-isogenic lines (NILs) developed from a heterogeneous inbred family. KA105-derived allele at qGSR2.02 significantly reduced GSR disease severity index (DSI) by 13–22% compared to lines with HZ4 allele. No significant difference was observed between the heterozygotes and homozygous HZ4 plants, suggesting that KA105 allele acts recessively at qGSR2.02. We also tested GER resistance using the two NILs, and found that NILKA105 showed significantly higher GER resistance than NILHZ4. Using a large segregating population, we fine-mapped qGSR2.02 to a 7-kb interval (KA105 genome) through recombinant-derived progeny testing strategy. Only one WD40 repeat gene, ZmWD40, is annotated in the qGSR2.02 region in susceptible parent HZ4. No corresponding gene is predicted in the 7-kb region in KA105 genome. Since the resistance allele is recessive, we hypothesis that ZmWD40 might be the causal gene at qGSR2.02. A maize mutant with a transposon insertion in the 5’-UTR region of the ZmWD40 gene showed significantly enhanced GSR resistance compared with its wildtype lacking the insertion. We are also making transgenic overexpression lines and knock-out lines to validate the function of ZmWD40. The findings will deepen our understanding of maize stalk rot and ear rot resistance and provide valuable resources for breeding program.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l27-phenotypic-characterization-of-u.s.-maize-heirlooms" class="level2">
+<h2 class="anchored" data-anchor-id="l27-phenotypic-characterization-of-u.s.-maize-heirlooms">L27: Phenotypic characterization of U.S. maize heirlooms</h2>
+<p><font color="#996633">Quantitative Genetics &amp; Breeding</font> <a href="mailto:madcfr@umsystem.edu">Melissa Draves</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-53-contents" aria-controls="callout-53" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-53" class="callout-53-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:madcfr@umsystem.edu">Draves, Melissa A</a><sup>1</sup><br><a href="mailto:jcummin5@ncsu.edu">Cummings, Jordan M</a><sup>2</sup><br><a href="mailto:jacob.washburn@usda.gov">Washburn, Jacob D</a><sup>3</sup><br><a href="mailto:jlgage@ncsu.edu">Gage, Joseph L</a><sup>2 4</sup><br><a href="mailto:jim.holland@usda.gov">Holland, James</a><sup>2 4 5</sup><br><a href="mailto:sherry.flint-garcia@usda.gov">Flint-Garcia, Sherry</a><sup>3</sup><br></p>
+<p><sup>1</sup>University of Missouri; Division of Plant Science and Technology; Columbia, MO, USA 65211<br><sup>2</sup>North Carolina State University; Department of Crop and Soil Sciences; Raleigh, NC, USA 27695<br><sup>3</sup>USDA-ARS; Plant Genetics Research Unit; Columbia, MO, USA 65211<br><sup>4</sup>NC Plant Sciences Initiative; Raleigh, NC, USA 27606<br><sup>5</sup>USDA-ARS; Plant Science Research Unit; Raleigh, NC, USA 27695<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-54-contents" aria-controls="callout-54" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-54" class="callout-54-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Hybrid maize is the most productive crop in the United States, producing millions of bushels per year and is used for food, feed, and fuel production. Prior to maize hybrids, open-pollinated heirloom populations (landraces) were primarily used in the US for subsistence farming and livestock feed. Heirlooms are phenotypically and genotypically diverse, with many populations harboring unique alleles that are not found in modern germplasm due to the rapid selection for high yield that drove hybrid production. However, heirlooms are relevant in specialty markets as many chefs, organic farmers, and smallholder growers are interested in marketing heirlooms as a natural culinary product. Outside of the United States, heirlooms have been intensively studied, with extensive monographs written about populations from Mexico, South America, and Europe. However, there are no comprehensive datasets on extant heirlooms from the United States. This study aims to fully phenotype 990 heirlooms, primarily housed at the North Central Regional Plant Introduction Station. Heirlooms were planted in a partially replicated design in the summer of 2024 and 2025 in Columbia, MO and Clayton, NC. Manual phenotypic measurements including flowering time, leaf and tassel architecture, plant heights, ear disease, tillering data, and harvest traits were collected throughout the growing season. Preliminary cluster analysis based on phenotypes indicates known trends in historical heirloom data including the north to south pattern of geographical origin and unique phenotypes represented in Southwestern US germplasm. Ongoing efforts include an automated imaging pipeline to collect area, shape, and color measurements on ears, cobs, and kernels, and prediction of kernel composition traits using near infrared spectroscopy. Ultimately, this project will produce a comprehensive, public data set that will fully describe heirloom populations and their potential use for novel culinary traits.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l28-predicting-biomass-in-drought-stressed-young-maize-plants-with-machine-learning-using-genomic-and-phenomic-data" class="level2">
+<h2 class="anchored" data-anchor-id="l28-predicting-biomass-in-drought-stressed-young-maize-plants-with-machine-learning-using-genomic-and-phenomic-data">L28: Predicting biomass in drought-stressed young maize plants with machine learning using genomic and phenomic data</h2>
+<p><font color="#996633">Quantitative Genetics &amp; Breeding</font> <a href="mailto:domagoj.simic@poljinos.hr">Domagoj Simic</a> (Research Scientist)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-55-contents" aria-controls="callout-55" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-55" class="callout-55-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:vlatko.galic@poljinos.hr">Galić, Vlatko</a><sup>1</sup><br><a href="mailto:lovro.vukadinovic@poljinos.hr">Vukadinović, Lovro</a><sup>1</sup><br><a href="mailto:antun.jambrovic@poljinos.hr">Jambrović, Antun</a><sup>1</sup><br><a href="mailto:domagoj.simic@poljinos.hr">Šimić, Domagoj</a><sup>1</sup><br></p>
+<p><sup>1</sup>Agricultural Institute Osijek; Juzno predgradje 17; HR-31000 Osijek, Croatia<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-56-contents" aria-controls="callout-56" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-56" class="callout-56-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Fresh and dry weight are important agronomic traits in young maize plants, which vary greatly with age, genotype, and growing conditions. Fresh weight (FW) includes all water, while dry weight (DW) is the solid plant matter (biomass) left after the removing of water. However, biomass prediction is still challenging, although there are a number of genomic and phenomic methods that generate large amounts of data. This study used phenomic data from chlorophyll fluorescence (ChlF) and hyperspectral imaging collected from a diversity panel of maize inbreds grown in a controlled environment and challenged by progressive drought stress. All inbreds were genotyped using the Illumina MaizeSNP50 array. The objective of this study was to compare predictions of FW and DW made by four machine learning (ML) algorithms based on a set of genomic and phenomic data in maize seedlings. Analysis was conducted starting with the loading of the dataset and selection of multiple measurement domains. The feature set included Q values from population structure analysis, spectral measurements from the ultraviolet-visible and near-infrared regions, ChlF parameters, calculated spectral indices, and several categorical variables. All data underwent standardization before model training. The four ML models were Partial Least Squares Regression (PLSR), Extreme Gradient Boosting (XGBoost), Random Forest, and a Convolutional Neural Network with a Multi-Layer Perceptron (CNN-MLP). CNN-MLP, the deep learning approach, achieved the highest accuracy, where R2 (Root Mean Squared Error – RMSE) was 0.81 (66.72 g) for FW and 0.74 (0.49 g) for DW. PLSR ranked second, where R2 (RMSE) was 0.64 (128.30 g) for FW and 0.61 (0.73 g) for DW. The integration of ChlF and hyperspectral data in combination with genomic data is recommended for predicting biomass in maize seedlings under drought-stressed environments. It could help improve management practices and contribute to the advancement of maize breeding and selection.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="transposons-epigenetics" class="level1">
+<h1>Transposons &amp; Epigenetics</h1>
+<section id="l29-characterization-of-two-epigenetically-regulated-abi3-vp1-transcription-factors-in-zea-mays-maize" class="level2">
+<h2 class="anchored" data-anchor-id="l29-characterization-of-two-epigenetically-regulated-abi3-vp1-transcription-factors-in-zea-mays-maize">L29: Characterization of two epigenetically regulated ABI3-VP1 transcription factors in Zea mays (maize)</h2>
+<p><font color="#0066CC">Transposons &amp; Epigenetics </font> <a href="mailto:blairca3@msu.edu">Carly Blair</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-57-contents" aria-controls="callout-57" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-57" class="callout-57-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:blairca3@msu.edu">Blair, Carly J</a><sup>1</sup><br><a href="mailto:baiochir@msu.edu">Riboldi, Lucas B</a><sup>1</sup><br><a href="mailto:madzimat@msu.edu">Madzima, Thelma F</a><sup>1</sup><br></p>
+<p><sup>1</sup>Michigan State University; East Lansing, Michigan, USA 48824<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-58-contents" aria-controls="callout-58" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-58" class="callout-58-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Transcriptional regulation via epigenetic mechanisms is critical for proper plant function and development. In plants, the RNA-directed DNA methylation (RdDM) pathway has been shown to maintain genomic integrity by transcriptionally silencing transposable elements (TEs) and genes via cytosine methylation. In maize, mediator of paramutation 1 (mop1) is a RNA-dependent RNA polymerase that is crucial for RdDM pathway function, and mop1-1 mutant plants are deficient in cytosine methylation and transcriptional gene silencing. Large-scale disruption of the RdDM pathway results in a variety of developmental defects, and baseline dysregulation of several genes including two transcription factor (TF) paralogs designated transcriptional gene silencing 2 (tgs2) a and b. These proteins belong to the ABI3-VP1 TF family; characterized by involvement in seed maturation and response to the plant hormone abscisic acid (ABA). However, tgs2a and tgs2b show differential regulation in mop1-1 plants without exogenous ABA treatments. To characterize the functions of these two proximal genes, upstream regulators and predicted targets were identified using the Maize Gene Regulatory Network. Most of the resulting regulators and targets were unique between the two TFs, suggesting these genes have evolved specialized tissue-specific function. This idea is additionally supported by preliminary locus-specific bisulfite sequencing data showing differential RdDM-dependent methylation patterns at the transcriptional start sites of both TFs. To further characterize the function of these TFs, we identified UniformMu insertion stocks with insertions in 5’ untranslated region of tgs2b. Preliminary analyses suggest that tgs2b plays a role in early developmental patterning and organ formation. Notably, tgs2b mutants exhibit abnormal elongation of the ear shank after pollination, particularly in the internode regions, while overall ear size remains unaffected. Characterization of tgs2a and tgs2b is expected to provide new insights into how epigenetic regulation of TFs contributes to developmental gene networks in maize.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l30-detecting-activity-of-hopscotch-family-long-terminal-repeat-retrotransposons-in-zea-mays" class="level2">
+<h2 class="anchored" data-anchor-id="l30-detecting-activity-of-hopscotch-family-long-terminal-repeat-retrotransposons-in-zea-mays">L30: Detecting activity of hopscotch family long terminal repeat retrotransposons in Zea mays</h2>
+<p><font color="#0066CC">Transposons &amp; Epigenetics </font> <a href="mailto:gardnerp1@montclair.edu">Patrick Gardner</a> (Graduate Student)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-59-contents" aria-controls="callout-59" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Author List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-59" class="callout-59-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="mailto:gardnerp1@montclair.edu">Gardner, Patrick</a><sup>1</sup><br><a href="mailto:taylor.isles@outlook.com">Isles, Taylor</a><sup>2</sup><br><a href="mailto:meixiazhao@ufl.edu">Zhao, Meixia</a><sup>3</sup><br><a href="mailto:duc@montclair.edu">Du, Charles</a><sup>1</sup><br></p>
+<p><sup>1</sup>Department of Biology; Montclair State University; Montclair, NJ, US 07043<br><sup>2</sup>Department of Biological Sciences; University of Missouri; Columbia, MO, US 65211<br><sup>3</sup>Microbiology &amp; Cell Science Department; University of Florida; Gainesville, FL, US 32611<br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-60-contents" aria-controls="callout-60" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-60" class="callout-60-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Long terminal repeat retrotransposons (LTRs) are a group of class 1 transposable elements that copy and reintegrate themselves throughout a genome, proliferating over time. This has resulted in LTRs composing a significant proportion of many eukaryotic genomes, from roughly 8% in humans, to as much as 75% in maize. The majority of LTR copies are degraded, from a combination of improper replication due to reverse-transcriptase’s lack of proofreading functionality, and mutations over many cell replication cycles. Resultingly, most LTRs in a given genome are nonfunctional, to the extent that some families of LTR retrotransposon lack any fully viable copies, and as a result no longer actively propagate. Previous research into retrotransposon-mediated mutations in maize pollen has suggested that the Hopscotch family of LTRs are still active. Additional examination, using whole genome sequencing data from the Du lab at Montclair State University, and the Zhao lab at the University of Florida, strengthens this suggestion, further indicating continued activity of Hopscotch LTRs in maize. This analysis involved mapping sets of paired-end reads to a conserved reference Hopscotch LTR sequence, and the two inbred line reference genomes each individual sequenced plant was a cross of, generating lists of Hopscotch insertion loci in those individuals. These lists were filtered against an index of prior Hopscotch insertion loci in each reference genome, assembled by mapping the reference Hopscotch sequence against both reference genomes at low coverage and moderate identity, limiting the list of mapped insertion loci to putatively novel sites. This process has yielded multiple potentially novel Hopscotch insertions, and while analysis is ongoing, these insertion loci may be validated as novel by performing the same analysis on the sequencing data of both parental plants. Any insertion locus not represented in either parental genome can reasonably be inferred to have occurred in the intervening generation.</p>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><span style="color:firebrick">Produced by</span> <a href="https://www.danielkick.com"><span style="color:firebrick">Daniel Kick, PhD</span></a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
