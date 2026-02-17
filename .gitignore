@@ -12,6 +12,9 @@ wheels/
 /.quarto/
 **/*.quarto_ipynb
 
+# OS files
+.DS_Store
+
 # assets
 data/*.xlsx
 
