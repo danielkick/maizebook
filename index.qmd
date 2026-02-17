@@ -38,8 +38,14 @@ Key fixes
     - [ ] Confirm there are no instances of `eval=FALSE` in the qmds
     - [ ] Confirm there are no instances of `FIXME` or `TODO` in the qmds
 
+
 Optional Fixes
 - [ ] fix dark mode 
+- [ ] remove deprecated index page generation
+  - [ ] `'generated/posters/index.qmd'`
+  - [ ] `'generated/talks/index.qmd'`
+
+
 
 :::
 
