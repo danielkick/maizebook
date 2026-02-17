@@ -2,11 +2,11 @@
 title: "Schedule of Events"
 ---
 
-::: {.callout-note appearance="simple" icon="false"}
+<!-- ::: {.callout-note appearance="simple" icon="false"}
 ## Note:
 
 Talks will be held in the Grand Ballroom. Posters will be displayed in the Midway West.
-:::
+::: -->
 
 ```{r echo=FALSE, eval=FALSE}
 #| include: false
@@ -73,7 +73,17 @@ k <- function(x){
 
 
 
-## Wednesday, March 5, 2025 
+## [Wednesday, February 25, 2026](./program_schedule.html#friday-february-25-2026)
+
+## [Thursday, February 26, 2026](./program_schedule.html#friday-february-26-2026)
+
+## [Friday, February 27, 2026](./program_schedule.html#friday-february-27-2026)
+
+## [Saturday, February 28, 2026](./program_schedule.html#saturday-february-28-2026)
+
+## [Sunday, March 1, 2026](./program_schedule.html#sunday-march-1-2026)
+
+<!-- ## Wednesday, March 5, 2025 
 
 ### Optional Pre-Conference Workshops (1/2)
 
@@ -300,7 +310,7 @@ subset_M(filter(
   Name != "OPTIONAL POST-CONFERENCE EVENT",
   lubridate::hm(StartTime) > lubridate::hm("12:00")
   )) |> k()
-```
+``` -->
 
 
 

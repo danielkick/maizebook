@@ -1,6 +1,6 @@
 ---
 title: "Meet the Speakers"
-subtitle: "[Official Page](https://www.mgcmeeting.com/#:~:text=Meet the,Speakers)"
+subtitle: "[Official Page Link](https://www.mgcmeeting.com/#:~:text=Meet the,Speakers)"
 ---
 
 ::: {style="text-align: center"}
