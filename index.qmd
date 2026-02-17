@@ -41,9 +41,9 @@ Key fixes
 
 Optional Fixes
 - [ ] fix dark mode 
-- [ ] remove deprecated index page generation
-  - [ ] `'generated/posters/index.qmd'`
-  - [ ] `'generated/talks/index.qmd'`
+- [x] remove deprecated index page generation
+  - [x] `'generated/posters/index.qmd'`
+  - [x] `'generated/talks/index.qmd'`
 
 
 
