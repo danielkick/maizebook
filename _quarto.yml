@@ -12,33 +12,33 @@ website:
   title: ""
   navbar:
     left:
-      - text: Home 🌽
+      - text: ⚠ Home 🌽
         href: index.qmd
+      - text: ⚠ Schedule
+        href: program_schedule.qmd
+      - text: Talks
+        href: generated_talks.qmd
       - text: Bios
         href: program_keynote_speakers.qmd
-      - text: Schedule
-        href: program_schedule.qmd
-      - text: Talk Abstracts
-        href: generated_talks.qmd
-      - text: Keynote Abstracts
+      - text: Keynotes
         href: generated_keynote_list.qmd
-      - text: Lightning Abstracts
+      - text: Lightning
         href: generated_lightning_list.qmd        
-      - text: Poster Lookup
-        href: program_poster_list.qmd
-      - text: Poster Abstracts
+      - text: Posters
         href: generated_poster_list.qmd
+      - text: ⚠ Poster Lookup
+        href: program_poster_list.qmd        
         
     right:
-      - text: General Information
-        href: program_general_information.qmd
-      # - text: Awards
-      #   href: program_awards.qmd
+      # - text: General Information
+      #   href: program_general_information.qmd
+      - text: ⚠ Awards
+        href: program_awards.qmd
       - text: Authors & Attendees
         href: program_authors_attendees.qmd
       - text: Sponsors
-        href: https://www.mgcmeeting.com/#:~:text=The maize community,sponsors
-        # href: program_sponsors.qmd
+        # href: https://www.mgcmeeting.com/#:~:text=The maize community,sponsors
+        href: program_sponsors.qmd
       # - text: Feedback
       #   href: https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1lXYyUuGj_6GQWpXM3yKE3RaYDqQz_gRBhLIhHWH3ny0%2Fedit&data=05%7C02%7CDaniel.Kick%40usda.gov%7Cad9985485bed48c00d3908dd5a768192%7Ced5b36e701ee4ebc867ee03cfa0d4697%7C1%7C0%7C638766187205203682%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=lEDQnFn0Zo7pavj7w%2B52WDe7AkNhPGHZ14sATQu8ydE%3D&reserved=0
 
