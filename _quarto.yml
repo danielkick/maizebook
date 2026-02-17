@@ -49,8 +49,8 @@ website:
 format:
   html:
     theme: 
-       light: [litera, theme_light_custom.scss]
-       dark:  [litera, theme_dark_custom.scss]
+      light: [litera, theme_light_custom.scss]
+      dark:  [litera, theme_dark_custom.scss]
     code-link: true
     code-fold: false
     code-block-bg: "lightgray"
