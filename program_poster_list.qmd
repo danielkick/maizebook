@@ -2,6 +2,12 @@
 title: "Presentations and Posters"
 ---
 
+::: {.callout-note appearance="simple" icon="false"}
+## ⚠ Update pending
+
+Material on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details.
+:::
+
 ```{r}
 #| include: false
 # note: it seems that the best way to get this to work with my computer's permissions is to render this one page on windows and then render the rest. 

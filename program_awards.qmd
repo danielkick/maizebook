@@ -2,6 +2,12 @@
 title: "From the Maize Genetics Cooperation Board of Directors:"
 ---
 
+::: {.callout-note appearance="simple" icon="false"}
+## ⚠ Update pending
+
+Material on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details.
+:::
+
 ## Maize Genetics Awards:
 <!-- 
 ### **The 2025 MGC Cooperator Awardees**
