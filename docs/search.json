@@ -4,7 +4,7 @@
     "href": "program_poster_list.html",
     "title": "Presentations and Posters",
     "section": "",
-    "text": "NoteNote:\n\n\n\nClick on the poster number in the Link column below to jump to the abstract."
+    "text": "Note⚠ Update pending\n\n\n\nMaterial on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details."
   },
   {
     "objectID": "program_poster_list.html#evolution-and-population-genetics",
@@ -2552,7 +2552,7 @@
     "href": "index.html",
     "title": "Maize Genetics Meeting",
     "section": "",
-    "text": "CautionPending Fixes\n\n\n\n\n\n\nGet pdf with schedule\nNeed pdf with schedule -&gt; schedule.csv\nExtract award information\n\nKey fixes\n\n\n⚠ Home 🌽 index.qmd\n\nLink to pdf abstract book\nLink to pdf schedule\nDay by day schedule summary\nVerify links in headings work\n\n\n\n⚠ Schedule program_schedule.qmd\n\nDay by day schedule summary\n\n\n\n⚠ Poster Lookup program_poster_list.qmd\n\nAssumes generated/schedule_links.csv\nAssumes generated/schedule.csv\ntest subset_M()\n\n\n\n⚠ Awards program_awards.qmd\n\nNeed award info.\n\n\n\n_quarto.yml\n\nRemove ⚠ from page links\nUpdated feedback link?\n\n\n\nFinal qmd checks\n\nConfirm there are no instances of eval=FALSE in the qmds\nConfirm there are no instances of FIXME or TODO in the qmds\n\n\n\nOptional Fixes - [ ] fix dark mode - [x] remove deprecated index page generation - [x] 'generated/posters/index.qmd' - [x] 'generated/talks/index.qmd'"
+    "text": "Note⚠ Update pending\n\n\n\nMaterial on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details."
   },
   {
     "objectID": "index.html#wednesday-february-25-2026",
@@ -2590,6 +2590,20 @@
     "text": "Sunday, March 1, 2026"
   },
   {
+    "objectID": "program_awards.html",
+    "href": "program_awards.html",
+    "title": "From the Maize Genetics Cooperation Board of Directors:",
+    "section": "",
+    "text": "Note⚠ Update pending\n\n\n\nMaterial on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details."
+  },
+  {
+    "objectID": "program_awards.html#maize-genetics-awards",
+    "href": "program_awards.html#maize-genetics-awards",
+    "title": "From the Maize Genetics Cooperation Board of Directors:",
+    "section": "Maize Genetics Awards:",
+    "text": "Maize Genetics Awards:"
+  },
+  {
     "objectID": "program_keynote_speakers.html#eileen-furlong",
     "href": "program_keynote_speakers.html#eileen-furlong",
     "title": "Meet the Speakers",
@@ -2623,6 +2637,20 @@
     "title": "Meet the Speakers",
     "section": "Dr. Joseph Ecker",
     "text": "Dr. Joseph Ecker\nThe McClintock Prize Awardee"
+  },
+  {
+    "objectID": "program_schedule.html",
+    "href": "program_schedule.html",
+    "title": "Schedule of Events",
+    "section": "",
+    "text": "Note⚠ Update pending\n\n\n\nMaterial on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details."
+  },
+  {
+    "objectID": "program_schedule.html#wednesday-february-25-2026",
+    "href": "program_schedule.html#wednesday-february-25-2026",
+    "title": "Schedule of Events",
+    "section": "Wednesday, February 25, 2026",
+    "text": "Wednesday, February 25, 2026"
   },
   {
     "objectID": "program_schedule.html#thursday-february-26-2026",
