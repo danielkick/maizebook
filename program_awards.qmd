@@ -1,103 +1,47 @@
 ---
-title: "From the Maize Genetics Cooperation Board of Directors:"
+title: "Maize Genetics Awards:"
 ---
 
-::: {.callout-note appearance="simple" icon="false"}
-## ⚠ Update pending
+### 2026 Maize Genetics Cooperation Community Awards
 
-Material on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details.
-:::
+The MGC Community Awards will be revealed in the awards ceremony at the meeting, and this page will be updated following the conclusion of that ceremony.
+Stay tuned!
 
-## Maize Genetics Awards:
-<!-- 
-### **The 2025 MGC Cooperator Awardees**
+### The Barbara McClintock Prize for Plant Genetics and Genome Studies
 
--   **Don McCarty**, University of Florida
+This award has been created to memorialize the unequalled contributions of Dr. McClintock through providing recognition to the most outstanding plant geneticists of the present era. In memory of the many contributions of Dr. McClintock, this Prize will be awarded each year to one or more of the most creative minds and productive scientists in the study of plant genome structure, function and evolution, including the analysis of gene regulation and epigenetics. 
 
--   **Karen Koch**, University of Florida
+The 2026 Barbara McClintock Prize for Plant Genetics and Genome Studies has been awarded to Dr. Joseph Ecker of the Salk Institute for Biological Studies who will present a McClintock Prize Address on Thursday, February 26, 8:40 pm (See Page 35). 
 
--   **Frank Hochholdinger**, University of Bonn
+(See https://maizegdb.org/mgc/awards/ for details about each award) 
 
--   **Caroline Macron**, University of Bonn
-
-### The 2025 MGC Leadership Awardee
-
--   **Shawn Kaeppler**, University of Wisconsin
-
-### The 2025 M. Rhoades Early Career Awardee
-
--   **Erin Sparks,** University of Missouri
-
-### The 2025 L. Stadler Mid-Career Awardee
-
--   **Sherry Flint-Garcia**, USDA Agricultural Research Service
-
-### The 2025 R. Emerson Lifetime Awardees
-
--   **Brian Larkins,** University of Nebraska, passed away on January 19^th^.
-
--   **Zac Cande,** University of California Berkley, now retired
-
-## The Barbara McClintock Prize for Plant Genetics and Genome Studies
-
-![](data/assets/FromTheMGCBoard/McClintock.png){fig-align="center" width="111"}
-
-This award has been created to memorialize the unequalled contributions of Dr. McClintock through providing recognition to the most outstanding plant geneticists of the present era. In memory of the many contributions of Dr. McClintock, this Prize will be awarded each year to one or more of the most creative minds and productive scientists in the study of plant genome structure, function and evolution, including the analysis of gene regulation and epigenetics.
-
-![](data/assets/FromTheMGCBoard/EdwardBuckler.png){fig-align="center" width="96"}
-
-The **2025** Barbara McClintock Prize for Plant Genetics and Genome Studies has been awarded to Dr. Edward S. Buckler IV of United States Department of Agriculture - Agricultural Research Service (USDA-ARS) who will present a McClintock Prize Address on Friday, March 7, 8:20 pm CDT. 
-
-(See <https://maizegdb.org/mgc/awards/> for details about each award)
+In addition, the maize genetics community participates in the ROOT & SHOOT RCN project (DBI- 2134321). The ROOT & SHOOT group of seven plant science organizations was awarded a five-year grant through the NSF’s LEAPS [LEAding cultural change through Professional Societies (LEAPS) of Biology] program. This Research Coordination Network (RCN) includes American Phytopathological Society (APS), American Society of Plant Biologists (ASPB), American Society of Plant Taxonomists (ASPT), Botanical Society of America (BSA), International Society for Molecular Plant Microbe Interactions (IS-MPMI), Maize Genetics Cooperation (MGC), North American Arabidopsis Steering Committee (NAASC), as well as other organizations that serve marginalized scientists.
 
 
-## NSF-funded support for maize genetics:
+### The 2026 Attendance/Travel Awards Program
 
-![](data/assets/FromTheMGCBoard/NSF.jpg){fig-align="center" width="100"}
+The maize community offers several attendance and travel awards to encourage attendance at the Annual Maize Genetics Meeting (MGM). There are several programs that provide travel/attendance awards; e.g. Disciplinary Breadth (DB), Expanding Institutional Access (EIA), and a general program to support first time attendees. The Maize Genetics Meeting also partners with the ROOT & SHOOT (R&S) Research Coordination Network to allow two first-time attendees to attend the meeting. 
 
-The National Science Foundation is supporting the 66th-68th Annual Maize Genetics
+Here are the awardees for 2026; please congratulate these scientists and welcome them to our famously hospitable conference! 
 
-Meetings with a grant awarded on November 14th, 2023 (IOS-2329928). This conference
+**Undergraduate Student**
 
-grant will support, Enhancing Institutional Access (EIA), and Disciplinary Breadth (DB) award programs. These programs broaden the participation of researchers with an interest in exploring research possibilities in maize genetics by providing funding to attend the meeting. These travel participants are paired with a team of mentors that included an early career scientist, an academic PI, and an industry or government scientist that engage with the awardees formally and informally before, during, and after the meeting.  Throughout the meeting participants receive professional development training, and opportunities to engage directly with leaders in the field through organized meals with invited speakers. These experiences are vital catalysts for the careers of aspiring student and postdoc trainees. We appreciate the support from the National Science Foundation for this initiative and are excited about the potential for the grant to substantially advance and transform our community.
+- Abigail McCarthy, Ohio State University Poster # 71
 
-## The 2025 Attendance/Travel Awards Program
+**Graduate Student**
 
-The maize community offers several attendance and travel awards to encourage attendance at the Annual Maize Genetics Meeting (MGM). There are several programs that provide travel/attendance awards; e.g. increasing Disciplinary Breadth (DB), Expanding Institutional Access (EIA), and a general program to support first time attendees. Here are the awardees for 2025; please congratulate these scientists and welcome them to our famously hospitable conference!
+- Jiyun Go, Chungnam National University Poster # 110
+- Maria Schoen, IPK Gatersleben Poster # 116
+- Tiago Corrêa, University of São Paulo Poster # 184
+- Mythri Bikkasani, Punjab Agricultural University Poster # 250
+- Ana Laura Marassi Maronezi, University of São Paulo Poster # 183
+- Elliot Braun, Michigan State University Poster # 158
+- Libia Gomez-Trejo, University of Nebraska - Lincoln Poster # 207
 
-| Undergraduate Student                                  |
-|--------------------------------------------------------|
-| Daisy Montero Ibarra, University of California - Davis |
-| Maria Ximena Anleu Gil, UCD, Postdoctoral Mentor       |
+### Broadening International Participation Awards
 
-| Graduate Student |   |
-|------------------------------------|------------------------------------|
-| Mariana Chavez, Montclair State University | Poster \# 22 |
-| Enameguono Olomuko, Purdue University | Poster \# 34 |
-| Sara Hafiza, Florida State University | Short Talk \[T23\] |
-| ➥ Hank Bass, FSU, Faculty Mentor | Poster \# 87 |
-| Sebastian Mueller, Oregon State University | Poster \# 158; Lightning Talk \[L5\] |
-| Edward Fernandez, North Dakota State University | Poster \# 174 |
-| Hanna Pil, North Carolina State University | Poster \# 202; Lightning Talk \[L8\] |
-| Vitor Sagae, University of Florida | Poster \# 238 |
-| Shreejana KC, University of Delaware | Poster \# 256 |
+The 2026 Broadening International Participation Award program seeks to promote international attendance for researchers from countries that are historically under-represented at the Maize Meeting. This 2026 award program seeks to enrich the maize community and broaden the opportunities to learn about maize genetics by connecting with scientists in the maize genetics community, exploring potential collaborations, and developing career contacts. BIP awardees receive waived registration to the recorded talks and sessions. 
 
-| Faculty |   |
-|------------------------------------|------------------------------------|
-| Gwonjin Lee, West Virginia State University | Poster \# 15; Lightning Talk \[L28\] |
-| Beth Thompson, East Carolina University |  |
-| Veronica Justen, University of Wisc. - River Falls| Poster \# 282 |
+**Graduate Student **
 
-The Maize Genetics Meeting is supported in part by IOS Award #2329928 from the National Science Foundation, Plant Genome Research Program.
-
-![](data/assets/FromTheMGCBoard/NSF.jpg){fig-align="center" width="100"}
-
-## Broadening International Participation Awards
-
-The 2025 Broadening International Participation Award program seeks to promote international attendance for researchers from countries that are historically under-represented at the Maize Meeting. This 2025 award program seeks to enrich the maize community and broaden the opportunities to learn about maize genetics by connecting with scientists in the maize genetics community, exploring potential collaborations, and developing career contacts. BIP awardees receive waived registration to the recorded talks and sessions. 
-
-|  |  |
-|--|--|
-| Research Scientists | Elena Andriunaite |
-| Postdocs | Muhammad Zafar Iqbal |
-| Graduate Students | Md Nazmul Hossain | -->
+- Memis Bilgici
