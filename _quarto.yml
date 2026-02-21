@@ -12,9 +12,9 @@ website:
   title: ""
   navbar:
     left:
-      - text: ⚠ Home 🌽
+      - text: Home 🌽
         href: index.qmd
-      - text: ⚠ Schedule
+      - text: Schedule
         href: program_schedule.qmd
       - text: Talks
         href: generated_talks.qmd
@@ -26,13 +26,13 @@ website:
         href: generated_lightning_list.qmd        
       - text: Posters
         href: generated_poster_list.qmd
-      - text: ⚠ Poster Lookup
+      - text: Poster Lookup
         href: program_poster_list.qmd        
         
     right:
-      # - text: General Information
-      #   href: program_general_information.qmd
-      - text: ⚠ Awards
+      - text: Info.
+        href: program_general_information.qmd
+      - text: Awards
         href: program_awards.qmd
       - text: Authors & Attendees
         href: program_authors_attendees.qmd

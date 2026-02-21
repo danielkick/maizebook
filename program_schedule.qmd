@@ -3,18 +3,20 @@ title: "Schedule of Events"
 ---
 
 ::: {.callout-note appearance="simple" icon="false"}
-## ⚠ Update pending
-
-Material on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details.
-:::
-
-<!-- ::: {.callout-note appearance="simple" icon="false"}
 ## Note:
 
-Talks will be held in the Grand Ballroom. Posters will be displayed in the Midway West.
-::: -->
+If you note a discrepancy between this page and the [2026Program.pdf](https://documents.maizegdb.org/maizemeeting/abstracts/2026Program.pdf) then the pdf is correct. Please report any errors so we can fix them.
+:::
 
-```{r echo=FALSE, eval=FALSE}
+::: {.callout-tip collapse="true" icon="false"}
+## Schedule at a Glance
+
+![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/4ab29ab1-48b0-430d-8960-78c4884c8bdd/Maize+2026+Schedule+at+a+Glance.png)
+[Official Page Link](https://www.mgcmeeting.com/schedule-at-a-glance)
+
+:::
+
+```{r echo=FALSE}
 #| include: false
 
 
@@ -26,10 +28,13 @@ M <- read.csv('./generated/schedule.csv') # Times are mangled in generated
 # M <- readxl::read_xlsx('./data/MGM2025_manual_schedule.xlsx')
 M_links <- read.csv('./generated/schedule_links.csv')
 
-M$StartTime <- strftime(ymd_hms(M$StartTime), '%H:%M', tz = "UTC")
-M$EndTime   <- strftime(ymd_hms(M$EndTime), '%H:%M', tz = "UTC")
+# M$StartTime <- strftime(ymd_hms(M$StartTime), '%H:%M', tz = "UTC")
+# M$EndTime   <- strftime(ymd_hms(M$EndTime), '%H:%M', tz = "UTC")
+M$StartTime <- format(as.POSIXct(M$StartTime, format="%H:%M:%S"), "%H:%M")
+M$EndTime   <- format(as.POSIXct(M$EndTime, format="%H:%M:%S"), "%H:%M")
 
-M[(M$StartTime == M$EndTime), 'EndTime'] <- ''
+
+# M[(M$StartTime == M$EndTime), 'EndTime'] <- ''
 
 
 subset_M <- function(x = "Wednesday, February 28, 2024"){
@@ -81,242 +86,167 @@ k <- function(x){
 
 ## [Wednesday, February 25, 2026](./program_schedule.html#friday-february-25-2026)
 
+### Optional Pre-Conference Activities  
+
+```{r echo=FALSE}
+subset_M(filter(
+  M,
+  Day == "2026-02-25",
+  )) |> k()
+```
+
 ## [Thursday, February 26, 2026](./program_schedule.html#friday-february-26-2026)
 
-## [Friday, February 27, 2026](./program_schedule.html#friday-february-27-2026)
+### Optional Pre-Conference Activities  
 
-## [Saturday, February 28, 2026](./program_schedule.html#saturday-february-28-2026)
-
-## [Sunday, March 1, 2026](./program_schedule.html#sunday-march-1-2026)
-
-<!-- ## Wednesday, March 5, 2025 
-
-### Optional Pre-Conference Workshops (1/2)
-
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 subset_M(filter(
-  M, 
-  Day == "Wednesday, March 5, 2025", 
-  Name != "OPTIONAL PRE-CONFERENCE WORKSHOPS"
+  M,
+  Day == "2026-02-26",
+  StartTime >= "00:00:00",
+  EndTime <= "19:00:00"
   )) |> k()
 ```
 
-## Thursday, March 6, 2025  
-
-### Optional Pre-Conference Workshops (2/2)
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Thursday, March 6, 2025", 
-  Name != "OPTIONAL PRE-CONFERENCE WORKSHOPS"
-  )) |> k()
-```
-
-
-### Session 1 – Welcome / Keynote / Gene Regulation
-
-**Sherry Flint-Garcia**
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Thursday, March 6, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("19:00")
-  )) |> k()
-```
-
-
-
-## Friday, March 7, 2025    
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Friday, March 7, 2025", 
-  lubridate::hm(StartTime) < lubridate::hm("8:15")
-  )) |> k()
-
-```
-
-
-### Session 2 – Modeling Corn
-
-**Hank Bass**
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Friday, March 7, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("8:15"),
-  lubridate::hm(StartTime) < lubridate::hm("10:45")
-  )) |> k()
-```
-
-
-### Session 3 – Education, Community, & Outreach
-
-**Brandi Sigmon**
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Friday, March 7, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("10:45"),
-  lubridate::hm(StartTime) < lubridate::hm("12:15")
-  )) |> k()
-```
-
-### Lunch and Poster Session
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Friday, March 7, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("12:15"),
-  lubridate::hm(StartTime) < lubridate::hm("16:40")
-  )) |> k()
-```
-
-### Session 4 – Maize Under Stress
-
-**Melissa Draves**
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Friday, March 7, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("16:40"),
-  lubridate::hm(StartTime) < lubridate::hm("19:00")
-  )) |> k()
-```
-
-
-
-### Session 5 – Awards
-
-**Andrea Eveland**
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Friday, March 7, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("19:00")
-  )) |> k()
-```
-
-
-
-## Saturday, March 8, 2025
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Saturday, March 8, 2025", 
-  lubridate::hm(StartTime) < lubridate::hm("8:15")
-  )) |> k()
-```
-
-
-### Session 6 – Roots & Nutrient Uptake / Keynote
-
-**Rubén Rellán Álvarez**
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Saturday, March 8, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("8:15"),
-  lubridate::hm(StartTime) < lubridate::hm("10:30")
-  )) |> k()
-```
-
-
-### Session 7 – Keynote / Cell Division & Meristems
-
-**Sarah Jensen**
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Saturday, March 8, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("10:30"),
-  lubridate::hm(StartTime) < lubridate::hm("12:30")
-  )) |> k()
-```
-
-
-### Lunch, Poster Session, & Community Session
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Saturday, March 8, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("12:30"),
-  lubridate::hm(StartTime) < lubridate::hm("19:00")
-  )) |> k()
-```
-
-
-### Session 8 – Reproduction / Keynote
-
-**Cinta Romay**
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Saturday, March 8, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("19:00")
-  )) |> k()
-```
-
-## Sunday, March 9, 2025
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Sunday, March 9, 2025", 
-  lubridate::hm(StartTime) < lubridate::hm("8:00")
-  )) |> k()
-
-```
-
-
-### Session 9 – Epigenetics
-
-**Katie Murphy**
-
-```{r echo=FALSE, eval=FALSE}
-subset_M(filter(
-  M, 
-  Day ==  "Sunday, March 9, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("8:25"),
-  lubridate::hm(StartTime) < lubridate::hm("10:20")
-  )) |> k()
-```
-
-### Session 10 - Building a Stronger Maize Plant
+### Session 1 - Welcome / Keynote / Award
 
 **Frank Hochholdinger**
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 subset_M(filter(
-  M, 
-  Day ==  "Sunday, March 9, 2025", 
-  lubridate::hm(StartTime) >= lubridate::hm("10:20"),
-  lubridate::hm(StartTime) < lubridate::hm("12:00")
+  M,
+  Day == "2026-02-26",
+  StartTime >= "19:00:00",
   )) |> k()
 ```
 
 
-### Optional Post-Conference Workshop
+## [Friday, February 27, 2026](./program_schedule.html#friday-february-27-2026)
 
-```{r echo=FALSE, eval=FALSE}
+### Session 2 - Cell Division And Meristems
+
+**Erin Sparks**
+
+```{r echo=FALSE}
 subset_M(filter(
-  M, 
-  Day ==  "Sunday, March 9, 2025", 
-  Name != "OPTIONAL POST-CONFERENCE EVENT",
-  lubridate::hm(StartTime) > lubridate::hm("12:00")
+  M,
+  Day == "2026-02-27",
+  StartTime >= "00:00:00",
+  StartTime <= "10:25:00"
   )) |> k()
-``` -->
+```
 
+### Session 3 - Lightning Talks / Keynote
 
+**Hank Bass**
 
+```{r echo=FALSE}
+subset_M(filter(
+  M,
+  Day == "2026-02-27",
+  StartTime >= "10:26:00",
+  StartTime < "16:00:00"
+  )) |> k()
+```
+
+### Session 4 - Genome Diversity
+
+**Michael Muszynski**
+
+```{r echo=FALSE}
+subset_M(filter(
+  M,
+  Day == "2026-02-27",
+  StartTime >= "16:00:00",
+  StartTime < "19:00:00"
+  )) |> k()
+```
+
+### Session 5 - Keynote / Awards
+
+**Andrea Eveland**
+
+```{r echo=FALSE}
+subset_M(filter(
+  M,
+  Day == "2026-02-27",
+  StartTime >= "19:00:00",
+  )) |> k()
+```
+
+## [Saturday, February 28, 2026](./program_schedule.html#saturday-february-28-2026)
+
+### Session 6 - Keynote / Roots And Kernels
+
+**Sylvia Morais de Sousa**
+
+```{r echo=FALSE}
+subset_M(filter(
+  M,
+  Day == "2026-02-28",
+  StartTime >= "00:00:00",
+  StartTime < "10:35:00"
+  )) |> k()
+```
+
+### Session 7 - Epigenetics / Keynote
+
+**Cinta Romay**
+
+```{r echo=FALSE}
+subset_M(filter(
+  M,
+  Day == "2026-02-28",
+  StartTime >= "10:35:00",
+  StartTime < "16:00:00"
+  )) |> k()
+```
+
+### Session 8 - Leaves
+
+**Oyenike Adeyemo**
+
+```{r echo=FALSE}
+subset_M(filter(
+  M,
+  Day == "2026-02-28",
+  StartTime >= "16:00:00",
+  )) |> k()
+```
+
+## [Sunday, March 1, 2026](./program_schedule.html#sunday-march-1-2026)
+
+### Session 9 - Manipulating Maize
+
+**John Fowler**
+
+```{r echo=FALSE}
+subset_M(filter(
+  M,
+  Day == "2026-03-01",
+  EndTime <= "10:40:00"
+  )) |> k()
+```
+
+### Session 10 - Resilience
+
+**Tony Studer**
+
+```{r echo=FALSE}
+subset_M(filter(
+  M,
+  Day == "2026-03-01",
+  StartTime >= "10:40:00",
+  EndTime <= "11:59:00"
+  )) |> k()
+```
+
+### Post Conference
+
+```{r echo=FALSE}
+subset_M(filter(
+  M,
+  Day == "2026-03-01",
+  EndTime > "11:59:00"
+  )) |> k()
+```

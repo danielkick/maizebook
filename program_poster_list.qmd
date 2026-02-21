@@ -2,12 +2,6 @@
 title: "Presentations and Posters"
 ---
 
-::: {.callout-note appearance="simple" icon="false"}
-## ⚠ Update pending
-
-Material on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details.
-:::
-
 ```{r}
 #| include: false
 # note: it seems that the best way to get this to work with my computer's permissions is to render this one page on windows and then render the rest. 
@@ -19,7 +13,7 @@ Material on this page is not finalized. There will be an update to this page pri
 Click on the poster number in the Link column below to jump to the abstract.
 :::
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 #| include: false
 
 library(tidyverse)
@@ -42,7 +36,7 @@ library(readxl)
 # }
 # Links need to match generated_poster_list.html sections
 # Link Presenter Description
-M <- read_xlsx('./data/MGM2025-Abstracts_v4.xlsx', sheet = 'Posters')
+M <- read_xlsx('./data/Abstracts - Web app.xlsx', sheet = 'Posters')
 M_links <- read.csv('./generated/schedule_links.csv')
 
 subset_M <- function(x = "<font color=\"#339966\">Cell and Developmental Biology </font>"){
@@ -66,52 +60,52 @@ subset_M <- function(x = "<font color=\"#339966\">Cell and Developmental Biology
 
 ## Evolution and Population Genetics
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 subset_M(x = '<font color="#FF0066">Evolution and Population Genetics</font>')
 ```
 
 
 ## Biochemical and Molecular Genetics 
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 subset_M(x = '<font color="#336699">Biochemical and Molecular Genetics </font>')
 ```
 
 ## Cell and Developmental Biology
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 subset_M(x = '<font color="#339966">Cell and Developmental Biology </font>')
 ```
 
 
 ## Computational and Large-Scale Biology 
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 subset_M(x = '<font color="#663399">Computational and Large-Scale Biology </font>')
 ```
 
 ## Cytogenetics
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 subset_M(x = '<font color="#669933">Cytogenetics</font>')
 ```
 
 ## Education & Outreach
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 subset_M(x = '<font color="#993366">Education & Outreach</font>')
 ```
 
 ## Quantitative Genetics & Breeding
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 subset_M(x = '<font color="#996633">Quantitative Genetics & Breeding</font>')
 ```
 
 
 ## Transposons & Epigenetics 
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE}
 subset_M(x = '<font color="#0066CC">Transposons & Epigenetics </font>')
 ```
 
