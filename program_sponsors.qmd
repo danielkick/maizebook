@@ -1,6 +1,6 @@
 ---
 title: ""
-subtitle: "[Official Page Link](https://www.mgcmeeting.com/#:~:text=The maize community is grateful,sponsors:)"
+subtitle: "[View on mgcmeeting.com](https://www.mgcmeeting.com/#:~:text=The maize community is grateful,sponsors:)"
 ---
 
 ::: {style="text-align: center"}
@@ -119,3 +119,6 @@ Travel support provided by:
 ### We thank these sponsors for their generosity!
 :::
 
+::: {style="text-align: center"}
+A special thank you for the in-kind support from the USDA-ARS.
+:::
