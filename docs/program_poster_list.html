@@ -33,12 +33,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-d496715cb688a7e1dd488a18866eacde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -64,171 +61,10 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><link rel="stylesheet" href="styles.css">
+}</script><script src="site_libs/kePrint-0.0.1/kePrint.js"></script><link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
@@ -240,11 +76,11 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">⚠ Home 🌽</span></a>
+<span class="menu-text">Home 🌽</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./program_schedule.html"> 
-<span class="menu-text">⚠ Schedule</span></a>
+<span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./generated_talks.html"> 
@@ -268,13 +104,17 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./program_poster_list.html" aria-current="page"> 
-<span class="menu-text">⚠ Poster Lookup</span></a>
+<span class="menu-text">Poster Lookup</span></a>
   </li>  
 </ul>
 <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item">
+    <a class="nav-link" href="./program_general_information.html"> 
+<span class="menu-text">Info.</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./program_awards.html"> 
-<span class="menu-text">⚠ Awards</span></a>
+<span class="menu-text">Awards</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./program_authors_attendees.html"> 
@@ -287,7 +127,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
@@ -329,19 +168,6 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>⚠ Update pending
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Material on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details.</p>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Note</span>Note:
 </div>
 </div>
@@ -350,30 +176,1492 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <section id="evolution-and-population-genetics" class="level2"><h2 class="anchored" data-anchor-id="evolution-and-population-genetics">Evolution and Population Genetics</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">P###</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Title</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p15-bzea-a-diverse-teosinte-introgression-population-for-improving-modern-maize-sustainability" style="     ">P15</a></td>
+<td style="text-align: left;">Hannah Pil</td>
+<td style="text-align: left;">BZea: A diverse teosinte introgression population for improving modern maize sustainability</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p16-booster-cistrome-and-transcriptome-comparative-genomics-among-species-with-markedly-drought-tolerance-differences" style="     ">P16</a></td>
+<td style="text-align: left;">Vincenzo Rossi</td>
+<td style="text-align: left;">Booster: Cistrome and transcriptome comparative genomics among species with markedly drought tolerance differences</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p17-comparative-grass-genomics-reveals-explosive-genome-evolution-in-maize-and-its-wild-relatives" style="     ">P17</a></td>
+<td style="text-align: left;">Michelle Stitzer</td>
+<td style="text-align: left;">Comparative grass genomics reveals explosive genome evolution in maize and its wild relatives</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p18-convergent-genome--and-gene-level-constraints-shape-repeated-environmental-adaptation-in-grasses" style="     ">P18</a></td>
+<td style="text-align: left;">Sheng-Kai Hsu</td>
+<td style="text-align: left;">Convergent genome- and gene-level constraints shape repeated environmental adaptation in grasses</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p19-diversity-of-root-system-architecture-and-aquaporin-in-response-to-low-nitrogen-in-maize-landraces" style="     ">P19</a></td>
+<td style="text-align: left;">Joséphine Guyot</td>
+<td style="text-align: left;">Diversity of root system architecture and aquaporin in response to low nitrogen in maize landraces</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p20-gwas-study-of-epistatic-interactions-with-semidominant-mutants-establishes-the-molecular-identities-and-pathways-affected-by-natural-variants" style="     ">P20</a></td>
+<td style="text-align: left;">Brian Dilkes</td>
+<td style="text-align: left;">GWAS study of epistatic interactions with semidominant mutants establishes the molecular identities and pathways affected by natural variants</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p21-genetic-characterization-of-united-states-and-canadian-heirloom-maize-seed-bank" style="     ">P21</a></td>
+<td style="text-align: left;">Jordan Cummings</td>
+<td style="text-align: left;">Genetic characterization of United States and Canadian heirloom maize seed bank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p22-genetic-diversity-and-population-structure-in-sweet-corn" style="     ">P22</a></td>
+<td style="text-align: left;">Derya Taşcilar</td>
+<td style="text-align: left;">Genetic diversity and population structure in sweet corn</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p23-genetic-legacies-of-the-first-ancient-south-american-state-in-archaeological-maize" style="     ">P23</a></td>
+<td style="text-align: left;">Heather Chamberlain</td>
+<td style="text-align: left;">Genetic legacies of the first ancient South American state in archaeological maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p24-genomic-basis-of-artificial-selection-revealed-in-two-high-oil-maize-populations" style="     ">P24</a></td>
+<td style="text-align: left;">Binghao Zhao</td>
+<td style="text-align: left;">Genomic basis of artificial selection revealed in two high-oil maize populations</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p25-harnessing-genetic-diversity-to-enhance-cold-stress-tolerance-in-maize-through-introgression-and-gene-expression-analysis" style="     ">P25</a></td>
+<td style="text-align: left;">Zehta Fazler</td>
+<td style="text-align: left;">Harnessing genetic diversity to enhance cold stress tolerance in maize through introgression and gene expression analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p26-harnessing-the-genetic-diversity-of-italian-traditional-maize-landraces-through-landscape-genomics" style="     ">P26</a></td>
+<td style="text-align: left;">Lorenzo Stagnati</td>
+<td style="text-align: left;">Harnessing the genetic diversity of Italian traditional maize landraces through landscape genomics</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p27-homologous-chromosome-interactions-reshape-chromatin-accessibility-contribute-to-hybrid-vigor-in-maize" style="     ">P27</a></td>
+<td style="text-align: left;">Tao Zhou</td>
+<td style="text-align: left;">Homologous chromosome interactions reshape chromatin accessibility contribute to hybrid vigor in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p28-identification-of-locally-adapted-loci-and-convergent-evolution-within-andropogoneae-species" style="     ">P28</a></td>
+<td style="text-align: left;">Gretta Buttelmann</td>
+<td style="text-align: left;">Identification of locally adapted loci and convergent evolution within Andropogoneae species</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p29-landscape-of-language-the-contribution-of-ethnolinguistics-to-mesoamerican-maize-genetic-diversity" style="     ">P29</a></td>
+<td style="text-align: left;">Forrest Li</td>
+<td style="text-align: left;">Landscape of language: The contribution of ethnolinguistics to Mesoamerican maize genetic diversity</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p30-localized-stimulation-of-meiotic-crossovers-through-the-juxtaposition-of-heterozygous-and-homozygous-regions" style="     ">P30</a></td>
+<td style="text-align: left;">Piotr Ziolkowski</td>
+<td style="text-align: left;">Localized stimulation of meiotic crossovers through the juxtaposition of heterozygous and homozygous regions</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p31-maize-landraces-are-not-distinct-populations-or-genetic-lineages" style="     ">P31</a></td>
+<td style="text-align: left;">Mackenzie Chun</td>
+<td style="text-align: left;">Maize landraces are not distinct populations or genetic lineages</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p32-pan-genome-and-ai-identify-causal-variants-for-maize-highland-adaptation" style="     ">P32</a></td>
+<td style="text-align: left;">Wei-Yun Lai</td>
+<td style="text-align: left;">Pan-genome and AI identify causal variants for maize highland adaptation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p33-quantifying-the-anthropogenic-effects-on-maize-genetic-diversity" style="     ">P33</a></td>
+<td style="text-align: left;">Samantha Snodgrass</td>
+<td style="text-align: left;">Quantifying the anthropogenic effects on maize genetic diversity</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p34-the-hapmap-of-tibet-landraces-reveals-the-genetic-mechanism-of-its-highland-adaptation" style="     ">P34</a></td>
+<td style="text-align: left;">En Luo</td>
+<td style="text-align: left;">The HapMap of Tibet landraces reveals the genetic mechanism of its highland adaptation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p35-the-mexmagic-population-explores-the-genetic-architecture-of-clinal-variation-in-mexican-native-maize" style="     ">P35</a></td>
+<td style="text-align: left;">Ruairidh Sawers</td>
+<td style="text-align: left;">The MexMAGIC population explores the genetic architecture of clinal variation in Mexican native maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p36-the-pangenome-graph-construction-of-zea-genus" style="     ">P36</a></td>
+<td style="text-align: left;">Zheng Luo</td>
+<td style="text-align: left;">The pangenome graph construction of Zea genus</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p37-trends-in-stomatal-density-and-size-in-maize-hybrids-representing-100-years-of-long-term-breeding-for-yield" style="     ">P37</a></td>
+<td style="text-align: left;">Memiş Bilgici</td>
+<td style="text-align: left;">Trends in stomatal density and size in maize hybrids representing 100 years of long-term breeding for yield</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p38-updates-on-silencing-of-the-ga1-reproductive-barrier" style="     ">P38</a></td>
+<td style="text-align: left;">Elli Cryan</td>
+<td style="text-align: left;">Updates on silencing of the Ga1 reproductive barrier</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p39-we-found-a-hole-in-the-phenological-trait-space-of-maize-is-it-a-new-territory-for-future-adaptation" style="     ">P39</a></td>
+<td style="text-align: left;">Randall Wisser</td>
+<td style="text-align: left;">We found a hole in the phenological trait space of maize: is it a new territory for future adaptation?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section><section id="biochemical-and-molecular-genetics" class="level2"><h2 class="anchored" data-anchor-id="biochemical-and-molecular-genetics">Biochemical and Molecular Genetics</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">P###</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Title</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p40-a-duf1230-gene-confers-quantitative-resistance-to-southern-leaf-blight-and-gray-leaf-spot-in-maize" style="     ">P40</a></td>
+<td style="text-align: left;">Ruiyu Zhang</td>
+<td style="text-align: left;">A DUF1230 gene confers quantitative resistance to southern leaf blight and gray leaf spot in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p41-a-genome-scale-model-tracks-how-arbuscular-mycorrhizal-symbiosis-mitigates-maize-n-deficiency-stress" style="     ">P41</a></td>
+<td style="text-align: left;">Alia Dellagi</td>
+<td style="text-align: left;">A genome-scale model tracks how arbuscular mycorrhizal symbiosis mitigates maize N deficiency stress.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p42-a-single-nucleotide-polymorphism-in-hlt1-enhances-maize-high-light-tolerance-and-adaptation-to-high-altitudes" style="     ">P42</a></td>
+<td style="text-align: left;">Lishuan Wu</td>
+<td style="text-align: left;">A single nucleotide polymorphism in HLT1 enhances maize high-light tolerance and adaptation to high altitudes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p43-application-of-a-ternary-agrobacterium-mediated-transformation-system-coupled-with-morphogenesis-regulators-enables-efficient-genome-editing-in-temperate-and-tropical-maize" style="     ">P43</a></td>
+<td style="text-align: left;">Sophia Gerasimova</td>
+<td style="text-align: left;">Application of a ternary Agrobacterium-mediated transformation system coupled with morphogenesis regulators enables efficient genome editing in temperate and tropical maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p44-booster-boosting-drought-tolerance-in-key-cereals-in-the-era-of-climate-change" style="     ">P44</a></td>
+<td style="text-align: left;">Vincenzo Rossi</td>
+<td style="text-align: left;">Booster: Boosting drought tolerance in key cereals in the era of climate change</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p45-booster-engineering-regulatory-regions-to-improve-drought-tolerance-in-maize" style="     ">P45</a></td>
+<td style="text-align: left;">Yasmine Vanhevel</td>
+<td style="text-align: left;">Booster: Engineering regulatory regions to improve drought tolerance in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p46-characterization-of-two-terpene-synthases-involved-in-maize-volatile-production" style="     ">P46</a></td>
+<td style="text-align: left;">Sarah-Maria Riedl</td>
+<td style="text-align: left;">Characterization of two terpene synthases involved in maize volatile production</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p47-characterization-of-the-maize-ustilago-maydis-interaction-in-a-warming-climate" style="     ">P47</a></td>
+<td style="text-align: left;">Karina van der Linde</td>
+<td style="text-align: left;">Characterization of the maize-Ustilago maydis interaction in a warming climate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p48-comparative-transcriptomic-analysis-of-low-temperature-stress-response-in-maize-zea-mays-l-at-ve-and-v3-growth-stages" style="     ">P48</a></td>
+<td style="text-align: left;">Ana Nikolic</td>
+<td style="text-align: left;">Comparative transcriptomic analysis of low-temperature stress response in maize (Zea mays L.) at VE and V3 growth stages</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p49-evidence-for-tor-linked-translational-reprogramming-during-proteome-rebalancing-in-opaque2-seeds" style="     ">P49</a></td>
+<td style="text-align: left;">Huda Ansaf</td>
+<td style="text-align: left;">Evidence for TOR-linked translational reprogramming during proteome rebalancing in opaque2 seeds</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p50-exploring-the-relationship-between-cell-wall-genetics-and-mycorrhizal-symbiosis-in-maize-under-low-nitrogen-stress" style="     ">P50</a></td>
+<td style="text-align: left;">Sylvie Coursol</td>
+<td style="text-align: left;">Exploring the relationship between cell wall genetics and mycorrhizal symbiosis in maize under low nitrogen stress</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p51-false-positive-lbd-interactions-in-yeast-one-hybrid-screens-a-plasmid-effect" style="     ">P51</a></td>
+<td style="text-align: left;">Mark Lubkowitz</td>
+<td style="text-align: left;">False positive LBD interactions in yeast one-hybrid screens: A plasmid effect</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p52-flavonoid-mediated-resistance-to-lepidopteran-pests-in-maize-operates-through-insect-gut-damage-and-microbiome-disruption" style="     ">P52</a></td>
+<td style="text-align: left;">Charles Colvin</td>
+<td style="text-align: left;">Flavonoid-mediated resistance to lepidopteran pests in maize operates through insect gut damage and microbiome disruption</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p53-from-herbivore-attack-to-parasitoid-attraction-how-a-bhlh-transcription-factor-modulates-defense-related-terpene-biosynthesis" style="     ">P53</a></td>
+<td style="text-align: left;">Janik Telleria Marloth</td>
+<td style="text-align: left;">From herbivore attack to parasitoid attraction: how a bHLH transcription factor modulates defense-related terpene biosynthesis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p54-functional-analysis-of-genes-zmgar2-controlling-maize-kernel-dehydration-rate" style="     ">P54</a></td>
+<td style="text-align: left;">Longyu Liu</td>
+<td style="text-align: left;">Functional analysis of genes ZmGAR2 controlling maize kernel dehydration rate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p55-genetic-dissection-of-wrky125-and-lox4-reveals-lipid–hormone-defense-networks-against-fusarium-verticillioides-in-maize" style="     ">P55</a></td>
+<td style="text-align: left;">Alessandra Lanubile</td>
+<td style="text-align: left;">Genetic dissection of WRKY125 and LOX4 reveals lipid–hormone defense networks against Fusarium verticillioides in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p56-genetic-diversity-study-of-farmers'-maize-accessions-from-nigeria-revealed-by-morphological-traits-to-asses-environmental-impacts-and-ssr-markers" style="     ">P56</a></td>
+<td style="text-align: left;">Oyenike Adeyemo</td>
+<td style="text-align: left;">Genetic diversity study of farmers' maize accessions from Nigeria revealed by morphological traits to asses environmental impacts and ssr markers</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p57-genetic-interaction-between-gl15-and-fdl1-modulates-juvenile-cuticle-deposition-and-leaf-permeability-in-maize" style="     ">P57</a></td>
+<td style="text-align: left;">Gabriella Consonni</td>
+<td style="text-align: left;">Genetic interaction between GL15 and FDL1 modulates juvenile cuticle deposition and leaf permeability in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p58-genome-editing-accelerates-flowering-in-tropical-maize" style="     ">P58</a></td>
+<td style="text-align: left;">Michael Muszynski</td>
+<td style="text-align: left;">Genome editing accelerates flowering in tropical maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p59-genome-editing-of-gibberellin-biosynthetic-genes-alters-plant-architecture-in-tropical-maize-inbred-lines" style="     ">P59</a></td>
+<td style="text-align: left;">Ricardo A. Dante</td>
+<td style="text-align: left;">Genome editing of gibberellin biosynthetic genes alters plant architecture in tropical maize inbred lines</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p60-high-throughput-protein-protein-interaction-screening-reveals-pervasive-function-of-the-whole-maize-genome" style="     ">P60</a></td>
+<td style="text-align: left;">Xiaoyang Shang</td>
+<td style="text-align: left;">High-throughput protein-protein interaction screening reveals pervasive function of the whole maize genome</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p61-identification-and-characterization-of-molecular-drivers-of-nitrogen-remobilization-in-maize-during-grain-filling" style="     ">P61</a></td>
+<td style="text-align: left;">Alexa Park</td>
+<td style="text-align: left;">Identification and characterization of molecular drivers of nitrogen remobilization in maize during grain filling</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p62-identification-and-functional-analysis-of-zm-rcc-controlling-leaf-rolling-in-maize" style="     ">P62</a></td>
+<td style="text-align: left;">Wenkang Chen</td>
+<td style="text-align: left;">Identification and functional analysis of Zm RCC controlling leaf rolling in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p63-identification-of-zea-mays-homologues-of-atvihs" style="     ">P63</a></td>
+<td style="text-align: left;">Klea Lami</td>
+<td style="text-align: left;">Identification of Zea mays homologues of AtVIHs</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p64-identification-of-transcription-factors-that-bind-to-moa-seq-motifs-using-the-yeast-1-hybrid-y1h-assay" style="     ">P64</a></td>
+<td style="text-align: left;">Paul Agbola</td>
+<td style="text-align: left;">Identification of transcription factors that bind to MOA-seq motifs using the yeast 1-hybrid (Y1H) assay</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p65-improved-soil-quality-confers-bacterial-resistance-against-rainfall-perturbations-to-mitigate-maize-yield-loss" style="     ">P65</a></td>
+<td style="text-align: left;">Yangbo Huai</td>
+<td style="text-align: left;">Improved soil quality confers bacterial resistance against rainfall perturbations to mitigate maize yield loss</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p66-maize-carbohydrate-partitioning-defective1-cpd1-acts-independently-of-carbohydrate-partitioning-defective6-cpd6-in-regulating-callose-deposition-in-the-phloem" style="     ">P66</a></td>
+<td style="text-align: left;">Zachary Traylor</td>
+<td style="text-align: left;">Maize Carbohydrate Partitioning Defective1 (Cpd1) acts independently of Carbohydrate Partitioning Defective6 (cpd6) in regulating callose deposition in the phloem</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p67-maize-hex4-and-sh1-g-quadruplex-g4-dnas-function-in-human-viral-promoter-transcription" style="     ">P67</a></td>
+<td style="text-align: left;">Bianca Sheridan</td>
+<td style="text-align: left;">Maize Hex4 and Sh1 G-quadruplex (G4) DNAs function in human viral promoter transcription.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p68-maize-root-gene-expression,-exudation,-and-the-diversity-of-rhizosphere-microorganisms-are-slightly-affected-by-moderate-soil-compaction-and-soil-structure" style="     ">P68</a></td>
+<td style="text-align: left;">Henrike Würsig</td>
+<td style="text-align: left;">Maize root gene expression, exudation, and the diversity of rhizosphere microorganisms are slightly affected by moderate soil compaction and soil structure</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p69-molecular-and-genetic-analysis-of-a-conserved-armadillo-repeat-motif-containing-protein-7-armc7-involved-in-u12-splicing" style="     ">P69</a></td>
+<td style="text-align: left;">Dalton Raymond</td>
+<td style="text-align: left;">Molecular and genetic analysis of a conserved Armadillo Repeat Motif-Containing Protein 7 (ARMC7) involved in U12 splicing</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p70-molecular-and-genetic-basis-of-maize-cold-tolerance-and-high-latitude-adaptation" style="     ">P70</a></td>
+<td style="text-align: left;">Shuhua Yang</td>
+<td style="text-align: left;">Molecular and genetic basis of maize cold tolerance and high-latitude adaptation</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p71-nuclei-isolation-rfficiency-across-maize-inbred-lines" style="     ">P71</a></td>
+<td style="text-align: left;">Abigail McCarthy</td>
+<td style="text-align: left;">Nuclei isolation rfficiency across maize inbred lines</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p72-overexpression-of-zmkrn8-elite-allele-enhances-kernel-row-number-and-kernel-yield-in-maize" style="     ">P72</a></td>
+<td style="text-align: left;">Yuanru Wang</td>
+<td style="text-align: left;">Overexpression of ZmKRN8 elite allele enhances kernel row number and kernel yield in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p73-pen1-catalyzes-rna-primer-removal-during-plastid-dna-replication-in-maize" style="     ">P73</a></td>
+<td style="text-align: left;">Xing Huang</td>
+<td style="text-align: left;">PEN1 catalyzes RNA primer removal during plastid DNA replication in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p74-post-synthetic-cell-wall-modification-initiates-defense-signaling,-enhancing-resistance" style="     ">P74</a></td>
+<td style="text-align: left;">Megan DeTemple</td>
+<td style="text-align: left;">Post-synthetic cell wall modification initiates defense signaling, enhancing resistance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p75-regulation-of-aquaporin-expression-by-nac-and-hsf-transcription-factors" style="     ">P75</a></td>
+<td style="text-align: left;">Jean Fontaine</td>
+<td style="text-align: left;">Regulation of aquaporin expression by NAC and HSF transcription factors</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p76-root-structure--and-soil-texture-dependent-microbial-self-organization-in-the-rhizosphere-and-in-specific-endorhizosphere-cell-types-of-maize" style="     ">P76</a></td>
+<td style="text-align: left;">Verena Bresgen</td>
+<td style="text-align: left;">Root structure- and soil texture-dependent microbial self-organization in the rhizosphere and in specific endorhizosphere cell types of maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p77-stress-tolerant-bacillus-and-paenibacillus-from-vellozia-spp-as-microbial-resources-for-improving-maize-phosphorus-use-and-drought-tolerance" style="     ">P77</a></td>
+<td style="text-align: left;">Sylvia Morais de Sousa Tinoco</td>
+<td style="text-align: left;">Stress-tolerant Bacillus and Paenibacillus from Vellozia spp. as microbial resources for improving maize phosphorus use and drought tolerance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p78-sucrose-transporters-expressed-in-the-endosperm-adjacent-to-the-embryo-eas-are-necessary-for-carbon-partitioning-and-embryo-growth" style="     ">P78</a></td>
+<td style="text-align: left;">Thomas Widiez</td>
+<td style="text-align: left;">Sucrose transporters expressed in the endosperm adjacent to the embryo (EAS) are necessary for carbon partitioning and embryo growth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p79-systematic-exploration-of-transcription-factor-function-in-maize" style="     ">P79</a></td>
+<td style="text-align: left;">Taylor Scroggs</td>
+<td style="text-align: left;">Systematic exploration of transcription factor function in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p80-targeted-gbs-provides-an-efficient-way-to-characterize-haplotypic-diversity-and-allele-frequency-in-pooled-maize-landraces" style="     ">P80</a></td>
+<td style="text-align: left;">Patricia Faivre Rampant</td>
+<td style="text-align: left;">Targeted GBS provides an efficient way to characterize haplotypic diversity and allele frequency in pooled maize landraces.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p81-the-ja-induced-emission-of-volatiles-in-maize-is-negatively-influenced-by-a-bhlh-transcription-factor" style="     ">P81</a></td>
+<td style="text-align: left;">Claudia Schaff</td>
+<td style="text-align: left;">The JA-induced emission of volatiles in maize is negatively influenced by a bHLH transcription factor</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p82-the-association-of-indels-with-meiotic-recombination-sites-in-maize" style="     ">P82</a></td>
+<td style="text-align: left;">Yike Chen</td>
+<td style="text-align: left;">The association of indels with meiotic recombination sites in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p83-the-characterization-of-rna-binding-motif-protein-48-rbm48-in-u12-intron-splicing,-cellular-differentiation,-and-development" style="     ">P83</a></td>
+<td style="text-align: left;">Caleb Kienbaum</td>
+<td style="text-align: left;">The characterization of RNA binding motif protein 48 (RBM48) in U12 intron splicing, cellular differentiation, and development</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p84-the-impact-of-the-maize-b-chromosome-on-transcriptome-during-plant-development" style="     ">P84</a></td>
+<td style="text-align: left;">Jan Bartoš</td>
+<td style="text-align: left;">The impact of the maize B chromosome on transcriptome during plant development</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p85-the-maize-zmvps23l-and-zmfbk1-modulate-the-nlr-protein-rp1-d21-mediated-defense-response-by-changing-its-subcellular-localization" style="     ">P85</a></td>
+<td style="text-align: left;">Guan-Feng Wang</td>
+<td style="text-align: left;">The maize ZmVPS23L and ZmFBK1 modulate the NLR protein Rp1-D21-mediated defense response by changing its subcellular localization</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p86-the-role-of-the-root-microbiome-in-agronomically-important-traits-of-mexican-maize-varieties" style="     ">P86</a></td>
+<td style="text-align: left;">Ana Laura Alonso-Nieves</td>
+<td style="text-align: left;">The role of the root microbiome in agronomically important traits of Mexican maize varieties</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p87-transcription-factors-and-regulation-of-aquaporin-expression-in-maize-stomatal-guard-cells-and-subsidiary-cells" style="     ">P87</a></td>
+<td style="text-align: left;">Sanskriti Vats</td>
+<td style="text-align: left;">Transcription factors and regulation of aquaporin expression in maize stomatal guard cells and subsidiary cells</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p88-understanding-expression-dynamics-of-flowering-time-genes-from-a-gene-network-perspective" style="     ">P88</a></td>
+<td style="text-align: left;">Joseph DeTemple</td>
+<td style="text-align: left;">Understanding expression dynamics of flowering time genes from a gene network perspective</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p89-xylem-sap-proteomics-reveals-defense-mechanisms-underlying-pierce’s-disease-tolerance-in-grapevines" style="     ">P89</a></td>
+<td style="text-align: left;">Ramesh Katam</td>
+<td style="text-align: left;">Xylem sap proteomics reveals defense mechanisms underlying pierce’s disease tolerance in grapevines</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p90-zmwakl-zmcpk39-synergistic-immunity-drives-super-additive-resistance-to-gray-leaf-spot-in-maize" style="     ">P90</a></td>
+<td style="text-align: left;">Mingliang Xu</td>
+<td style="text-align: left;">ZmWAKL-ZmCPK39 synergistic immunity drives super-additive resistance to gray leaf spot in maize</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section><section id="cell-and-developmental-biology" class="level2"><h2 class="anchored" data-anchor-id="cell-and-developmental-biology">Cell and Developmental Biology</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">P###</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Title</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p91-discovering-the-roles-of-feronia-like-receptor-kinase-genes-in-maize" style="     ">P91</a></td>
+<td style="text-align: left;">Lander Geadelmann</td>
+<td style="text-align: left;">Discovering the roles of feronia-like receptor kinase genes in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p92-maize-transcription-factors-alter-meristem-size-and-shoot-architecture" style="     ">P92</a></td>
+<td style="text-align: left;">Lander Geadelmann</td>
+<td style="text-align: left;">Maize transcription factors alter meristem size and shoot architecture</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p93-a-little-zipper–rolled-leaf1-regulatory-module-controls-polarity-in-maize-inflorescences" style="     ">P93</a></td>
+<td style="text-align: left;">Zongliang Chen</td>
+<td style="text-align: left;">A LITTLE ZIPPER–ROLLED LEAF1 regulatory module controls polarity in maize inflorescences</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p94-a-tri-peptide-signaling-mechanisms-regulates-pollen-tube-growth-and-guidance-during-double-fertilization-in-maize" style="     ">P94</a></td>
+<td style="text-align: left;">Xia Chen</td>
+<td style="text-align: left;">A Tri-peptide signaling mechanisms regulates pollen tube growth and guidance during double fertilization in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p95-a-nuclear-role-of-ramosa3-in-inflorescence-branching-independent-of-its-enzymatic-function" style="     ">P95</a></td>
+<td style="text-align: left;">Xiaosa Xu</td>
+<td style="text-align: left;">A nuclear role of RAMOSA3 in inflorescence branching independent of its enzymatic function</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p96-a-receptor-like-kinase-heterotrimeric-g-protein-module-regulates-immune-responses-in-maize" style="     ">P96</a></td>
+<td style="text-align: left;">Shujun Meng</td>
+<td style="text-align: left;">A receptor like kinase-heterotrimeric G protein module regulates immune responses in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p97-a-strategy-for-synthetic-biology-of-large-genome-grasses" style="     ">P97</a></td>
+<td style="text-align: left;">Lukas Evans</td>
+<td style="text-align: left;">A strategy for synthetic biology of large genome grasses</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p98-a-trypsin-like-serine-protease-zmnal1a-fine-tunes-maize-floral-transition-and-flowering-time" style="     ">P98</a></td>
+<td style="text-align: left;">Lei Liu</td>
+<td style="text-align: left;">A trypsin-like serine protease ZmNAL1a fine-tunes maize floral transition and flowering time</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p99-arftf17-regulates-dent-and-flint-kernel-architecture-in-maize" style="     ">P99</a></td>
+<td style="text-align: left;">Haihai Wang</td>
+<td style="text-align: left;">ARFTF17 regulates dent and flint kernel architecture in Maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p100-arftf17-regulates-dent-and-flint-kernel-architecture-in-maize" style="     ">P100</a></td>
+<td style="text-align: left;">Yidong Zhu</td>
+<td style="text-align: left;">ARFTF17 regulates dent and flint kernel architecture in Maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p101-advances-at-the-wisconsin-crop-innovation-center-to-enable-maize-research" style="     ">P101</a></td>
+<td style="text-align: left;">Dayane Cristina Lima</td>
+<td style="text-align: left;">Advances at the Wisconsin Crop Innovation Center to enable maize research</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p102-an-α-l-fucosidase-wilting-leaf-1-maintains-maize-abiotic-stress-resistance-by-regulating-vascular-development" style="     ">P102</a></td>
+<td style="text-align: left;">Zichao Li</td>
+<td style="text-align: left;">An α-L-fucosidase WILTING LEAF 1 maintains maize abiotic stress resistance by regulating vascular development</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p103-antagonistic-transcription-factors-regulate-antisymmetric-wrapping-in-grass-leaves" style="     ">P103</a></td>
+<td style="text-align: left;">Mike Scanlon</td>
+<td style="text-align: left;">Antagonistic transcription factors regulate antisymmetric wrapping in grass leaves</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p104-blurring-the-line-blade-sheath-boundaries-and-the-extended-auricle1-mutant" style="     ">P104</a></td>
+<td style="text-align: left;">Heather Jones</td>
+<td style="text-align: left;">Blurring the line: blade-sheath boundaries and the extended auricle1 mutant</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p105-boundary-issues-investigating-the-role-of-liguleless-2-in-maize-leaf-development" style="     ">P105</a></td>
+<td style="text-align: left;">Ed Bridge</td>
+<td style="text-align: left;">Boundary issues: investigating the role of LIGULELESS 2 in maize leaf development</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p106-characterization-of-a-novel-maize-mutant-with-altered-plant-architecture" style="     ">P106</a></td>
+<td style="text-align: left;">Alberto Galeazzo Caffi</td>
+<td style="text-align: left;">Characterization of a novel maize mutant with altered plant architecture</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p107-characterization-of-conserved-growth-promoting-cytochrome-p450-genes" style="     ">P107</a></td>
+<td style="text-align: left;">Büşra Çelik</td>
+<td style="text-align: left;">Characterization of conserved growth promoting cytochrome P450 genes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p108-characterization-of-roothairless-7-in-maize" style="     ">P108</a></td>
+<td style="text-align: left;">Theo Nowak</td>
+<td style="text-align: left;">Characterization of roothairless 7 in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p109-characterization-of-grns-controlling-sam-signaling-centers" style="     ">P109</a></td>
+<td style="text-align: left;">Antje Feller</td>
+<td style="text-align: left;">Characterization of GRNs controlling SAM signaling centers</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p110-characterization-of-a-novel-embryo-defective-mutant-affecting-embryo-endosperm-development-in-maize" style="     ">P110</a></td>
+<td style="text-align: left;">Jiyun Go</td>
+<td style="text-align: left;">Characterization of a novel embryo-defective mutant affecting embryo-endosperm development in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p111-characterization-of-phenylboronic-acid-responsive-pathways-in-maize-zea-mays-l" style="     ">P111</a></td>
+<td style="text-align: left;">Julia Brück</td>
+<td style="text-align: left;">Characterization of phenylboronic acid-responsive pathways in maize (Zea mays L.)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p112-cold-induced-transcriptomic-diversity-in-epidermis-of-maize-different-root-types" style="     ">P112</a></td>
+<td style="text-align: left;">Fanghe Jin</td>
+<td style="text-align: left;">Cold induced transcriptomic diversity in epidermis of maize different root types</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p113-comprehensive-phenotypic-and-transcriptomic-analyses-reveal-multiple-defects-in-the-maize-dwarf-mutant-dizzy1" style="     ">P113</a></td>
+<td style="text-align: left;">Xuelian Du</td>
+<td style="text-align: left;">Comprehensive phenotypic and transcriptomic analyses reveal multiple defects in the maize dwarf mutant dizzy1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p114-development-of-efficient-haploid-inducers-of-fast-flowering-mini-maize" style="     ">P114</a></td>
+<td style="text-align: left;">James Birchler</td>
+<td style="text-align: left;">Development of efficient haploid inducers of fast flowering mini maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p115-developmental-and-environmental-control-of-genetic-interactions-between-grfs-and-tcps" style="     ">P115</a></td>
+<td style="text-align: left;">Stijn Seynnaeve</td>
+<td style="text-align: left;">Developmental and environmental control of genetic interactions between GRFs and TCPs.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p116-difference-in-variation-in-root-anatomy-along-the-longitudinal-axis-between-maize-and-temperate-cereal-crops" style="     ">P116</a></td>
+<td style="text-align: left;">Maria Schön</td>
+<td style="text-align: left;">Difference in variation in root anatomy along the longitudinal axis between maize and temperate cereal crops</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p117-disrupted-gamete-interaction-in-maize-gex2-mutants-biases-fertilization-toward-egg-cell-only-fertilization-and-promotes-heterofertilization" style="     ">P117</a></td>
+<td style="text-align: left;">Andrea Calhau</td>
+<td style="text-align: left;">Disrupted gamete interaction in maize gex2 mutants biases fertilization toward egg-cell-only fertilization and promotes heterofertilization</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p118-dissecting-the-gene-regulatory-networks-controlling-maize-nucellus-degeneration" style="     ">P118</a></td>
+<td style="text-align: left;">Jie Zhang</td>
+<td style="text-align: left;">Dissecting the gene regulatory networks controlling maize nucellus degeneration</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p119-dissecting-the-boron-deficiency-response-of-maize-roots-using-phenylboronic-acid" style="     ">P119</a></td>
+<td style="text-align: left;">Liuyang Chu</td>
+<td style="text-align: left;">Dissecting the boron deficiency response of maize roots using phenylboronic acid</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p120-esr-localized-cle-peptides-regulate-maize-embryonic-symmetric-patterning" style="     ">P120</a></td>
+<td style="text-align: left;">Meng Hu</td>
+<td style="text-align: left;">ESR-localized CLE peptides regulate maize embryonic symmetric patterning</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p121-early-patterning-and-morphogenesis-of-the-maize-embryo" style="     ">P121</a></td>
+<td style="text-align: left;">Mingchen He</td>
+<td style="text-align: left;">Early patterning and morphogenesis of the maize embryo</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p122-effector-driven-developmental-reprogramming-during-ustilago-maydis–induced-gall-formation" style="     ">P122</a></td>
+<td style="text-align: left;">Mamoona Khan</td>
+<td style="text-align: left;">Effector-driven developmental reprogramming during Ustilago maydis–induced gall formation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p123-embryo-derived-signaling-regulates-nutrient-allocation-in-maize-kernels" style="     ">P123</a></td>
+<td style="text-align: left;">Laurine Grazer</td>
+<td style="text-align: left;">Embryo-derived signaling regulates nutrient allocation in maize kernels</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p124-exploring-the-spatial-dynamics-of-root-cortical-barriers-in-maize-stress-responses" style="     ">P124</a></td>
+<td style="text-align: left;">Darshan Damodaran</td>
+<td style="text-align: left;">Exploring the spatial dynamics of root cortical barriers in maize stress responses</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p125-genome-editing-efficiency-during-haploid-induction-is-maximized-through-cenh3-mediated-genome-elimination" style="     ">P125</a></td>
+<td style="text-align: left;">Fisher Stines</td>
+<td style="text-align: left;">Genome editing efficiency during haploid induction is maximized through cenh3-mediated genome elimination</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p126-grafting-in-maize" style="     ">P126</a></td>
+<td style="text-align: left;">Shijun Zhang</td>
+<td style="text-align: left;">Grafting in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p127-heat-stress-at-tricellular-stage-hinders-maize-pollen-dehiscence" style="     ">P127</a></td>
+<td style="text-align: left;">Divya Rana</td>
+<td style="text-align: left;">Heat stress at tricellular stage hinders maize pollen dehiscence</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p128-high-resolution,-stage-specific-single-cell-atlas-reveals-meristem-transitions-in-maize-inflorescence-development" style="     ">P128</a></td>
+<td style="text-align: left;">Xiaosa Xu</td>
+<td style="text-align: left;">High-resolution, stage-specific single-cell atlas reveals meristem transitions in maize inflorescence development</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p129-how-to-reproducibly-pattern-a-meristem-despite-size-variability" style="     ">P129</a></td>
+<td style="text-align: left;">Cecilia Lara-Mondragón</td>
+<td style="text-align: left;">How to reproducibly pattern a meristem despite size variability</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p130-integrating-replication-timing,-transcriptional-activity,-and-3d-genome-organization-in-maize" style="     ">P130</a></td>
+<td style="text-align: left;">Hank Bass</td>
+<td style="text-align: left;">Integrating replication timing, transcriptional activity, and 3D genome organization in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p131-leaf-based-transformation-as-a-strategy-for-the-genetic-transformation-of-tropical-maize-lines" style="     ">P131</a></td>
+<td style="text-align: left;">Maria Helena Faustinoni Bruno</td>
+<td style="text-align: left;">Leaf-based transformation as a strategy for the genetic transformation of tropical maize lines</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p132-linking-carbon-metabolism-to-meiotic-entry-in-maize-anthers-from-bulk-to-single-cell-resolution" style="     ">P132</a></td>
+<td style="text-align: left;">An Hsu</td>
+<td style="text-align: left;">Linking carbon metabolism to meiotic entry in maize anthers: From bulk to single-cell resolution</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p133-maize-baby-boom-transcription-factors-initiate-parthenogenesis-and-embryonic-patterning" style="     ">P133</a></td>
+<td style="text-align: left;">Xixi Zheng</td>
+<td style="text-align: left;">Maize BABY BOOM transcription factors initiate parthenogenesis and embryonic patterning</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p134-maize-development-under-boron-deficient-field-conditions-is-the-benzoxazinoid-pathway-a-target-for-improvement" style="     ">P134</a></td>
+<td style="text-align: left;">Cay Christin Schaefer</td>
+<td style="text-align: left;">Maize development under boron-deficient field conditions: Is the benzoxazinoid pathway a target for improvement?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p135-modulation-of-host-gene-expression-via-fungal-transactivation-effectors-taes" style="     ">P135</a></td>
+<td style="text-align: left;">Weiliang Zuo</td>
+<td style="text-align: left;">Modulation of host gene expression via fungal transactivation effectors (TAEs)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p136-molecular-mechanisms-modulating-growth-suppression-in-maize" style="     ">P136</a></td>
+<td style="text-align: left;">Jazmin Abraham-Juarez</td>
+<td style="text-align: left;">Molecular mechanisms modulating growth suppression in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p137-multiplex-rca-fish-facilitates-to-visualize-cell-type-spatial-patterns-of-maize-inflorescence" style="     ">P137</a></td>
+<td style="text-align: left;">Lu Kang</td>
+<td style="text-align: left;">Multiplex RCA FISH facilitates to visualize cell-type spatial patterns of maize inflorescence</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p138-nodal-root-anatomical-variation-and-allometric-scaling-in-wheat" style="     ">P138</a></td>
+<td style="text-align: left;">Akshay Babasaheb Tawale</td>
+<td style="text-align: left;">Nodal root anatomical variation and allometric scaling in wheat</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p139-northern-teosinte---the-artificial-teosinte,-which-defies-daylength-limitations" style="     ">P139</a></td>
+<td style="text-align: left;">Tom Burges</td>
+<td style="text-align: left;">Northern teosinte - The artificial teosinte, which defies daylength limitations</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p140-pcd1-controls-kernel-filling-by-promoting-differentiation-and-cell-death-in-the-placenta-chalazal-region" style="     ">P140</a></td>
+<td style="text-align: left;">Geng Sun</td>
+<td style="text-align: left;">Pcd1 controls kernel filling by promoting differentiation and cell death in the placenta-chalazal region</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p141-rapid-and-selective-peri-germ-cell-membrane-breakdown-during-double-fertilization" style="     ">P141</a></td>
+<td style="text-align: left;">Naoya Sugi</td>
+<td style="text-align: left;">Rapid and selective peri-germ cell membrane breakdown during double fertilization</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p142-single-cell-transcriptomic-profiling-of-a-maize-ploidy-series-with-enhanced-photosynthetic-capacity" style="     ">P142</a></td>
+<td style="text-align: left;">Xiaowen Shi</td>
+<td style="text-align: left;">Single-cell transcriptomic profiling of a maize ploidy series with enhanced photosynthetic capacity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p143-spatial-regulation-of-cell-wall-remodeling-shapes-maize-digestibility-under-drought" style="     ">P143</a></td>
+<td style="text-align: left;">Ana López Malvar</td>
+<td style="text-align: left;">Spatial regulation of cell wall remodeling shapes maize digestibility under drought</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p144-spatiotemporal-transcriptomics-reveals-zmgras90-as-an-early-determinant-of-maize-aleurone-and-basal-endosperm-fate-specification" style="     ">P144</a></td>
+<td style="text-align: left;">Hao Wu</td>
+<td style="text-align: left;">Spatiotemporal transcriptomics reveals ZmGRAS90 as an early determinant of maize aleurone and basal endosperm fate specification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p145-supervised-clustering-sheds-light-on-the-developmental-trajectories-of-young-inflorescence-in-barley" style="     ">P145</a></td>
+<td style="text-align: left;">Thirulogachandar Venkatasubbu</td>
+<td style="text-align: left;">Supervised clustering sheds light on the developmental trajectories of young inflorescence in barley</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p146-the-eal1-peptide-controls-embryonic-meristem-initiation-in-maize" style="     ">P146</a></td>
+<td style="text-align: left;">Guojing Jiang</td>
+<td style="text-align: left;">The EAL1 peptide controls embryonic meristem initiation in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p147-the-cis-regulatory-evolution-of-grassy-tillers1-gt1" style="     ">P147</a></td>
+<td style="text-align: left;">Hailong Yang</td>
+<td style="text-align: left;">The cis-regulatory evolution of GRASSY TILLERS1 (GT1)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p148-the-combination-of-morphogenic-regulators-baby-boom-and-grf-gif-improves-maize-transformation-efficiency" style="     ">P148</a></td>
+<td style="text-align: left;">Zongliang Chen</td>
+<td style="text-align: left;">The combination of morphogenic regulators BABY BOOM and GRF-GIF improves maize transformation efficiency</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p149-the-distributive-germline-a-developmental-strategy-to-restrict-the-spread-of-new-mutations" style="     ">P149</a></td>
+<td style="text-align: left;">Justin Scherer</td>
+<td style="text-align: left;">The distributive germline: A developmental strategy to restrict the spread of new mutations</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p150-the-peri-germ-cell-membrane-a-gateway-to-haploid-embryo-induction" style="     ">P150</a></td>
+<td style="text-align: left;">Marina Millán Blánquez</td>
+<td style="text-align: left;">The peri-germ cell membrane: A gateway to haploid embryo induction?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p151-the-role-of-zmarf28-in-leaf-initiation-and-development-in-maize" style="     ">P151</a></td>
+<td style="text-align: left;">Bianca Tasha Ferreira</td>
+<td style="text-align: left;">The role of ZmARF28 in leaf initiation and development in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p152-transcriptomic-control-of-heterosis-manifestation-during-lateral-root-initiation-in-maize" style="     ">P152</a></td>
+<td style="text-align: left;">Annika Meyer</td>
+<td style="text-align: left;">Transcriptomic control of heterosis manifestation during lateral root initiation in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p153-transformation-and-genome-editing-of-the-maize-model-line-gaspé-flint-111" style="     ">P153</a></td>
+<td style="text-align: left;">Silvio Salvi</td>
+<td style="text-align: left;">Transformation and genome editing of the maize model Line Gaspé Flint 1.1.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p154-two-semi-dominant-mutants-acting-in-a-common-pathway-regulate-maize-leaf-angle" style="     ">P154</a></td>
+<td style="text-align: left;">Guan Zhang</td>
+<td style="text-align: left;">Two semi-dominant mutants acting in a common pathway regulate maize leaf angle</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p155-feminized-upright-narrow1-is-a-novel-nuclear-disordered-protein-that-mediates-brassinosteroid-and-oxylipin-biosynthesis" style="     ">P155</a></td>
+<td style="text-align: left;">Jazmin Abraham-Juarez</td>
+<td style="text-align: left;">feminized upright narrow1 is a novel nuclear disordered protein that mediates brassinosteroid and oxylipin biosynthesis</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section><section id="computational-and-large-scale-biology" class="level2"><h2 class="anchored" data-anchor-id="computational-and-large-scale-biology">Computational and Large-Scale Biology</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">P###</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Title</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p156-ai-ready-genomics-and-multi-omic-functional-annotation-at-maizegdb" style="     ">P156</a></td>
+<td style="text-align: left;">Carson Andorf</td>
+<td style="text-align: left;">AI-ready genomics and multi-omic functional annotation at MaizeGDB</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p157-using-the-maizegdb-genome-browser-to-evaluate-gene-model-annotation-quality-and-gain-functional-insights" style="     ">P157</a></td>
+<td style="text-align: left;">John Portwood</td>
+<td style="text-align: left;">Using the MaizeGDB genome browser to evaluate gene model annotation quality and gain functional insights</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p158-benchmarking-software-tools-for-identifying-common-plant-metabolites-in-lc-ms-datasets" style="     ">P158</a></td>
+<td style="text-align: left;">Elliot Braun</td>
+<td style="text-align: left;">Benchmarking software tools for identifying common plant metabolites in LC-MS datasets</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p159-beyond-chromatin-dna-replication-timing-becomes-a-novel-determinant-of-meiotic-recombination-landscapes" style="     ">P159</a></td>
+<td style="text-align: left;">Quinn Johnson</td>
+<td style="text-align: left;">Beyond chromatin: DNA replication timing becomes a novel determinant of meiotic recombination landscapes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p160-decoding-the-agronomic-genome-foundation-models-for-precision-trait-discovery" style="     ">P160</a></td>
+<td style="text-align: left;">Javier Mendoza Revilla</td>
+<td style="text-align: left;">Decoding the agronomic genome: Foundation models for precision trait discovery</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p161-evolutionary-dynamics-and-co-adaptation-of-root-traits-and-microbiome-function-in-poaceae-drought-tolerance" style="     ">P161</a></td>
+<td style="text-align: left;">Xiaolin Lyu</td>
+<td style="text-align: left;">Evolutionary dynamics and co-adaptation of root traits and microbiome function in Poaceae drought tolerance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p162-exploring-the-maize-transcriptional-regulatory-landscape-through-large-scale-profiling-of-transcription-factor-binding-sites" style="     ">P162</a></td>
+<td style="text-align: left;">Zeyang Ma</td>
+<td style="text-align: left;">Exploring the maize transcriptional regulatory landscape through large-scale profiling of transcription factor binding sites</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p163-genes-driving-maize-stem-responses-to-water-deficit-from-expression-to-phenotype" style="     ">P163</a></td>
+<td style="text-align: left;">Sylvie Coursol</td>
+<td style="text-align: left;">Genes driving maize stem responses to water deficit: from expression to phenotype</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p164-genome-assembly-and-flowering-time-regulation-in-the-model-maize-line-gaspé-flint-111" style="     ">P164</a></td>
+<td style="text-align: left;">Silvio Salvi</td>
+<td style="text-align: left;">Genome assembly and flowering-time regulation in the model maize line Gaspé Flint 1.1.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p165-haiant-symbiotic-integration-between-humans-and-artificial-intelligence" style="     ">P165</a></td>
+<td style="text-align: left;">Yunlong Zhang</td>
+<td style="text-align: left;">HAIant: Symbiotic integration between humans and artificial intelligence</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p166-high-throughput-quantification-of-midrib-color-for-lignin-related-trait-mapping-in-sorghum" style="     ">P166</a></td>
+<td style="text-align: left;">Karla Montserrat Cuellar Perez</td>
+<td style="text-align: left;">High-throughput quantification of midrib color for lignin-related trait mapping in sorghum</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p167-integrating-proteomics-data-into-a-genome-scale-metabolic-model-to-predict-metabolic-fluxes-in-maize-leaf" style="     ">P167</a></td>
+<td style="text-align: left;">Maëla Sémery</td>
+<td style="text-align: left;">Integrating proteomics data into a genome-scale metabolic model to predict metabolic fluxes in maize leaf</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p168-machine-learning-for-removal-of-technical-bias-signals-in-high-throughput-transcriptomics-datasets" style="     ">P168</a></td>
+<td style="text-align: left;">Teague McCracken</td>
+<td style="text-align: left;">Machine learning for removal of technical bias signals in high-throughput transcriptomics datasets</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p169-maize-genomic-prediction-integrating-genomics-and-transcriptomics-for-trait-analysis" style="     ">P169</a></td>
+<td style="text-align: left;">Ally Schumacher</td>
+<td style="text-align: left;">Maize genomic prediction: Integrating genomics and transcriptomics for trait analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p170-missing-heritability-of-6-ecophysiological-traits-of-maize-in-response-to-water-deficit-captured-by-integration-of-phenomic,-proteomic,-and-genomic-data" style="     ">P170</a></td>
+<td style="text-align: left;">Marie-Laure Martin</td>
+<td style="text-align: left;">Missing heritability of 6 ecophysiological traits of maize in response to water deficit captured by integration of phenomic, proteomic, and genomic data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p171-model,-predict,-generate-the-utility-of-machine-learning-models-in-angiosperm-genomics" style="     ">P171</a></td>
+<td style="text-align: left;">Ana Berthel</td>
+<td style="text-align: left;">Model, predict, generate: The utility of machine learning models in angiosperm genomics</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p172-phylogenetic-study-of-helitron-polymorphism-in-fungi,-plantae,-or-animalia-kingdoms" style="     ">P172</a></td>
+<td style="text-align: left;">Bethany Olive</td>
+<td style="text-align: left;">Phylogenetic study of Helitron polymorphism in Fungi, Plantae, or Animalia Kingdoms</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p173-plastochron-regulation-in-maize-spatial-transcriptomics-reveals-transcriptional-changes-in-the-plastochron1-mutant" style="     ">P173</a></td>
+<td style="text-align: left;">Lotte Van de Vreken</td>
+<td style="text-align: left;">Plastochron regulation in maize: Spatial transcriptomics reveals transcriptional changes in the plastochron1 mutant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p174-predicted-protein-3d-structures-provide-essential-insights-into-the-genetic-architecture-underlying-phenotypic-diversity-in-maize" style="     ">P174</a></td>
+<td style="text-align: left;">Shuai Wang</td>
+<td style="text-align: left;">Predicted protein 3D structures provide essential insights into the genetic architecture underlying phenotypic diversity in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p175-predicting-complex-phenotypes-using-multi-omics-data-in-maize" style="     ">P175</a></td>
+<td style="text-align: left;">Madison Creach</td>
+<td style="text-align: left;">Predicting complex phenotypes using multi-omics data in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p176-regulatory-response-of-maize-to-water-deficit-mediated-by-cis-regulatory-elements" style="     ">P176</a></td>
+<td style="text-align: left;">Thomas-Sylvestre Michau</td>
+<td style="text-align: left;">Regulatory response of maize to water deficit mediated by cis-regulatory elements</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p177-shortcuts-to-success-how-large-scale-genotyping-benefits-the-maize-community" style="     ">P177</a></td>
+<td style="text-align: left;">Corrinne Grover</td>
+<td style="text-align: left;">Shortcuts to success: how large-scale genotyping benefits the maize community</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p178-the-breeding-trends-of-2060-widly-planting-commercial-maize-hybrids-in-china" style="     ">P178</a></td>
+<td style="text-align: left;">Rui Han</td>
+<td style="text-align: left;">The breeding trends of 2060 widly planting commercial maize hybrids in China</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p179-towards-next-generation-bioinoculants-machine-learning-assisted-characterization-of-pgpb-for-maize" style="     ">P179</a></td>
+<td style="text-align: left;">Sulamita Santos Correa</td>
+<td style="text-align: left;">Towards next-generation bioinoculants: Machine learning-assisted characterization of PGPB for maize</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section><section id="cytogenetics" class="level2"><h2 class="anchored" data-anchor-id="cytogenetics">Cytogenetics</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">P###</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Title</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p180-cytogenetic-analyses-of-mutants-of-class-i-and-class-ii-crossover-regulators-in-maize" style="     ">P180</a></td>
+<td style="text-align: left;">Seijiro Ono</td>
+<td style="text-align: left;">Cytogenetic analyses of mutants of class I and class II crossover regulators in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p181-engineering-a-maize-mini-b-chromosome-as-a-platform-for-site-specific-gene-integration" style="     ">P181</a></td>
+<td style="text-align: left;">Jasnoor Singh</td>
+<td style="text-align: left;">Engineering a maize mini-B chromosome as a platform for site-specific gene integration</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p182-genome-wide-investigation-of-recombination-in-the-presence-of-maize-b-chromosomes" style="     ">P182</a></td>
+<td style="text-align: left;">Malika Sharma</td>
+<td style="text-align: left;">Genome-Wide investigation of recombination in the presence of maize B chromosomes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p183-inheritance-and-segregation-of-heterochromatic-knobs-in-an-f2-progeny-from-highly-endogamic-inbred-lines" style="     ">P183</a></td>
+<td style="text-align: left;">Ana Laura Marassi Maronezi</td>
+<td style="text-align: left;">Inheritance and segregation of heterochromatic knobs in an F2 progeny from highly endogamic inbred lines</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p184-maize-knob-heterochromatin-and-chromosomal-features-a-cytoinformatics-framework" style="     ">P184</a></td>
+<td style="text-align: left;">Tiago Corrêa</td>
+<td style="text-align: left;">Maize knob heterochromatin and chromosomal features: A cytoinformatics framework</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p185-mapping-the-second-trans-acting-factors-required-for-the-b-chromosome-nondisjunction" style="     ">P185</a></td>
+<td style="text-align: left;">Hua Yang</td>
+<td style="text-align: left;">Mapping the second trans-acting factor(s) required for the B chromosome nondisjunction</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p186-molecular-analysis-of-barbara-mcclintock's-tiny-fragment-chromosome" style="     ">P186</a></td>
+<td style="text-align: left;">Taylor Isles</td>
+<td style="text-align: left;">Molecular analysis of Barbara McClintock's tiny fragment chromosome</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p187-neotelomere-formation-in-maize" style="     ">P187</a></td>
+<td style="text-align: left;">Kempton Bryan</td>
+<td style="text-align: left;">Neotelomere formation in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p188-zyp1-mediates-synaptonemal-complex-assembly-and-ensures-crossover-assurance-in-maize" style="     ">P188</a></td>
+<td style="text-align: left;">Tzu-Han Huang</td>
+<td style="text-align: left;">ZYP1 mediates synaptonemal complex assembly and ensures crossover assurance in maize</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section><section id="education-outreach" class="level2"><h2 class="anchored" data-anchor-id="education-outreach">Education &amp; Outreach</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">P###</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Title</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p189-digitizing-maize-cytogenetics-history-female-meiosis-and-fertilization" style="     ">P189</a></td>
+<td style="text-align: left;">Taylor Isles</td>
+<td style="text-align: left;">Digitizing maize cytogenetics history: Female meiosis and fertilization</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p190-maize-genome-editing-and-genetic-transformation-platform-in-lyon,-france" style="     ">P190</a></td>
+<td style="text-align: left;">Emilie Montes</td>
+<td style="text-align: left;">Maize genome editing and genetic transformation platform in Lyon, France</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p191-popcorn-the-origin-of-maize-and-the-future-of-science-education" style="     ">P191</a></td>
+<td style="text-align: left;">Anthony Studer</td>
+<td style="text-align: left;">Popcorn: The origin of maize and the future of science education</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p192-redesigning-nitrogen-flow-in-grass-dominated-food-systems" style="     ">P192</a></td>
+<td style="text-align: left;">Edward Buckler</td>
+<td style="text-align: left;">Redesigning nitrogen flow in grass-dominated food systems</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p193-the-si-mi-mentoring-program-a-resource-for-guiding-effective-mentorship-in-the-plant-sciences-community" style="     ">P193</a></td>
+<td style="text-align: left;">Brandi Sigmon</td>
+<td style="text-align: left;">The SI-MI mentoring program: A resource for guiding effective mentorship in the plant sciences community</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section><section id="quantitative-genetics-breeding" class="level2"><h2 class="anchored" data-anchor-id="quantitative-genetics-breeding">Quantitative Genetics &amp; Breeding</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">P###</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Title</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p194-a-dynamic-genotype-environment-integration-approach-decodes-the-genetic-basis-of-phenotypic-plasticity-in-maize" style="     ">P194</a></td>
+<td style="text-align: left;">Pengfei Yin</td>
+<td style="text-align: left;">A dynamic genotype-environment integration approach decodes the genetic basis of phenotypic plasticity in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p195-a-research-tool-for-the-study-of-endosperm-mutants-in-sweet-corn-zea-mays-l" style="     ">P195</a></td>
+<td style="text-align: left;">Sophie Banks</td>
+<td style="text-align: left;">A research tool for the study of endosperm mutants in sweet corn (Zea mays L.)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p196-adaptive-plasticity-of-root-system-architecture-as-a-response-to-nitrogen-availability-drives-yield-gain-over-time-in-us-maize-hybrids" style="     ">P196</a></td>
+<td style="text-align: left;">John McKay</td>
+<td style="text-align: left;">Adaptive plasticity of root system architecture as a response to Nitrogen availability drives yield gain over time in US maize hybrids</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p197-assembly-and-function-of-rhizosphere-microbiome-under-drought-stress-during-heterosis-manifestation-in-maize" style="     ">P197</a></td>
+<td style="text-align: left;">Ling Gu</td>
+<td style="text-align: left;">Assembly and function of rhizosphere microbiome under drought stress during heterosis manifestation in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p198-bridging-air-and-soil-adaptive-variation-of-maize-brace-roots-in-contrasting-environments" style="     ">P198</a></td>
+<td style="text-align: left;">Avani Vallayil</td>
+<td style="text-align: left;">Bridging air and soil: Adaptive variation of maize brace roots in contrasting environments</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p199-cerca---circular-economy-that-reimagines-corn-agriculture" style="     ">P199</a></td>
+<td style="text-align: left;">Cinta Romay</td>
+<td style="text-align: left;">CERCA - Circular Economy that Reimagines Corn Agriculture</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p200-categorical-and-quantitative-approaches-for-evaluating-maize-yield-response-to-nitrogen" style="     ">P200</a></td>
+<td style="text-align: left;">Donielle Brottlund</td>
+<td style="text-align: left;">Categorical and quantitative approaches for evaluating maize yield response to nitrogen</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p201-combining-canopy-architecture-and-plot-orientation-to-optimize-light-interception-and-distribution-for-improved-maize-grain-yield" style="     ">P201</a></td>
+<td style="text-align: left;">Gregory Schoenbaum</td>
+<td style="text-align: left;">Combining canopy architecture and plot orientation to optimize light interception and distribution for improved maize grain yield</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p202-comparative-analysis-of-us-ex-pvp-and-“zemun-polje”-commercial-maize-inbred-lines-using-a-25k-snp-array" style="     ">P202</a></td>
+<td style="text-align: left;">Nikola Grcic</td>
+<td style="text-align: left;">Comparative analysis of U.S. ex-PVP and “Zemun Polje” commercial maize inbred lines using a 25K SNP array</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p203-cutting-back-on-canopy-tailoring-plant-architecture-for-the-agronomic-management-strategies-of-tomorrow-with-a-novel-genetic-modifier" style="     ">P203</a></td>
+<td style="text-align: left;">Matthew Runyon</td>
+<td style="text-align: left;">Cutting back on canopy: Tailoring plant architecture for the agronomic management strategies of tomorrow with a novel genetic modifier</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p204-decomposing-complex-traits-in-maize-without-prior-knowledge" style="     ">P204</a></td>
+<td style="text-align: left;">Tingting Guo</td>
+<td style="text-align: left;">Decomposing complex traits in maize without prior knowledge</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p205-designing-interpretable-ai-models-to-identify-drivers-of-maize-phenotypic-plasticity" style="     ">P205</a></td>
+<td style="text-align: left;">Karlene Negus</td>
+<td style="text-align: left;">Designing interpretable AI models to identify drivers of maize phenotypic plasticity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p206-dissecting-genetic-diversity-and-flowering-related-traits-in-italian-maize-lines-through-gwas" style="     ">P206</a></td>
+<td style="text-align: left;">Helga Cassol</td>
+<td style="text-align: left;">Dissecting genetic diversity and flowering related traits in Italian maize lines through GWAS</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p207-diverse-defense-responses-of-sorghum-and-corn-to-non-adapted-rust-pathogens" style="     ">P207</a></td>
+<td style="text-align: left;">Libia Gomez Trejo</td>
+<td style="text-align: left;">Diverse defense responses of sorghum and corn to non-adapted rust pathogens</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p208-do-we-need-dedicated-maize-varieties-for-perennial-groundcover-systems" style="     ">P208</a></td>
+<td style="text-align: left;">Memis Bilgici</td>
+<td style="text-align: left;">Do we need dedicated maize varieties for perennial groundcover systems?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p209-drought-tolerance-classification-using-unmanned-aerial-systems-with-rgb-and-multispectral-data" style="     ">P209</a></td>
+<td style="text-align: left;">Juliana Yassitepe</td>
+<td style="text-align: left;">Drought tolerance classification using unmanned aerial systems with RGB and multispectral data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p210-dynamic-calibration-of-maize-growth-model-for-enhanced-decision-making-in-breeding-and-production" style="     ">P210</a></td>
+<td style="text-align: left;">Xianlong Song</td>
+<td style="text-align: left;">Dynamic calibration of maize growth model for enhanced decision-making in breeding and production</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p211-engineering-maize-root-architecture-via-targeted-genome-editing-of-root-regulatory-genes" style="     ">P211</a></td>
+<td style="text-align: left;">Marisa Miller</td>
+<td style="text-align: left;">Engineering maize root architecture via targeted genome editing of root regulatory genes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p212-engineering-synthetic-apomixis-in-maize" style="     ">P212</a></td>
+<td style="text-align: left;">Nina Chumak</td>
+<td style="text-align: left;">Engineering synthetic apomixis in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p213-evaluation-of-drought-tolerance–related-traits-in-native-maize-populations-from-the-northeast-of-mexico" style="     ">P213</a></td>
+<td style="text-align: left;">Daniel Cruz Rosas</td>
+<td style="text-align: left;">Evaluation of drought tolerance–related traits in native maize populations from the northeast of Mexico</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p214-evaluation-of-morphological-and-reproductive-traits-associated-with-drought-tolerance-in-native-maize-populations-from-the-state-of-coahuila,-mexico" style="     ">P214</a></td>
+<td style="text-align: left;">Alejandro Mendoza Gomez</td>
+<td style="text-align: left;">Evaluation of morphological and reproductive traits associated with drought tolerance in native maize populations from the State of Coahuila, Mexico.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p215-expanding-the-use-of-biodiversity-to-safeguard-future-maize-production" style="     ">P215</a></td>
+<td style="text-align: left;">Ashish Saxena</td>
+<td style="text-align: left;">Expanding the use of biodiversity to safeguard future maize production</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p216-from-phenotypic-tradition-to-genomic-precision-maize-dus-20" style="     ">P216</a></td>
+<td style="text-align: left;">Anurag Daware</td>
+<td style="text-align: left;">From phenotypic tradition to genomic precision: Maize DUS 2.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p217-genetic-analysis-and-gene-cloning-of-maize-waterlogging-tolerant-germplasm-resource-material-hz32" style="     ">P217</a></td>
+<td style="text-align: left;">Xueqing Zheng</td>
+<td style="text-align: left;">Genetic analysis and gene cloning of maize waterlogging tolerant germplasm resource material HZ32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p218-genetic-and-molecular-analyses-of-european-maize-landrace-for-resistance-to-fusarium-stalk-rot" style="     ">P218</a></td>
+<td style="text-align: left;">Desmond Darko Asiedu</td>
+<td style="text-align: left;">Genetic and molecular analyses of European maize landrace for resistance to Fusarium stalk rot</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p219-genetic-basis-of-leaf-orientation-responsiveness-and-yield-stability-in-maize-zea-mays-under-contrasting-row-spacing-and-cover-crop-management" style="     ">P219</a></td>
+<td style="text-align: left;">Lakshmipriyanka Tammineni</td>
+<td style="text-align: left;">Genetic basis of leaf orientation responsiveness and yield stability in maize (Zea mays) under contrasting row spacing and cover crop management</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p220-genetic-dissection-of-the-deep-phenotype-for-nitrogen-use-efficiency-in-maize" style="     ">P220</a></td>
+<td style="text-align: left;">Haoyan Yang</td>
+<td style="text-align: left;">Genetic dissection of the deep phenotype for nitrogen use efficiency in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p221-genetic-diversity-and-identification-of-qtls-for-low-nitrogen-in-maize-doubled-haploid-lines-dhls" style="     ">P221</a></td>
+<td style="text-align: left;">Georgina Lala Ehemba</td>
+<td style="text-align: left;">Genetic diversity and identification of QTLs for low nitrogen in maize doubled haploid lines (DHLs)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p222-genetic-mechanism-analysis-for-spontaneous-haploid-genome-doubling-in-maize" style="     ">P222</a></td>
+<td style="text-align: left;">Wenhao Song</td>
+<td style="text-align: left;">Genetic mechanism analysis for spontaneous haploid genome doubling in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p223-genetic-pleiotropy-in-sorghum-using-a-503-trait-meta-analysis-spanning-18-years-of-studies" style="     ">P223</a></td>
+<td style="text-align: left;">Harshita Mangal</td>
+<td style="text-align: left;">Genetic pleiotropy in sorghum using a 503-trait meta-analysis spanning 18 years of studies</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p224-genome-wide-response-to-divergent-selection-on-vegetative-phase-change-in-maize" style="     ">P224</a></td>
+<td style="text-align: left;">Heather Wodehouse</td>
+<td style="text-align: left;">Genome-wide response to divergent selection on vegetative phase change in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p225-genomic-characterization-of-aafc’s-historical-maize-inbred-lines-and-their-application-in-gwas" style="     ">P225</a></td>
+<td style="text-align: left;">Aida Kebede</td>
+<td style="text-align: left;">Genomic characterization of AAFC’s historical maize inbred lines and their application in GWAS</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p226-global-genetic-dissection-of-maize-teosinte-divergence-reveals-el3-2-as-a-pleiotropic-domestication-regulator" style="     ">P226</a></td>
+<td style="text-align: left;">Xiaohong Yang</td>
+<td style="text-align: left;">Global genetic dissection of maize-teosinte divergence reveals EL3-2 as a pleiotropic domestication regulator</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p227-how-well-do-gwas-methods-perform-on-twas-data" style="     ">P227</a></td>
+<td style="text-align: left;">Marion Pitz</td>
+<td style="text-align: left;">How well do GWAS methods perform on TWAS data?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p228-identification-and-fine-mapping-of-quantitative-trait-loci-for-anthesis-silking-interval-in-maize" style="     ">P228</a></td>
+<td style="text-align: left;">Yapeng Wang</td>
+<td style="text-align: left;">Identification and fine mapping of quantitative trait loci for anthesis silking interval in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p229-impact-of-spontaneous-haploid-genome-doubling-on-haploid-induction-in-maize-haploid-inducers" style="     ">P229</a></td>
+<td style="text-align: left;">Vencke Gruening</td>
+<td style="text-align: left;">Impact of spontaneous haploid genome doubling on haploid induction in maize haploid inducers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p230-insights-into-the-biocontrol-potential-of-burkholderia-gladioli-b22-against-maize-stalk-rot-and-promoting-growth" style="     ">P230</a></td>
+<td style="text-align: left;">Huanhuan Tai</td>
+<td style="text-align: left;">Insights into the biocontrol potential of Burkholderia gladioli B22 against maize stalk rot and promoting growth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p231-integrating-genomic-prediction-and-offset-using-dna-pool-genotyping-to-assess-maize-landrace-adaptation-and-select-accessions-for-pre-breeding" style="     ">P231</a></td>
+<td style="text-align: left;">Stéphane Nicolas</td>
+<td style="text-align: left;">Integrating genomic prediction and offset using DNA-pool genotyping to assess maize landrace adaptation and select accessions for pre-breeding</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p232-ion-know-which-genes-control-elemental-traits!" style="     ">P232</a></td>
+<td style="text-align: left;">Magdalena Janik</td>
+<td style="text-align: left;">Ion-know which genes control elemental traits!</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p233-k-mer-based-gwas-as-a-complementary-approach-to-traditional-gwas-across-maize-and-sorghum-genomes" style="     ">P233</a></td>
+<td style="text-align: left;">Waqar Ali</td>
+<td style="text-align: left;">K-mer based GWAS as a complementary approach to traditional GWAS across maize and sorghum genomes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p234-leveraging-transcriptomic-modulation-to-enhance-genomic-prediction-of-hybrid-performance-across-environments" style="     ">P234</a></td>
+<td style="text-align: left;">Jenifer Camila Godoy dos Santos</td>
+<td style="text-align: left;">Leveraging transcriptomic modulation to enhance genomic prediction of hybrid performance across environments</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p235-long-term-selection-reshapes-the-maize-genome-by-elevating-standing-and-rare-beneficial-variants-to-drive-sustained-gains-in-kernel-oil-content" style="     ">P235</a></td>
+<td style="text-align: left;">Binghao Zhao</td>
+<td style="text-align: left;">Long-term selection reshapes the maize genome by elevating standing and rare beneficial variants to drive sustained gains in kernel oil content</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p236-map-based-cloning-identifies-two-qtl-genes-for-synergistic-control-of-husk-number-in-maize" style="     ">P236</a></td>
+<td style="text-align: left;">Cuixia Chen</td>
+<td style="text-align: left;">Map-based cloning identifies two QTL genes for synergistic control of husk number in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p237-mining-allelic-diversity-of-maize-landraces-for-abiotic-and-biotic-stresses" style="     ">P237</a></td>
+<td style="text-align: left;">Stéphane Nicolas</td>
+<td style="text-align: left;">Mining allelic diversity of maize landraces for abiotic and biotic stresses</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p238-modeling-spatiotemporal-variation-in-genotype-by-environment-interactions-of-maize-flowering-time" style="     ">P238</a></td>
+<td style="text-align: left;">Lorenzo Rocchetti</td>
+<td style="text-align: left;">Modeling spatiotemporal variation in genotype-by-environment interactions of maize flowering time</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p239-molecular-mechanism-of-maize-qel308-regulating-trehalose-metabolism-and-its-impact-on-ear-development" style="     ">P239</a></td>
+<td style="text-align: left;">Aoqing Hu</td>
+<td style="text-align: left;">Molecular mechanism of maize qEL3.08 regulating trehalose metabolism and its impact on ear development</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p240-multi-trait-synergic-selection-by-integrating-prior-genetic-and-environmental-information-in-crop-breeding" style="     ">P240</a></td>
+<td style="text-align: left;">Wenjie Fang</td>
+<td style="text-align: left;">Multi-trait synergic selection by integrating prior genetic and environmental information in crop breeding</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p241-multi-view-blup-a-promising-solution-for-post-omics-data-integrative-prediction" style="     ">P241</a></td>
+<td style="text-align: left;">Bingjie Wu</td>
+<td style="text-align: left;">Multi-view BLUP: a promising solution for post-omics data integrative prediction</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p242-natural-variation-of-liguleless1-promoter-bound-by-zmbhlh-narrows-maize-leaf-angle" style="     ">P242</a></td>
+<td style="text-align: left;">Yaxin Wang</td>
+<td style="text-align: left;">Natural variation of liguleless1 promoter bound by ZmbHLH narrows maize leaf angle</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p243-optimization-of-diabrotica-resistance-in-maize-by-enhanced-nematode-attraction" style="     ">P243</a></td>
+<td style="text-align: left;">Niloufar Ashrafi</td>
+<td style="text-align: left;">Optimization of Diabrotica resistance in maize by enhanced nematode attraction</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p244-parsing-genotype-interaction-effects-to-understand-the-genetic-architecture-of-maize-cuticular-wax-accumulation-across-environments" style="     ">P244</a></td>
+<td style="text-align: left;">Matthew Wendt</td>
+<td style="text-align: left;">Parsing genotype-interaction effects to understand the genetic architecture of maize cuticular wax accumulation across environments</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p245-phenotypic-analysis-of-transgenic-maize-events-under-water-stress-conditions" style="     ">P245</a></td>
+<td style="text-align: left;">Juliana Nonato</td>
+<td style="text-align: left;">Phenotypic analysis of transgenic maize events under water stress conditions</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p246-phenotypic-characterization-of-us-maize-heirlooms" style="     ">P246</a></td>
+<td style="text-align: left;">Melissa Draves</td>
+<td style="text-align: left;">Phenotypic characterization of U.S. maize heirlooms</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p247-plant–microorganism-interactions-as-novel-screening-criteria-in-maize-varietal-registration" style="     ">P247</a></td>
+<td style="text-align: left;">Anna Pia Maria Giulini</td>
+<td style="text-align: left;">Plant–microorganism interactions as novel screening criteria in maize varietal registration</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p248-population-scale-rna-sequencing-reveals-host-genetic-control-of-phyllosphere-fungal-communities" style="     ">P248</a></td>
+<td style="text-align: left;">Charles Colvin</td>
+<td style="text-align: left;">Population-scale RNA sequencing reveals host genetic control of phyllosphere fungal communities</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p249-predicting-biomass-in-drought-stressed-young-maize-plants-with-machine-learning-using-genomic-and-phenomic-data" style="     ">P249</a></td>
+<td style="text-align: left;">Domagoj Simic</td>
+<td style="text-align: left;">Predicting biomass in drought-stressed young maize plants with machine learning using genomic and phenomic data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p250-quantitative-assessment-of-heterosis-and-combining-ability-for-strategic-hybrid-breeding-in-maize-for-silage" style="     ">P250</a></td>
+<td style="text-align: left;">Mythri Bikkasani</td>
+<td style="text-align: left;">Quantitative assessment of heterosis and combining ability for strategic hybrid breeding in maize for silage</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p251-rhizosheath-inhabiting-massilia-are-linked-to-heterosis-in-roots-of-maize" style="     ">P251</a></td>
+<td style="text-align: left;">Xiaoming He</td>
+<td style="text-align: left;">Rhizosheath inhabiting Massilia are linked to heterosis in roots of maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p252-roadmaps-to-rhizosphere-nitrogen-retention-breeding-crops-for-microbiome-associated-phenotypes" style="     ">P252</a></td>
+<td style="text-align: left;">Angela Kent</td>
+<td style="text-align: left;">RoadMAPs to rhizosphere nitrogen retention: Breeding crops for microbiome-associated phenotypes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p253-rooting-for-ecosystem-services-through-haplotype-analysis" style="     ">P253</a></td>
+<td style="text-align: left;">Abby Livingston</td>
+<td style="text-align: left;">Rooting for ecosystem services through haplotype analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p254-screening-of-maize-photosynthetic-responses-at-low-temperatures-and-high-light" style="     ">P254</a></td>
+<td style="text-align: left;">Emma Leary</td>
+<td style="text-align: left;">Screening of maize photosynthetic responses at low temperatures and high light</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p255-seeking-the-molecular-drivers-of-hidden-chilling-susceptibility-in-maize" style="     ">P255</a></td>
+<td style="text-align: left;">Catherine Giauffret</td>
+<td style="text-align: left;">Seeking the molecular drivers of hidden chilling susceptibility in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p256-single-cell-transcriptomics-reveals-cell-type-specific-signatures-of-heterosis-in-early-roots-of-maize" style="     ">P256</a></td>
+<td style="text-align: left;">Danning Wang</td>
+<td style="text-align: left;">Single-cell transcriptomics reveals cell-type-specific signatures of heterosis in early roots of maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p257-sources-of-transcriptomic-variation-in-modern-maize" style="     ">P257</a></td>
+<td style="text-align: left;">Marcin Grzybowski</td>
+<td style="text-align: left;">Sources of transcriptomic variation in modern maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p258-stable-phenotypic-shade-avoidance-responses-to-low-red/far-red-ratio-and-shifting-resource-use-strategies-in-maize-hybrids-representing-100-years-of-long-term-breeding-for-yield" style="     ">P258</a></td>
+<td style="text-align: left;">Memis Bilgici</td>
+<td style="text-align: left;">Stable phenotypic shade-avoidance responses to low red/far-red ratio and shifting resource-use strategies in maize hybrids representing 100 years of long-term breeding for yield</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p259-systems-level-plant-microbiome-transcriptomics-to-explore-maize-and-rhizosphere-interactions-underlying-heat-stress-response" style="     ">P259</a></td>
+<td style="text-align: left;">Nate Korth</td>
+<td style="text-align: left;">Systems level plant-microbiome transcriptomics to explore maize and rhizosphere interactions underlying heat stress response</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p260-temporal-2d–3d-phenotyping-reveals-dynamic-maize-architectural-development-across-the-growth-cycle" style="     ">P260</a></td>
+<td style="text-align: left;">Zhongjie Ji</td>
+<td style="text-align: left;">Temporal 2D–3D phenotyping reveals dynamic maize architectural development across the growth cycle</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p261-the-complementarity-of-ex-pvp-temperate-and-tropical-lines-in-enhancing-grain-yield-in-tropical-environments" style="     ">P261</a></td>
+<td style="text-align: left;">Ashish Saxena</td>
+<td style="text-align: left;">The Complementarity of Ex-PVP temperate and tropical lines in enhancing grain yield in tropical environments</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p262-the-cornbox,-an-effective-platform-for-improving-nitrogen-utilization-in-us-corn-belt-maize" style="     ">P262</a></td>
+<td style="text-align: left;">Steve Moose</td>
+<td style="text-align: left;">The CorNBox, an effective platform for improving nitrogen utilization in U.S. corn belt maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p263-the-pheno_maize-project-uav-based-high-throughput-phenotyping-to-support-decision-making-in-maize-breeding" style="     ">P263</a></td>
+<td style="text-align: left;">Sofija Božinović</td>
+<td style="text-align: left;">The PHENO_MaizE Project: UAV-based high-throughput phenotyping to support decision-making in maize breeding</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p264-the-combination-of-linkage-mapping,-genome-wide-association-study,-and-dynamic-transcriptome-analysis-reveals-conserved-candidate-genes-for-salt-tolerance-in-maize" style="     ">P264</a></td>
+<td style="text-align: left;">Ziyi Xiao</td>
+<td style="text-align: left;">The combination of linkage mapping, genome-wide association study, and dynamic transcriptome analysis reveals conserved candidate genes for salt tolerance in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p265-the-effect-of-selection-on-allele-frequencies-and-diversity-in-wheat-triticum-aestivum" style="     ">P265</a></td>
+<td style="text-align: left;">Mirai Inaoka</td>
+<td style="text-align: left;">The effect of selection on allele frequencies and diversity in wheat (Triticum aestivum)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p266-the-genetic-architecture-of-acyl-lipid-traits-in-maize-kernel-and-leaf" style="     ">P266</a></td>
+<td style="text-align: left;">Hui Li</td>
+<td style="text-align: left;">The genetic architecture of acyl-lipid traits in maize kernel and leaf</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p267-understanding-the-morpho-physiological-framework-of-ear-flex-for-improving-yield-and-yield-stability-in-maize" style="     ">P267</a></td>
+<td style="text-align: left;">Yuki Matsumura</td>
+<td style="text-align: left;">Understanding the morpho-physiological framework of ear flex for improving yield and yield stability in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p268-unlocking-sugar-potential-evaluating-sugar-content-of-waxy1/shrunken2-i-hybrids" style="     ">P268</a></td>
+<td style="text-align: left;">Danny Davis</td>
+<td style="text-align: left;">Unlocking sugar potential: Evaluating sugar content of waxy1/shrunken2-i hybrids</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p269-vegetation-indices-including-soil-confound-plant-health-and-canopy-cover-multi-environment-analysis-of-maize-temporal-progression" style="     ">P269</a></td>
+<td style="text-align: left;">Fatma Ozair</td>
+<td style="text-align: left;">Vegetation indices including soil confound plant health and canopy cover: Multi-environment analysis of maize temporal progression</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p270-zmnags-enhances-maize-kernel-size-and-grain-yield-through-increasing-photosynthesis-and-starch-content" style="     ">P270</a></td>
+<td style="text-align: left;">Huinan Li</td>
+<td style="text-align: left;">ZmNAGS enhances maize kernel size and grain yield through increasing photosynthesis and starch content</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p271-qgsr202-confers-recessive-resistance-to-stalk-rot-and-ear-rot-in-maize" style="     ">P271</a></td>
+<td style="text-align: left;">Chuan Chen</td>
+<td style="text-align: left;">qGSR2.02 confers recessive resistance to stalk rot and ear rot in maize</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section><section id="transposons-epigenetics" class="level2"><h2 class="anchored" data-anchor-id="transposons-epigenetics">Transposons &amp; Epigenetics</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">P###</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Title</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p1-a-role-for-rddm-in-susceptibility-to-paramutation-at-the-maize-booster1-locus" style="     ">P1</a></td>
+<td style="text-align: left;">Kevin Peek</td>
+<td style="text-align: left;">A role for RdDM in susceptibility to paramutation at the maize BOOSTER1 locus</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p2-an-epigenetic-basis-for-inbreeding-depression-in-maize" style="     ">P2</a></td>
+<td style="text-align: left;">Z Jeffrey Chen</td>
+<td style="text-align: left;">An epigenetic basis for inbreeding depression in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p3-beyond-flavonoid-pigmentation-ufo1-links-epigenetic-regulation-and-redox-homeostasis-during-maize-endosperm-development" style="     ">P3</a></td>
+<td style="text-align: left;">Surinder Chopra</td>
+<td style="text-align: left;">Beyond flavonoid pigmentation: ufo1 links epigenetic Regulation and Redox Homeostasis during maize endosperm development</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p4-characterization-of-two-epigenetically-regulated-abi3-vp1-transcription-factors-in-zea-mays-maize" style="     ">P4</a></td>
+<td style="text-align: left;">Carly Blair</td>
+<td style="text-align: left;">Characterization of two epigenetically regulated ABI3-VP1 transcription factors in Zea mays (maize)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p5-characterizing-chromatin-accessibility-of-long-terminal-repeat-retrotransposons-in-response-to-cold-stress-in-maize" style="     ">P5</a></td>
+<td style="text-align: left;">Carmen Rodriguez</td>
+<td style="text-align: left;">Characterizing chromatin accessibility of long terminal repeat retrotransposons in response to cold stress in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p6-co-expression-analysis-unveils-the-roles-of-long-terminal-repeat-retrotransposons-in-maize-developmental-regulation" style="     ">P6</a></td>
+<td style="text-align: left;">Abby Sow</td>
+<td style="text-align: left;">Co-expression analysis unveils the roles of long terminal repeat retrotransposons in maize developmental regulation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p7-detecting-activity-of-hopscotch-family-long-terminal-repeat-retrotransposons-in-zea-mays" style="     ">P7</a></td>
+<td style="text-align: left;">Patrick Gardner</td>
+<td style="text-align: left;">Detecting activity of hopscotch family long terminal repeat retrotransposons in Zea mays</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p8-does-active-dna-demethylation-drive-epigenetic-silencing-in-pollen" style="     ">P8</a></td>
+<td style="text-align: left;">Jonathan Gent</td>
+<td style="text-align: left;">Does active DNA demethylation drive epigenetic silencing in pollen?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p9-genome-wide-resolution-of-long-terminal-repeat-retrotransposon-promoters-and-their-tissue-specific-regulatory-programs" style="     ">P9</a></td>
+<td style="text-align: left;">Caleb Gooden</td>
+<td style="text-align: left;">Genome-wide resolution of long terminal repeat retrotransposon promoters and their tissue-specific regulatory programs</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p10-helitron-mediated-expansion-of-endosperm-regulatory-binding-sites-in-maize" style="     ">P10</a></td>
+<td style="text-align: left;">Daniela Barro Trastoy</td>
+<td style="text-align: left;">Helitron-mediated expansion of endosperm regulatory binding sites in maize</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p11-how-transposable-elements-preserve-heterozygosity-during-inbreeding-in-maize" style="     ">P11</a></td>
+<td style="text-align: left;">Hailey Buell</td>
+<td style="text-align: left;">How transposable elements preserve heterozygosity during inbreeding in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p12-identification-of-regulatory-genes-involved-in-rna-directed-dna-methylation-mediated-regulation-of-responses-to-abiotic-stress-in-zea-mays-maize" style="     ">P12</a></td>
+<td style="text-align: left;">Thelma Madzima</td>
+<td style="text-align: left;">Identification of regulatory genes involved in RNA-directed DNA methylation mediated regulation of responses to abiotic stress in Zea mays (maize).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p13-single-molecule-methylation-profiling-at-the-repetitive-b1-paramutation-locus-in-maize" style="     ">P13</a></td>
+<td style="text-align: left;">Juliette Breil-Aubert</td>
+<td style="text-align: left;">Single-molecule methylation profiling at the repetitive b1 paramutation locus in maize</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="./generated_poster_list.html#p14-tes-in-the-“metagenome”-a-kmer-based-approach-to-estimate-te-abundance-from-short-reads" style="     ">P14</a></td>
+<td style="text-align: left;">Natasha Dhamrait</td>
+<td style="text-align: left;">TEs in the “Metagenome”: A kmer based approach to estimate TE abundance from short reads</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

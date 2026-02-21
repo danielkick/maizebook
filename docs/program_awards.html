@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>From the Maize Genetics Cooperation Board of Directors:</title>
+<title>Maize Genetics Awards:</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,12 +37,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-d496715cb688a7e1dd488a18866eacde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,169 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -251,11 +86,11 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">⚠ Home 🌽</span></a>
+<span class="menu-text">Home 🌽</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./program_schedule.html"> 
-<span class="menu-text">⚠ Schedule</span></a>
+<span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./generated_talks.html"> 
@@ -279,13 +114,17 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./program_poster_list.html"> 
-<span class="menu-text">⚠ Poster Lookup</span></a>
+<span class="menu-text">Poster Lookup</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./program_general_information.html"> 
+<span class="menu-text">Info.</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./program_awards.html" aria-current="page"> 
-<span class="menu-text">⚠ Awards</span></a>
+<span class="menu-text">Awards</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./program_authors_attendees.html"> 
@@ -298,7 +137,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -312,17 +150,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#maize-genetics-awards" id="toc-maize-genetics-awards" class="nav-link active" data-scroll-target="#maize-genetics-awards">Maize Genetics Awards:</a></li>
+  <li><a href="#maize-genetics-cooperation-community-awards" id="toc-maize-genetics-cooperation-community-awards" class="nav-link active" data-scroll-target="#maize-genetics-cooperation-community-awards">2026 Maize Genetics Cooperation Community Awards</a></li>
+  <li><a href="#the-barbara-mcclintock-prize-for-plant-genetics-and-genome-studies" id="toc-the-barbara-mcclintock-prize-for-plant-genetics-and-genome-studies" class="nav-link" data-scroll-target="#the-barbara-mcclintock-prize-for-plant-genetics-and-genome-studies">The Barbara McClintock Prize for Plant Genetics and Genome Studies</a></li>
+  <li><a href="#the-2026-attendancetravel-awards-program" id="toc-the-2026-attendancetravel-awards-program" class="nav-link" data-scroll-target="#the-2026-attendancetravel-awards-program">The 2026 Attendance/Travel Awards Program</a></li>
+  <li><a href="#broadening-international-participation-awards" id="toc-broadening-international-participation-awards" class="nav-link" data-scroll-target="#broadening-international-participation-awards">Broadening International Participation Awards</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">From the Maize Genetics Cooperation Board of Directors:</h1>
+<h1 class="title">Maize Genetics Awards:</h1>
 </div>
 
 
@@ -339,113 +179,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>⚠ Update pending
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Material on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details.</p>
-</div>
-</div>
-<section id="maize-genetics-awards" class="level2">
-<h2 class="anchored" data-anchor-id="maize-genetics-awards">Maize Genetics Awards:</h2>
-<!-- 
-### **The 2025 MGC Cooperator Awardees**
-
--   **Don McCarty**, University of Florida
-
--   **Karen Koch**, University of Florida
-
--   **Frank Hochholdinger**, University of Bonn
-
--   **Caroline Macron**, University of Bonn
-
-### The 2025 MGC Leadership Awardee
-
--   **Shawn Kaeppler**, University of Wisconsin
-
-### The 2025 M. Rhoades Early Career Awardee
-
--   **Erin Sparks,** University of Missouri
-
-### The 2025 L. Stadler Mid-Career Awardee
-
--   **Sherry Flint-Garcia**, USDA Agricultural Research Service
-
-### The 2025 R. Emerson Lifetime Awardees
-
--   **Brian Larkins,** University of Nebraska, passed away on January 19^th^.
-
--   **Zac Cande,** University of California Berkley, now retired
-
-## The Barbara McClintock Prize for Plant Genetics and Genome Studies
-
-![](data/assets/FromTheMGCBoard/McClintock.png){fig-align="center" width="111"}
-
-This award has been created to memorialize the unequalled contributions of Dr. McClintock through providing recognition to the most outstanding plant geneticists of the present era. In memory of the many contributions of Dr. McClintock, this Prize will be awarded each year to one or more of the most creative minds and productive scientists in the study of plant genome structure, function and evolution, including the analysis of gene regulation and epigenetics.
-
-![](data/assets/FromTheMGCBoard/EdwardBuckler.png){fig-align="center" width="96"}
-
-The **2025** Barbara McClintock Prize for Plant Genetics and Genome Studies has been awarded to Dr. Edward S. Buckler IV of United States Department of Agriculture - Agricultural Research Service (USDA-ARS) who will present a McClintock Prize Address on Friday, March 7, 8:20 pm CDT. 
-
-(See <https://maizegdb.org/mgc/awards/> for details about each award)
-
-
-## NSF-funded support for maize genetics:
-
-![](data/assets/FromTheMGCBoard/NSF.jpg){fig-align="center" width="100"}
-
-The National Science Foundation is supporting the 66th-68th Annual Maize Genetics
-
-Meetings with a grant awarded on November 14th, 2023 (IOS-2329928). This conference
-
-grant will support, Enhancing Institutional Access (EIA), and Disciplinary Breadth (DB) award programs. These programs broaden the participation of researchers with an interest in exploring research possibilities in maize genetics by providing funding to attend the meeting. These travel participants are paired with a team of mentors that included an early career scientist, an academic PI, and an industry or government scientist that engage with the awardees formally and informally before, during, and after the meeting.  Throughout the meeting participants receive professional development training, and opportunities to engage directly with leaders in the field through organized meals with invited speakers. These experiences are vital catalysts for the careers of aspiring student and postdoc trainees. We appreciate the support from the National Science Foundation for this initiative and are excited about the potential for the grant to substantially advance and transform our community.
-
-## The 2025 Attendance/Travel Awards Program
-
-The maize community offers several attendance and travel awards to encourage attendance at the Annual Maize Genetics Meeting (MGM). There are several programs that provide travel/attendance awards; e.g. increasing Disciplinary Breadth (DB), Expanding Institutional Access (EIA), and a general program to support first time attendees. Here are the awardees for 2025; please congratulate these scientists and welcome them to our famously hospitable conference!
-
-| Undergraduate Student                                  |
-|--------------------------------------------------------|
-| Daisy Montero Ibarra, University of California - Davis |
-| Maria Ximena Anleu Gil, UCD, Postdoctoral Mentor       |
-
-| Graduate Student |   |
-|------------------------------------|------------------------------------|
-| Mariana Chavez, Montclair State University | Poster \# 22 |
-| Enameguono Olomuko, Purdue University | Poster \# 34 |
-| Sara Hafiza, Florida State University | Short Talk \[T23\] |
-| ➥ Hank Bass, FSU, Faculty Mentor | Poster \# 87 |
-| Sebastian Mueller, Oregon State University | Poster \# 158; Lightning Talk \[L5\] |
-| Edward Fernandez, North Dakota State University | Poster \# 174 |
-| Hanna Pil, North Carolina State University | Poster \# 202; Lightning Talk \[L8\] |
-| Vitor Sagae, University of Florida | Poster \# 238 |
-| Shreejana KC, University of Delaware | Poster \# 256 |
-
-| Faculty |   |
-|------------------------------------|------------------------------------|
-| Gwonjin Lee, West Virginia State University | Poster \# 15; Lightning Talk \[L28\] |
-| Beth Thompson, East Carolina University |  |
-| Veronica Justen, University of Wisc. - River Falls| Poster \# 282 |
-
-The Maize Genetics Meeting is supported in part by IOS Award #2329928 from the National Science Foundation, Plant Genome Research Program.
-
-![](data/assets/FromTheMGCBoard/NSF.jpg){fig-align="center" width="100"}
-
-## Broadening International Participation Awards
-
-The 2025 Broadening International Participation Award program seeks to promote international attendance for researchers from countries that are historically under-represented at the Maize Meeting. This 2025 award program seeks to enrich the maize community and broaden the opportunities to learn about maize genetics by connecting with scientists in the maize genetics community, exploring potential collaborations, and developing career contacts. BIP awardees receive waived registration to the recorded talks and sessions. 
-
-|  |  |
-|--|--|
-| Research Scientists | Elena Andriunaite |
-| Postdocs | Muhammad Zafar Iqbal |
-| Graduate Students | Md Nazmul Hossain | -->
+<section id="maize-genetics-cooperation-community-awards" class="level3">
+<h3 class="anchored" data-anchor-id="maize-genetics-cooperation-community-awards">2026 Maize Genetics Cooperation Community Awards</h3>
+<p>The MGC Community Awards will be revealed in the awards ceremony at the meeting, and this page will be updated following the conclusion of that ceremony. Stay tuned!</p>
+</section>
+<section id="the-barbara-mcclintock-prize-for-plant-genetics-and-genome-studies" class="level3">
+<h3 class="anchored" data-anchor-id="the-barbara-mcclintock-prize-for-plant-genetics-and-genome-studies">The Barbara McClintock Prize for Plant Genetics and Genome Studies</h3>
+<p>This award has been created to memorialize the unequalled contributions of Dr.&nbsp;McClintock through providing recognition to the most outstanding plant geneticists of the present era. In memory of the many contributions of Dr.&nbsp;McClintock, this Prize will be awarded each year to one or more of the most creative minds and productive scientists in the study of plant genome structure, function and evolution, including the analysis of gene regulation and epigenetics.</p>
+<p>The 2026 Barbara McClintock Prize for Plant Genetics and Genome Studies has been awarded to Dr.&nbsp;Joseph Ecker of the Salk Institute for Biological Studies who will present a McClintock Prize Address on Thursday, February 26, 8:40 pm (See Page 35).</p>
+<p>(See https://maizegdb.org/mgc/awards/ for details about each award)</p>
+<p>In addition, the maize genetics community participates in the ROOT &amp; SHOOT RCN project (DBI- 2134321). The ROOT &amp; SHOOT group of seven plant science organizations was awarded a five-year grant through the NSF’s LEAPS [LEAding cultural change through Professional Societies (LEAPS) of Biology] program. This Research Coordination Network (RCN) includes American Phytopathological Society (APS), American Society of Plant Biologists (ASPB), American Society of Plant Taxonomists (ASPT), Botanical Society of America (BSA), International Society for Molecular Plant Microbe Interactions (IS-MPMI), Maize Genetics Cooperation (MGC), North American Arabidopsis Steering Committee (NAASC), as well as other organizations that serve marginalized scientists.</p>
+</section>
+<section id="the-2026-attendancetravel-awards-program" class="level3">
+<h3 class="anchored" data-anchor-id="the-2026-attendancetravel-awards-program">The 2026 Attendance/Travel Awards Program</h3>
+<p>The maize community offers several attendance and travel awards to encourage attendance at the Annual Maize Genetics Meeting (MGM). There are several programs that provide travel/attendance awards; e.g.&nbsp;Disciplinary Breadth (DB), Expanding Institutional Access (EIA), and a general program to support first time attendees. The Maize Genetics Meeting also partners with the ROOT &amp; SHOOT (R&amp;S) Research Coordination Network to allow two first-time attendees to attend the meeting.</p>
+<p>Here are the awardees for 2026; please congratulate these scientists and welcome them to our famously hospitable conference!</p>
+<p><strong>Undergraduate Student</strong></p>
+<ul>
+<li>Abigail McCarthy, Ohio State University Poster # 71</li>
+</ul>
+<p><strong>Graduate Student</strong></p>
+<ul>
+<li>Jiyun Go, Chungnam National University Poster # 110</li>
+<li>Maria Schoen, IPK Gatersleben Poster # 116</li>
+<li>Tiago Corrêa, University of São Paulo Poster # 184</li>
+<li>Mythri Bikkasani, Punjab Agricultural University Poster # 250</li>
+<li>Ana Laura Marassi Maronezi, University of São Paulo Poster # 183</li>
+<li>Elliot Braun, Michigan State University Poster # 158</li>
+<li>Libia Gomez-Trejo, University of Nebraska - Lincoln Poster # 207</li>
+</ul>
+</section>
+<section id="broadening-international-participation-awards" class="level3">
+<h3 class="anchored" data-anchor-id="broadening-international-participation-awards">Broadening International Participation Awards</h3>
+<p>The 2026 Broadening International Participation Award program seeks to promote international attendance for researchers from countries that are historically under-represented at the Maize Meeting. This 2026 award program seeks to enrich the maize community and broaden the opportunities to learn about maize genetics by connecting with scientists in the maize genetics community, exploring potential collaborations, and developing career contacts. BIP awardees receive waived registration to the recorded talks and sessions.</p>
+<p><strong>Graduate Student </strong></p>
+<ul>
+<li>Memis Bilgici</li>
+</ul>
 
 
 </section>
@@ -453,19 +223,6 @@ The 2025 Broadening International Participation Award program seeks to promote i
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

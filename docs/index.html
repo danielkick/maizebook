@@ -33,12 +33,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-d496715cb688a7e1dd488a18866eacde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-d0e82dbfbf5279bb8f6f0b1b5a84537e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -64,171 +61,10 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><link rel="stylesheet" href="styles.css">
+}</script><script src="site_libs/kePrint-0.0.1/kePrint.js"></script><link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
@@ -240,11 +76,11 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">⚠ Home 🌽</span></a>
+<span class="menu-text">Home 🌽</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./program_schedule.html"> 
-<span class="menu-text">⚠ Schedule</span></a>
+<span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./generated_talks.html"> 
@@ -268,13 +104,17 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./program_poster_list.html"> 
-<span class="menu-text">⚠ Poster Lookup</span></a>
+<span class="menu-text">Poster Lookup</span></a>
   </li>  
 </ul>
 <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item">
+    <a class="nav-link" href="./program_general_information.html"> 
+<span class="menu-text">Info.</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./program_awards.html"> 
-<span class="menu-text">⚠ Awards</span></a>
+<span class="menu-text">Awards</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./program_authors_attendees.html"> 
@@ -287,7 +127,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
@@ -297,11 +136,44 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#wednesday-february-25-2026" id="toc-wednesday-february-25-2026" class="nav-link active" data-scroll-target="#wednesday-february-25-2026">Wednesday, February 25, 2026</a></li>
-  <li><a href="#thursday-february-26-2026" id="toc-thursday-february-26-2026" class="nav-link" data-scroll-target="#thursday-february-26-2026">Thursday, February 26, 2026</a></li>
-  <li><a href="#friday-february-27-2026" id="toc-friday-february-27-2026" class="nav-link" data-scroll-target="#friday-february-27-2026">Friday, February 27, 2026</a></li>
-  <li><a href="#saturday-february-28-2026" id="toc-saturday-february-28-2026" class="nav-link" data-scroll-target="#saturday-february-28-2026">Saturday, February 28, 2026</a></li>
-  <li><a href="#sunday-march-1-2026" id="toc-sunday-march-1-2026" class="nav-link" data-scroll-target="#sunday-march-1-2026">Sunday, March 1, 2026</a></li>
+<li>
+<a href="#wednesday-february-25-2026" id="toc-wednesday-february-25-2026" class="nav-link active" data-scroll-target="#wednesday-february-25-2026">Wednesday, February 25, 2026</a>
+  <ul class="collapse">
+<li><a href="#optional-pre-conference-activities" id="toc-optional-pre-conference-activities" class="nav-link" data-scroll-target="#optional-pre-conference-activities">Optional Pre-Conference Activities</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#thursday-february-26-2026" id="toc-thursday-february-26-2026" class="nav-link" data-scroll-target="#thursday-february-26-2026">Thursday, February 26, 2026</a>
+  <ul class="collapse">
+<li><a href="#optional-pre-conference-activities-1" id="toc-optional-pre-conference-activities-1" class="nav-link" data-scroll-target="#optional-pre-conference-activities-1">Optional Pre-Conference Activities</a></li>
+  <li><a href="#session-1---welcome-keynote-award" id="toc-session-1---welcome-keynote-award" class="nav-link" data-scroll-target="#session-1---welcome-keynote-award">Session 1 - Welcome / Keynote / Award</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#friday-february-27-2026" id="toc-friday-february-27-2026" class="nav-link" data-scroll-target="#friday-february-27-2026">Friday, February 27, 2026</a>
+  <ul class="collapse">
+<li><a href="#session-2---cell-division-and-meristems" id="toc-session-2---cell-division-and-meristems" class="nav-link" data-scroll-target="#session-2---cell-division-and-meristems">Session 2 - Cell Division And Meristems</a></li>
+  <li><a href="#session-3---lightning-talks-keynote" id="toc-session-3---lightning-talks-keynote" class="nav-link" data-scroll-target="#session-3---lightning-talks-keynote">Session 3 - Lightning Talks / Keynote</a></li>
+  <li><a href="#session-4---genome-diversity" id="toc-session-4---genome-diversity" class="nav-link" data-scroll-target="#session-4---genome-diversity">Session 4 - Genome Diversity</a></li>
+  <li><a href="#session-5---keynote-awards" id="toc-session-5---keynote-awards" class="nav-link" data-scroll-target="#session-5---keynote-awards">Session 5 - Keynote / Awards</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#saturday-february-28-2026" id="toc-saturday-february-28-2026" class="nav-link" data-scroll-target="#saturday-february-28-2026">Saturday, February 28, 2026</a>
+  <ul class="collapse">
+<li><a href="#session-6---keynote-roots-and-kernels" id="toc-session-6---keynote-roots-and-kernels" class="nav-link" data-scroll-target="#session-6---keynote-roots-and-kernels">Session 6 - Keynote / Roots And Kernels</a></li>
+  <li><a href="#session-7---epigenetics-keynote" id="toc-session-7---epigenetics-keynote" class="nav-link" data-scroll-target="#session-7---epigenetics-keynote">Session 7 - Epigenetics / Keynote</a></li>
+  <li><a href="#session-8---leaves" id="toc-session-8---leaves" class="nav-link" data-scroll-target="#session-8---leaves">Session 8 - Leaves</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#sunday-march-1-2026" id="toc-sunday-march-1-2026" class="nav-link" data-scroll-target="#sunday-march-1-2026">Sunday, March 1, 2026</a>
+  <ul class="collapse">
+<li><a href="#session-9---manipulating-maize" id="toc-session-9---manipulating-maize" class="nav-link" data-scroll-target="#session-9---manipulating-maize">Session 9 - Manipulating Maize</a></li>
+  <li><a href="#session-10---resilience" id="toc-session-10---resilience" class="nav-link" data-scroll-target="#session-10---resilience">Session 10 - Resilience</a></li>
+  <li><a href="#post-conference" id="toc-post-conference" class="nav-link" data-scroll-target="#post-conference">Post Conference</a></li>
+  </ul>
+</li>
   </ul></nav>
     </div>
 <!-- main -->
@@ -321,70 +193,19 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>⚠ Update pending
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Material on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details.</p>
-</div>
-</div>
-<!-- ::: {.callout-note appearance="simple" icon="false"}
+</header><!-- ::: {.callout-note appearance="simple" icon="false"}
 ## 
 
 Thank you for attending the Maize Genetics Meeting, we look forward to seeing you next year!
-::: -->
-<!-- ::: {.callout-caution appearance="simple" icon="false" collapse="true"}
-## Pending Fixes
-
-- [ ] Get pdf with schedule
-- [ ] Need pdf with schedule -> `schedule.csv`
-- [ ] Extract award information
-
-Key fixes
-
-- [ ] ⚠ Home 🌽 `index.qmd`
-  - [ ] Link to pdf abstract book
-  - [ ] Link to pdf schedule
-  - [ ] Day by day schedule summary
-  - [ ] Verify links in headings work
-- [ ] ⚠ Schedule `program_schedule.qmd`
-  - [ ] Day by day schedule summary
-- [ ] ⚠ Poster Lookup `program_poster_list.qmd`
-  - [ ] Assumes `generated/schedule_links.csv`
-  - [ ] Assumes `generated/schedule.csv`
-  - [ ] test `subset_M()`
-- [ ] ⚠ Awards `program_awards.qmd`
-  - [ ] Need award info.
-- [ ] `_quarto.yml`
-  - [ ] Remove ⚠ from page links
-  - [ ] Updated feedback link?
-- [ ] Final qmd checks
-    - [ ] Confirm there are no instances of `eval=FALSE` in the qmds
-    - [ ] Confirm there are no instances of `FIXME` or `TODO` in the qmds
-
-
-Optional Fixes
-
-- [ ] fix dark mode 
-- [x] remove deprecated index page generation
-  - [x] `'generated/posters/index.qmd'`
-  - [x] `'generated/talks/index.qmd'`
-
-
-
-::: -->
+::: --><div style="text-align: center">
+<p>Download PDF Version: <a href="https://documents.maizegdb.org/maizemeeting/abstracts/2026Program.pdf">2026Program.pdf</a></p>
+</div>
 <!-- ::: {style="text-align: center"}
 Download PDF Versions:
 [Schedule](./official/MGM2025Schedule.pdf) | [Abstract book](./official/2025Program.pdf)
 ::: -->
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -393,7 +214,7 @@ Download PDF Versions:
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><img src="https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/4ab29ab1-48b0-430d-8960-78c4884c8bdd/Maize+2026+Schedule+at+a+Glance.png" class="img-fluid"><a href="https://www.mgcmeeting.com/schedule-at-a-glance">Official Page Link</a></p>
 </div>
@@ -402,173 +223,1171 @@ Download PDF Versions:
 <!-- ![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/0d0e0571-078d-4602-9672-d81c316db871/favicon.ico?format=100w) -->
 <!-- logo -->
 <section id="wednesday-february-25-2026" class="level2"><h2 class="anchored" data-anchor-id="wednesday-february-25-2026"><a href="./program_schedule.html#friday-february-25-2026">Wednesday, February 25, 2026</a></h2>
-<!-- ### Optional Pre-Conference Workshops (1/2) -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M,  -->
-<!--   Day == "Wednesday, March 5, 2025",  -->
-<!--   Name != "OPTIONAL PRE-CONFERENCE WORKSHOPS" -->
-<!--   )) |> k() -->
-<!-- ``` -->
-</section><section id="thursday-february-26-2026" class="level2"><h2 class="anchored" data-anchor-id="thursday-february-26-2026"><a href="./program_schedule.html#friday-february-26-2026">Thursday, February 26, 2026</a></h2>
-<!-- ### Optional Pre-Conference Workshops (2/2) -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Thursday, March 6, 2025", -->
-<!--   Name != "OPTIONAL PRE-CONFERENCE WORKSHOPS" -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Session 1 – Welcome / Keynote / Gene Regulation -->
-<!-- **Sherry Flint-Garcia** -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Thursday, March 6, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("19:00") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-</section><section id="friday-february-27-2026" class="level2"><h2 class="anchored" data-anchor-id="friday-february-27-2026"><a href="./program_schedule.html#friday-february-27-2026">Friday, February 27, 2026</a></h2>
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Friday, March 7, 2025", -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("8:15") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Session 2 – Modeling Corn -->
-<!-- **Hank Bass** -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Friday, March 7, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("8:15"), -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("10:45") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Session 3 – Education, Community, & Outreach -->
-<!-- **Brandi Sigmon** -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Friday, March 7, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("10:45"), -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("12:15") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Lunch and Poster Session -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Friday, March 7, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("12:15"), -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("16:40") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Session 4 – Maize Under Stress -->
-<!-- **Melissa Draves** -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Friday, March 7, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("16:40"), -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("19:00") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Session 5 – Awards -->
-<!-- **Andrea Eveland** -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Friday, March 7, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("19:00") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-</section><section id="saturday-february-28-2026" class="level2"><h2 class="anchored" data-anchor-id="saturday-february-28-2026"><a href="./program_schedule.html#saturday-february-28-2026">Saturday, February 28, 2026</a></h2>
-<!-- ## [Saturday, March 8, 2025](./program_schedule.html#saturday-march-8-2025) -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Saturday, March 8, 2025", -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("8:15") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Session 6 – Roots & Nutrient Uptake / Keynote -->
-<!-- **Rubén Rellán Álvarez** -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Saturday, March 8, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("8:15"), -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("10:30") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Session 7 – Keynote / Cell Division & Meristems -->
-<!-- **Sarah Jensen** -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Saturday, March 8, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("10:30"), -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("12:30") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Lunch, Poster Session, & Community Session -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Saturday, March 8, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("12:30"), -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("19:00") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Session 8 – Reproduction / Keynote -->
-<!-- **Cinta Romay** -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Saturday, March 8, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("19:00") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-</section><section id="sunday-march-1-2026" class="level2"><h2 class="anchored" data-anchor-id="sunday-march-1-2026"><a href="./program_schedule.html#sunday-march-1-2026">Sunday, March 1, 2026</a></h2>
-<!-- ## [Sunday, March 9, 2025](./program_schedule.html#sunday-march-9-2025) -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Sunday, March 9, 2025", -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("8:00") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Session 9 – Epigenetics -->
-<!-- **Katie Murphy** -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Sunday, March 9, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("8:25"), -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("10:20") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Session 10 - Building a Stronger Maize Plant -->
-<!-- **Frank Hochholdinger** -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Sunday, March 9, 2025", -->
-<!--   lubridate::hm(StartTime) >= lubridate::hm("10:20"), -->
-<!--   lubridate::hm(StartTime) < lubridate::hm("12:00") -->
-<!--   )) |> k() -->
-<!-- ``` -->
-<!-- ### Optional Post-Conference Workshop -->
-<!-- ```{r echo=FALSE} -->
-<!-- subset_M(filter( -->
-<!--   M, -->
-<!--   Day ==  "Sunday, March 9, 2025", -->
-<!--   Name != "OPTIONAL POST-CONFERENCE EVENT", -->
-<!--   lubridate::hm(StartTime) > lubridate::hm("12:00") -->
-<!--   )) |> k() -->
-<!-- ``` -->
+<section id="optional-pre-conference-activities" class="level3"><h3 class="anchored" data-anchor-id="optional-pre-conference-activities">Optional Pre-Conference Activities</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;">17:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Optional Pre-Conference Workshops</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;">17:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Corn Breeding Research (Day 1)</td>
+<td style="text-align: left;">Salon 16/Königswinter</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section></section><section id="thursday-february-26-2026" class="level2"><h2 class="anchored" data-anchor-id="thursday-february-26-2026"><a href="./program_schedule.html#friday-february-26-2026">Thursday, February 26, 2026</a></h2>
+<section id="optional-pre-conference-activities-1" class="level3"><h3 class="anchored" data-anchor-id="optional-pre-conference-activities-1">Optional Pre-Conference Activities</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;">17:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Optional Pre-Conference Workshops</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;">12:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Corn Breeding Research (Day 2)</td>
+<td style="text-align: left;">Salon 16/Königswinter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">08:30</td>
+<td style="text-align: left;">17:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Genetics of maize-microbe interactions</td>
+<td style="text-align: left;">Cologne Biocenter, Lecture hall 0.024; Zülpicher Str. 47b, 50674 Köln</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">09:00</td>
+<td style="text-align: left;">15:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Optional Pre-Conference Tours</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">09:00</td>
+<td style="text-align: left;">15:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Juelich Plant Phenotyping</td>
+<td style="text-align: left;">Tour Bus leaves in front of the main hotel entrance. Arrives at 8:45 AM</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">09:00</td>
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Development &amp; Cell Biology Workshop</td>
+<td style="text-align: left;">Salon 14/Koeln</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">12:30</td>
+<td style="text-align: left;">17:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Bayer Crop Science Tour - Monheim</td>
+<td style="text-align: left;">Bus leaves in front of the main hotel entrance. Bus arrives at 12:15 PM</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">15:00</td>
+<td style="text-align: left;">18:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Poster Hanging</td>
+<td style="text-align: left;">Hall 1 &amp; Hall 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">17:00</td>
+<td style="text-align: left;">17:45</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Travel awardees / mentors meet &amp; greet</td>
+<td style="text-align: left;">Salon 21/Mannheim</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">18:00</td>
+<td style="text-align: left;">19:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Dinner</td>
+<td style="text-align: left;">Rottisserie + Glass Hall combined</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="session-1---welcome-keynote-award" class="level3"><h3 class="anchored" data-anchor-id="session-1---welcome-keynote-award">Session 1 - Welcome / Keynote / Award</h3>
+<p><strong>Frank Hochholdinger</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">19:20</td>
+<td style="text-align: left;">19:25</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Curtis Hannah, University of Florida</td>
+<td style="text-align: left;">Cologne and maize genetics</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">19:25</td>
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;"><a href="./generated_keynote_list.html#ks1-genome-regulation-going-loopy-studying-enhancer-promoter-interactions---a-view-from-metazoans" style="     ">KS1</a></td>
+<td style="text-align: left;">Eileen Furlong, European Molecular Biology Lab</td>
+<td style="text-align: left;">Regulatory principles during embryonic development</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">L1, P57</td>
+<td style="text-align: left;">Gabriella Consonni, University of Milan</td>
+<td style="text-align: left;">Genetic interaction between GL15 and FDL1 modulates juvenile cuticle deposition and leaf permeability in maize</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">L2, P61</td>
+<td style="text-align: left;">Alexa Park, Texas A&amp;M University</td>
+<td style="text-align: left;">Identification and Characterization of Molecular Drivers of Nitrogen Remobilization in Maize During Grain Filling</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">L3, P88</td>
+<td style="text-align: left;">Joseph DeTemple, Iowa State University</td>
+<td style="text-align: left;">Understanding expression dynamics of flowering time genes from a gene network perspective</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">L4, P43</td>
+<td style="text-align: left;">Sophia Gerasimova, Martin Luther University</td>
+<td style="text-align: left;">Application of a ternary agrobacterium-mediated transformation system coupled with morphogenesis regulators enables efficient genome editing in temperate and tropical maize</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">L5, P144</td>
+<td style="text-align: left;">Hao Wu, Nanjing Agricultural University</td>
+<td style="text-align: left;">Spatiotemporal transcriptomics reveals ZmGRAS90 as an early determinant of maize aleurone and basal endosperm fate specification</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">L6, P129</td>
+<td style="text-align: left;">Cecilia Lara-Mondragón, University of Tübingen</td>
+<td style="text-align: left;">How to reproducibly pattern a meristem despite size variability</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">L7, P117</td>
+<td style="text-align: left;">Andrea Calhau, INRAE</td>
+<td style="text-align: left;">Disrupted gamete interaction in maize gex2 mutants biases fertilization toward egg-cell-only fertilization and promotes heterofertilization</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">L8, P122</td>
+<td style="text-align: left;">Mamoona Khan, University of Bonn</td>
+<td style="text-align: left;">Effector-driven developmental reprogramming during Ustilago maydis–induced gall formation</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">L9, P143</td>
+<td style="text-align: left;">Ana López Malvar, INRAE</td>
+<td style="text-align: left;">Spatial regulation of cell wall remodeling shapes maize digestibility under drought</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">20:10</td>
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">L10, P132</td>
+<td style="text-align: left;">An Hsu, National Taiwan University</td>
+<td style="text-align: left;">Linking carbon metabolism to meiotic entry in maize anthers: From bulk to single-cell resolution</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">20:30</td>
+<td style="text-align: left;">20:40</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Andrea Eveland</td>
+<td style="text-align: left;">McClintock Prize introduction</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">20:40</td>
+<td style="text-align: left;">21:25</td>
+<td style="text-align: left;"><a href="./generated_keynote_list.html#m1-single-cell-and-spatial-genomics-of-plant" style="     ">M1</a></td>
+<td style="text-align: left;">Joe Ecker Salk Institute</td>
+<td style="text-align: left;">Epigenomic diversity from plants to the nervous system</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">21:25</td>
+<td style="text-align: left;">23:59</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Informal Poster Viewing &amp; Hospitality</td>
+<td style="text-align: left;">Hall 1 &amp; Hall 2 / Congress-Foyer</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section></section><section id="friday-february-27-2026" class="level2"><h2 class="anchored" data-anchor-id="friday-february-27-2026"><a href="./program_schedule.html#friday-february-27-2026">Friday, February 27, 2026</a></h2>
+<section id="session-2---cell-division-and-meristems" class="level3"><h3 class="anchored" data-anchor-id="session-2---cell-division-and-meristems">Session 2 - Cell Division And Meristems</h3>
+<p><strong>Erin Sparks</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">07:00</td>
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Breakfast</td>
+<td style="text-align: left;">Rottisserie + Glass Hall combined</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">07:30</td>
+<td style="text-align: left;">12:30</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Registration</td>
+<td style="text-align: left;">Congress-Foyer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;">10:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Session 2 - Cell Division And Meristems</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;">08:15</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Announcements</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">08:15</td>
+<td style="text-align: left;">08:35</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t1-a-novel,-evolutionary-conserved-peptide-regulates-cell-proliferation" style="     ">T1</a></td>
+<td style="text-align: left;">Faith Kanana Mbiti, University of Regensburg</td>
+<td style="text-align: left;">A novel, evolutionary conserved peptide regulates cell proliferation</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">08:35</td>
+<td style="text-align: left;">08:55</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t2-a-developmental-viewpoint-of-maize-ear-inflorescence-domestication-at-single-cell-resolution" style="     ">T2</a></td>
+<td style="text-align: left;">Xiaosa Xu, University of California - Davis</td>
+<td style="text-align: left;">A developmental viewpoint of maize ear inflorescence domestication at single-cell resolution</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">08:55</td>
+<td style="text-align: left;">09:15</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t3-new-regulators-and-elements-shaping-maize-inflorescence-architecture-and-their-applications" style="     ">T3</a></td>
+<td style="text-align: left;">Fang Yang, Sun Yat-Sen University</td>
+<td style="text-align: left;">New regulators and elements shaping maize inflorescence architecture and their applications</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">09:15</td>
+<td style="text-align: left;">09:35</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t4-specification-of-the-maize-embryonic-shoot-stem-cell-niche-via-hierarchical-morphogenic-signals" style="     ">T4</a></td>
+<td style="text-align: left;">Marja Timmermans, University of Tübingen</td>
+<td style="text-align: left;">Specification of the maize embryonic shoot stem cell niche via hierarchical morphogenic signals</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">09:35</td>
+<td style="text-align: left;">10:00</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t5-shared-regulatory-logic-between-inflorescence-and-brace-root-development" style="     ">T5</a></td>
+<td style="text-align: left;">Thanduanlung Kamei, University of Delaware</td>
+<td style="text-align: left;">Shared regulatory logic between inflorescence and brace root development</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10:00</td>
+<td style="text-align: left;">10:25</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">Congress-Foyer</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="session-3---lightning-talks-keynote" class="level3"><h3 class="anchored" data-anchor-id="session-3---lightning-talks-keynote">Session 3 - Lightning Talks / Keynote</h3>
+<p><strong>Hank Bass</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">11:35</td>
+<td style="text-align: left;">11:55</td>
+<td style="text-align: left;">L21, P256</td>
+<td style="text-align: left;">Danning Wang, Technical University of Munich</td>
+<td style="text-align: left;">Single-cell transcriptomics reveals cell-type-specific signatures of heterosis in early roots of maize</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:35</td>
+<td style="text-align: left;">11:55</td>
+<td style="text-align: left;">L22, P194</td>
+<td style="text-align: left;">Pengfei Yin, China Agricultural University</td>
+<td style="text-align: left;">A dynamic genotype-environment integration approach decodes the genetic basis of phenotypic plasticity in maize</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11:35</td>
+<td style="text-align: left;">11:55</td>
+<td style="text-align: left;">L23, P248</td>
+<td style="text-align: left;">Charles Colvin, Pennsylvania State University</td>
+<td style="text-align: left;">Population-scale RNAsequencing reveals host genetic control of phyllosphere fungal communities</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:35</td>
+<td style="text-align: left;">11:55</td>
+<td style="text-align: left;">L24, P250</td>
+<td style="text-align: left;">Mythri Bikkasani, Punjab Agricultural University</td>
+<td style="text-align: left;">Quantitative assessment of heterosis and combining ability for strategic hybrid breeding in maize for silage</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11:35</td>
+<td style="text-align: left;">11:55</td>
+<td style="text-align: left;">L25, P260</td>
+<td style="text-align: left;">Zhongjie Ji, University of Nebraska-Lincoln</td>
+<td style="text-align: left;">Temporal 2D–3D phenotyping reveals dynamic maize architectural development across the growth cycle</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:35</td>
+<td style="text-align: left;">11:55</td>
+<td style="text-align: left;">L26, P271</td>
+<td style="text-align: left;">Chuan Chen, Northwest A&amp;F University</td>
+<td style="text-align: left;">qGSR2.02 confers recessive resistance to stalk rot and ear rot in maize</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11:35</td>
+<td style="text-align: left;">11:55</td>
+<td style="text-align: left;">L27, P246</td>
+<td style="text-align: left;">Melissa Draves, University of Missouri</td>
+<td style="text-align: left;">Phenotypic characterization of U.S. maize heirlooms</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:35</td>
+<td style="text-align: left;">11:55</td>
+<td style="text-align: left;">L28, P249</td>
+<td style="text-align: left;">Domagoj Simic, Agricultural Institute Osijek</td>
+<td style="text-align: left;">Predicting biomass in drought-stressed young maize plants with machine learning using genomic and phenomic data</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11:35</td>
+<td style="text-align: left;">11:55</td>
+<td style="text-align: left;">L29, P4</td>
+<td style="text-align: left;">Carly Blair, Michigan State University</td>
+<td style="text-align: left;">Characterization of two epigenetically regulated ABI3-VP1 transcription factors in Zea mays (maize)</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:35</td>
+<td style="text-align: left;">11:55</td>
+<td style="text-align: left;">L30, P7</td>
+<td style="text-align: left;">Patrick Gardner, Montclair State University</td>
+<td style="text-align: left;">Detecting activity of hopscotch family long terminal repeat retrotransposons in Zea mays</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">12:00</td>
+<td style="text-align: left;">13:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Lunch</td>
+<td style="text-align: left;">Rottisserie + Glass Hall combined</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">12:00</td>
+<td style="text-align: left;">13:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MGC BoD and MGAC Lunch</td>
+<td style="text-align: left;">Salon 21 / Mannheim</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">12:00</td>
+<td style="text-align: left;">13:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Travel Awardee / Keynote speaker Lunch</td>
+<td style="text-align: left;">Salon 16 / Koenigswinter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">13:00</td>
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Beverages will be available from 2:00 to 4:00 PM in the foyer between Hall 1 &amp; Hall 2</td>
+<td style="text-align: left;">Hall 1 &amp; Hall 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">13:00</td>
+<td style="text-align: left;">14:30</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Presenters should be at odd-numbered posters</td>
+<td style="text-align: left;">Hall 1 &amp; Hall 2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">14:30</td>
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Presenters should be at even-numbered posters</td>
+<td style="text-align: left;">Hall 1 &amp; Hall 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;">18:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Session 4 - Genome Diversity</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;">16:20</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t6-grasses-as-a-single-genetic-system-a-strategy-for-synthetic-biology-of-large-genome-grasses" style="     ">T6</a></td>
+<td style="text-align: left;">Mike Scanlon, Cornell University</td>
+<td style="text-align: left;">Grasses as a single genetic system: a strategy for synthetic biology of large genome grasses</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="session-4---genome-diversity" class="level3"><h3 class="anchored" data-anchor-id="session-4---genome-diversity">Session 4 - Genome Diversity</h3>
+<p><strong>Michael Muszynski</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">16:20</td>
+<td style="text-align: left;">16:40</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t7-shortcuts-to-success-how-large-scale-genotyping-benefits-the-maize-community" style="     ">T7</a></td>
+<td style="text-align: left;">Corrinne Grover, Iowa State University</td>
+<td style="text-align: left;">Shortcuts to success: how large-scale genotyping benefits the maize community</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16:40</td>
+<td style="text-align: left;">17:00</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t8-revisiting-the-functional-features-of-maize-dispensable-genes-and-the-key-factors-underlying-their-dispensability" style="     ">T8</a></td>
+<td style="text-align: left;">Clementine Vitte, CNRS</td>
+<td style="text-align: left;">Revisiting the functional features of maize dispensable genes and the key factors underlying their dispensability</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">17:00</td>
+<td style="text-align: left;">17:20</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t9-the-pangenome-graph-construction-of-zea-genus" style="     ">T9</a></td>
+<td style="text-align: left;">Zheng Luo, Huazhong Agricultural University</td>
+<td style="text-align: left;">The pangenome graph construction of Zea genus</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">17:20</td>
+<td style="text-align: left;">17:40</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t10-demographics-of-maize-adaptation" style="     ">T10</a></td>
+<td style="text-align: left;">Miguel Vallebueno-Estrada, Swedish</td>
+<td style="text-align: left;">Agricultural University Demographics of maize adaptation</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">17:40</td>
+<td style="text-align: left;">18:00</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t11-designing-interpretable-ai-models-to-identify-drivers-of-maize-phenotypic-plasticity" style="     ">T11</a></td>
+<td style="text-align: left;">Karlene Negus, Iowa State University</td>
+<td style="text-align: left;">Designing interpretable AI models to identify drivers of maize phenotypic plasticity</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">18:00</td>
+<td style="text-align: left;">19:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Dinner</td>
+<td style="text-align: left;">Rottisserie + Glass Hall combined</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">18:00</td>
+<td style="text-align: left;">19:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Bayer Student/Postdoc Dinner</td>
+<td style="text-align: left;">Café Heumarkt</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">18:00</td>
+<td style="text-align: left;">19:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Corteva Student/Postdoc Dinner</td>
+<td style="text-align: left;">La Galerie</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">19:00</td>
+<td style="text-align: left;">20:55</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Session 5 - Keynote / Awards</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">19:00</td>
+<td style="text-align: left;">19:45</td>
+<td style="text-align: left;"><a href="./generated_keynote_list.html#ks3-towards-a-blueprint-for-growth-regulation" style="     ">KS3</a></td>
+<td style="text-align: left;">Hilde Nelissen, VIB Ghent</td>
+<td style="text-align: left;">Towards a blueprint for growth regulation</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="session-5---keynote-awards" class="level3"><h3 class="anchored" data-anchor-id="session-5---keynote-awards">Session 5 - Keynote / Awards</h3>
+<p><strong>Andrea Eveland</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">19:45</td>
+<td style="text-align: left;">19:55</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Andrea Eveland</td>
+<td style="text-align: left;">Introduction to Awards</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">19:55</td>
+<td style="text-align: left;">20:15</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Natalia de Léon</td>
+<td style="text-align: left;">Presenting: Cooperator and Leadership Awards</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">20:15</td>
+<td style="text-align: left;">20:35</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thomas Dresselhaus</td>
+<td style="text-align: left;">Presenting: M. Rhoades Early-Career, L. Stadler, Mid-Career</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">20:35</td>
+<td style="text-align: left;">21:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Matt Hufford</td>
+<td style="text-align: left;">Presenting: R. Emerson Lifetime Awards</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">21:00</td>
+<td style="text-align: left;">00:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Informal Poster Viewing &amp; Hospitality</td>
+<td style="text-align: left;">Hall 1 &amp; Hall 2 / Congress-Foyer</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section></section><section id="saturday-february-28-2026" class="level2"><h2 class="anchored" data-anchor-id="saturday-february-28-2026"><a href="./program_schedule.html#saturday-february-28-2026">Saturday, February 28, 2026</a></h2>
+<section id="session-6---keynote-roots-and-kernels" class="level3"><h3 class="anchored" data-anchor-id="session-6---keynote-roots-and-kernels">Session 6 - Keynote / Roots And Kernels</h3>
+<p><strong>Sylvia Morais de Sousa</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">07:00</td>
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Breakfast</td>
+<td style="text-align: left;">Rottisserie + Glass Hall combined</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;">12:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Registration</td>
+<td style="text-align: left;">Congress-Foyer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;">10:05</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Session 6 - Keynote / Roots And Kernels</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">08:00</td>
+<td style="text-align: left;">08:45</td>
+<td style="text-align: left;"><a href="./generated_keynote_list.html#ks4-to-clone-or-not-to-clone-qtls-20-years-on---progress,-pitfalls,-and-future-directions" style="     ">KS4</a></td>
+<td style="text-align: left;">Silvio Salvi, University of Bologna</td>
+<td style="text-align: left;">To clone or not to clone QTLs: 20 years on - progress, pitfalls, and future directions</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">08:45</td>
+<td style="text-align: left;">09:05</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t12-computational-method-for-spatial-metabolite-analysis-reveals-distinct-developmental-patterns-in-maize-roots,-identifying-candidates-for-developmental-and-stress-responses" style="     ">T12</a></td>
+<td style="text-align: left;">Andrea Sama, University of California San Diego</td>
+<td style="text-align: left;">Computational method for spatial metabolite analysis reveals distinct developmental patterns in maize roots, identifying candidates for developmental and stress responses.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">09:05</td>
+<td style="text-align: left;">09:25</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t13-genetic-determinants-and-regulatory-mechanisms-governing-rhizosphere-microbiome-assembly-in-maize" style="     ">T13</a></td>
+<td style="text-align: left;">Xiaofang Huang, Technical University of Munich</td>
+<td style="text-align: left;">Genetic determinants and regulatory mechanisms governing rhizosphere microbiome assembly in maize</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">09:25</td>
+<td style="text-align: left;">09:45</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t14-zmnags-enhances-maize-kernel-size-and-grain-yield-through-increasing-photosynthesis-and-starch-content" style="     ">T14</a></td>
+<td style="text-align: left;">Huinan Li, Huazhong Agricultural University</td>
+<td style="text-align: left;">ZmNAGS enhances maize kernel size and grain yield through increasing photosynthesis and starch content</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">09:45</td>
+<td style="text-align: left;">10:05</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t15-from-kernel-to-kitchen-targeting-free-asparagine-to-reduce-acrylamide-formation-in-corn-based-foods" style="     ">T15</a></td>
+<td style="text-align: left;">Sarah Fitzsimmons, University of Missouri</td>
+<td style="text-align: left;">From kernel to kitchen: Targeting free asparagine to reduce acrylamide formation in corn-based foods</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10:05</td>
+<td style="text-align: left;">10:35</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10:35</td>
+<td style="text-align: left;">11:59</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Session 7 - Epigenetics / Keynote</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10:35</td>
+<td style="text-align: left;">10:55</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t16-a-gap-free-telomere-to-telomere-maize-genome-reveals-long-non-coding-rna–mediated-chromatin-regulation-during-anther-development" style="     ">T16</a></td>
+<td style="text-align: left;">Mei Zhang, Chinese Academy of Sciences</td>
+<td style="text-align: left;">A gap-free telomere-to-telomere maize genome reveals long non-coding RNA–mediated chromatin regulation during anther development</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="session-7---epigenetics-keynote" class="level3"><h3 class="anchored" data-anchor-id="session-7---epigenetics-keynote">Session 7 - Epigenetics / Keynote</h3>
+<p><strong>Cinta Romay</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">10:55</td>
+<td style="text-align: left;">11:15</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t17-single-molecule-methylation-profiling-at-the-repetitive-b1-paramutation-locus-in-maize" style="     ">T17</a></td>
+<td style="text-align: left;">Juliette Breil-Aubert, University of Amsterdam</td>
+<td style="text-align: left;">Single-molecule methylation profiling at the repetitive b1 paramutation locus in maize</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:15</td>
+<td style="text-align: left;">12:00</td>
+<td style="text-align: left;"><a href="./generated_keynote_list.html#ks5-bridging-plant-communication-and-inclusive-community-networks" style="     ">KS5</a></td>
+<td style="text-align: left;">Yoselin Benitez Alfonso, University of Leeds</td>
+<td style="text-align: left;">Dismantling walls and building bridges for communication</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">12:00</td>
+<td style="text-align: left;">13:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Lunch</td>
+<td style="text-align: left;">Rottisserie + Glass Hall combined</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">12:00</td>
+<td style="text-align: left;">13:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Maize genetics mentoring and speed networking lunch</td>
+<td style="text-align: left;">La Galerie</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">12:00</td>
+<td style="text-align: left;">13:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MGMSC Lunch</td>
+<td style="text-align: left;">Salon 21 / Mannheim</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">13:00</td>
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Beverages will be available from 2:00 to 4:00 PM in the foyer between Hall 1 &amp; Hall 2</td>
+<td style="text-align: left;">Hall 1 &amp; Hall 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">13:00</td>
+<td style="text-align: left;">14:30</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Presenters should be at odd-numbered posters</td>
+<td style="text-align: left;">Hall 1 &amp; Hall 2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">14:30</td>
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Presenters should be at even-numbered posters</td>
+<td style="text-align: left;">Hall 1 &amp; Hall 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;">17:40</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Session 8 - Leaves</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;">16:20</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t18-the-maize-10-maze-project-science-communication-featuring-an-educational-public-chromosome-map-garden-of-maize-mutants" style="     ">T18</a></td>
+<td style="text-align: left;">Bianca Sheridan, Florida State University</td>
+<td style="text-align: left;">The Maize-10-Maze project: Science communication featuring an educational public chromosome map garden of maize mutants</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="session-8---leaves" class="level3"><h3 class="anchored" data-anchor-id="session-8---leaves">Session 8 - Leaves</h3>
+<p><strong>Oyenike Adeyemo</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">16:20</td>
+<td style="text-align: left;">16:40</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t19-form-follows-function-genetic-modulation-of-leaf-area-and-canopy-structure" style="     ">T19</a></td>
+<td style="text-align: left;">Matthew Runyon, University of Illinois</td>
+<td style="text-align: left;">Form follows function: Genetic modulation of leaf area and canopy structure</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16:40</td>
+<td style="text-align: left;">17:00</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t20-how-should-we-compare-canopy-architecture-in-maize" style="     ">T20</a></td>
+<td style="text-align: left;">Kristian Johnson, INRAE</td>
+<td style="text-align: left;">How should we compare canopy architecture in maize?</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">17:00</td>
+<td style="text-align: left;">17:20</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t21-low-cost,-scalable-leaf-imaging-and-computer-vision-approaches-enable-quantitative-genetic-studies-of-disease-response-and-morphological-features-across-environments" style="     ">T21</a></td>
+<td style="text-align: left;">Jensina Davis, University of Nebraska-Lincoln</td>
+<td style="text-align: left;">Low-cost, scalable leaf imaging and computer vision approaches enable quantitative genetic studies of disease response and morphological features across environments</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">17:20</td>
+<td style="text-align: left;">17:40</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t22-why-doesn't-corn-recycle-nitrogen-insights-from-perennial-grass-senescence" style="     ">T22</a></td>
+<td style="text-align: left;">Jonathan Ojeda-Rivera, Cornell University</td>
+<td style="text-align: left;">Why doesn't corn recycle nitrogen? Insights from perennial grass senescence</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">17:40</td>
+<td style="text-align: left;">17:50</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">Congress-Foyer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">17:50</td>
+<td style="text-align: left;">19:20</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Matt Hufford, MGC BoD Chair</td>
+<td style="text-align: left;">Maize Genetics Cooperative</td>
+<td style="text-align: left;">Hall 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">19:30</td>
+<td style="text-align: left;">19:30</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Walking to brewery</td>
+<td style="text-align: left;">Am Hof 12-18, 50667 Köln</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">19:30</td>
+<td style="text-align: left;">23:59</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Conference Dinner at the Frueh Brewery</td>
+<td style="text-align: left;">Am Hof 12-18, 50667 Köln</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section></section><section id="sunday-march-1-2026" class="level2"><h2 class="anchored" data-anchor-id="sunday-march-1-2026"><a href="./program_schedule.html#sunday-march-1-2026">Sunday, March 1, 2026</a></h2>
+<section id="session-9---manipulating-maize" class="level3"><h3 class="anchored" data-anchor-id="session-9---manipulating-maize">Session 9 - Manipulating Maize</h3>
+<p><strong>John Fowler</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">07:00</td>
+<td style="text-align: left;">08:30</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Breakfast</td>
+<td style="text-align: left;">Rottisserie + Glass Hall combined</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">08:30</td>
+<td style="text-align: left;">10:10</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Session 9 - Manipulating Maize</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">08:30</td>
+<td style="text-align: left;">08:50</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t23-combining-grf-gif-chimeras-with-a-non-integrating-wus2-strategy-to-improve-maize-zea-mays-l-transformation-frequency" style="     ">T23</a></td>
+<td style="text-align: left;">Wout Vandeputte, Ghent University</td>
+<td style="text-align: left;">Combining GRF-GIF chimeras with a non-integrating WUS2 strategy to improve maize (Zea mays L.) transformation frequency</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">08:50</td>
+<td style="text-align: left;">09:10</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t24-evaluation-of-transgenerational-gene-editing-efficiency-and-inheritance-of-edits-using-a-split-cas9/grna-crossing-system-in-zea-mays" style="     ">T24</a></td>
+<td style="text-align: left;">Laurens Pauwels, Ghent University</td>
+<td style="text-align: left;">Evaluation of transgenerational gene editing efficiency and inheritance of edits using a split Cas9/gRNA crossing system in Zea mays</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">09:10</td>
+<td style="text-align: left;">09:30</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t25-genome-editing-accelerates-flowering-in-tropical-maize" style="     ">T25</a></td>
+<td style="text-align: left;">Michael Muszynski, University of Hawaii</td>
+<td style="text-align: left;">Genome editing accelerates flowering in tropical maize</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">09:30</td>
+<td style="text-align: left;">09:50</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t26-the-peri-germ-cell-membrane-a-gateway-to-haploid-embryo-induction" style="     ">T26</a></td>
+<td style="text-align: left;">Marina Millán Blánquez, INRAE</td>
+<td style="text-align: left;">The peri-germ cell membrane: A gateway to haploid embryo induction?</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">09:50</td>
+<td style="text-align: left;">10:10</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t27-super-resolution-expansion-microscopy-exm-reveals-meiotic-recombination-intermediates-in-maize" style="     ">T27</a></td>
+<td style="text-align: left;">CJ Rachel Wang, Academia Sinica</td>
+<td style="text-align: left;">Super-resolution expansion microscopy (ExM) reveals meiotic recombination intermediates in maize</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10:10</td>
+<td style="text-align: left;">10:40</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">Congress-Foyer</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="session-10---resilience" class="level3"><h3 class="anchored" data-anchor-id="session-10---resilience">Session 10 - Resilience</h3>
+<p><strong>Tony Studer</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">11:00</td>
+<td style="text-align: left;">11:20</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t29-confirmation-of-two-candidate-genes-involved-in-chilling-tolerance-in-maize" style="     ">T29</a></td>
+<td style="text-align: left;">Karin Ernst, Heinrich-Heine-University</td>
+<td style="text-align: left;">Confirmation of two candidate genes involved in chilling tolerance in maize</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:20</td>
+<td style="text-align: left;">11:40</td>
+<td style="text-align: left;"><a href="./generated_talks.html#t30-navigating-complexity-breeding-for-resilience-under-a-changing-climate" style="     ">T30</a></td>
+<td style="text-align: left;">Christian Riedelsheimer, Corteva Agriscience</td>
+<td style="text-align: left;">Navigating complexity: Breeding for resilience under a changing climate</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11:40</td>
+<td style="text-align: left;">11:59</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Closing Remrks</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:59</td>
+<td style="text-align: left;">11:59</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Adjournment</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="post-conference" class="level3"><h3 class="anchored" data-anchor-id="post-conference">Post Conference</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">End</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Presenter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">14:00</td>
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Optional Post-Conference Workshops</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">14:00</td>
+<td style="text-align: left;">16:00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Cologne Old City walking tour Meet at hotel main entrance</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 <!-- 
 ------------------------------------------------------------------------
 
@@ -587,21 +1406,8 @@ Download PDF Versions:
  -->
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
