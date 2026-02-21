@@ -3,64 +3,16 @@ title: "Maize Genetics Meeting"
 subtitle: "Digital Abstract Book"
 ---
 
-::: {.callout-note appearance="simple" icon="false"}
-## ⚠ Update pending
-
-Material on this page is not finalized. There will be an update to this page prior to the meeting, but until then please consult the pdf version for details.
-:::
-
 <!-- ::: {.callout-note appearance="simple" icon="false"}
 ## 
 
 Thank you for attending the Maize Genetics Meeting, we look forward to seeing you next year!
 ::: -->
 
-<!-- ::: {.callout-caution appearance="simple" icon="false" collapse="true"}
-## Pending Fixes
-
-- [x] Get pdf with schedule
-- [x] Need pdf with schedule -> `schedule.csv` 
-- [x] Extract award information
-
-Key fixes
-
-- [x] ⚠ Home 🌽 `index.qmd`
-  - [x] Link to pdf abstract book
-  - [NA] Link to pdf schedule
-  - [x] Day by day schedule summary
-  - [x] Verify links in headings work
-- [x] ⚠ Schedule `program_schedule.qmd`
-  - [x] Day by day schedule summary
-- [x] ⚠ Poster Lookup `program_poster_list.qmd`
-  - [x] Assumes `generated/schedule_links.csv`
-  - [x] Assumes `generated/schedule.csv`
-  - [x] test `subset_M()`
-- [x] ⚠ Awards `program_awards.qmd`
-  - [x] Need award info.
-- [ ] `_quarto.yml`
-  - [x] Remove ⚠ from page links
-  - [ ] Updated feedback link?
-- [x] Final qmd checks
-    - [x] Confirm there are no instances of `eval=FALSE` in the qmds
-    - [x] Confirm there are no instances of `FIXME` or `TODO` in the qmds
-
-
-Optional Fixes
-
-- [ ] fix dark mode 
-- [x] remove deprecated index page generation
-  - [x] `'generated/posters/index.qmd'`
-  - [x] `'generated/talks/index.qmd'`
-
-
-https://documents.maizegdb.org/maizemeeting/abstracts/2026Program.pdf
-
-::: -->
-
 ::: {style="text-align: center"}
 Download PDF Version:
 [2026Program.pdf](https://documents.maizegdb.org/maizemeeting/abstracts/2026Program.pdf)
-::
+:::
 <!-- ::: {style="text-align: center"}
 Download PDF Versions:
 [Schedule](./official/MGM2025Schedule.pdf) | [Abstract book](./official/2025Program.pdf)
