@@ -9,10 +9,10 @@ subtitle: "Digital Abstract Book"
 Thank you for attending the Maize Genetics Meeting, we look forward to seeing you next year!
 ::: -->
 
-::: {style="text-align: center"}
+<!-- ::: {style="text-align: center"}
 Download PDF Version:
 [2026Program.pdf](https://documents.maizegdb.org/maizemeeting/abstracts/2026Program.pdf)
-:::
+::: -->
 <!-- ::: {style="text-align: center"}
 Download PDF Versions:
 [Schedule](./official/MGM2025Schedule.pdf) | [Abstract book](./official/2025Program.pdf)
@@ -27,6 +27,14 @@ Download PDF Versions:
 
 :::
 
+
+::: {.callout-note appearance="simple" icon="false"}
+## Note:
+
+If you note a discrepancy between this page and the PDF Version [2026Program.pdf](https://documents.maizegdb.org/maizemeeting/abstracts/2026Program.pdf) then the pdf is correct.
+
+Please report any errors so we can fix them.
+:::
 <!-- ![](https://images.squarespace-cdn.com/content/v1/63642f74ecb478122c97890d/0d0e0571-078d-4602-9672-d81c316db871/favicon.ico?format=100w) -->
 <!-- logo -->
 

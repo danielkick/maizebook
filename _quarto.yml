@@ -12,10 +12,10 @@ website:
   title: ""
   navbar:
     left:
-      - text: Home 🌽
+      - text: Schedule 🌽
         href: index.qmd
-      - text: Schedule
-        href: program_schedule.qmd
+      # - text: Schedule
+      #   href: program_schedule.qmd
       - text: Talks
         href: generated_talks.qmd
       - text: Bios
