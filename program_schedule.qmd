@@ -5,7 +5,9 @@ title: "Schedule of Events"
 ::: {.callout-note appearance="simple" icon="false"}
 ## Note:
 
-If you note a discrepancy between this page and the [2026Program.pdf](https://documents.maizegdb.org/maizemeeting/abstracts/2026Program.pdf) then the pdf is correct. Please report any errors so we can fix them.
+If you note a discrepancy between this page and the [2026Program.pdf](https://documents.maizegdb.org/maizemeeting/abstracts/2026Program.pdf) then the pdf is correct.
+
+Please report any errors so we can fix them.
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
