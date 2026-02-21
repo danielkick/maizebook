@@ -40,9 +40,9 @@ Key fixes
 - [ ] `_quarto.yml`
   - [x] Remove ⚠ from page links
   - [ ] Updated feedback link?
-- [ ] Final qmd checks
-    - [ ] Confirm there are no instances of `eval=FALSE` in the qmds
-    - [ ] Confirm there are no instances of `FIXME` or `TODO` in the qmds
+- [x] Final qmd checks
+    - [x] Confirm there are no instances of `eval=FALSE` in the qmds
+    - [x] Confirm there are no instances of `FIXME` or `TODO` in the qmds
 
 
 Optional Fixes
