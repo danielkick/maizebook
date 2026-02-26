@@ -112,7 +112,7 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-02-26",
-  StartTime >= "19:00:00",
+  StartTime >= "19:00",
   )) |> k()
 ```
 
@@ -127,8 +127,8 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-02-27",
-  StartTime >= "00:00:00",
-  StartTime <= "10:25:00"
+  StartTime >= "00:00",
+  StartTime <= "10:25"
   )) |> k()
 ```
 
@@ -140,8 +140,8 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-02-27",
-  StartTime >= "10:26:00",
-  StartTime < "16:00:00"
+  StartTime >= "10:26",
+  StartTime < "16:00"
   )) |> k()
 ```
 
@@ -153,8 +153,8 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-02-27",
-  StartTime >= "16:00:00",
-  StartTime < "19:00:00"
+  StartTime >= "16:00",
+  StartTime < "19:00"
   )) |> k()
 ```
 
@@ -166,7 +166,7 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-02-27",
-  StartTime >= "19:00:00",
+  StartTime >= "19:00",
   )) |> k()
 ```
 
@@ -180,8 +180,8 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-02-28",
-  StartTime >= "00:00:00",
-  StartTime < "10:35:00"
+  StartTime >= "00:00",
+  StartTime < "10:35"
   )) |> k()
 ```
 
@@ -193,8 +193,8 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-02-28",
-  StartTime >= "10:35:00",
-  StartTime < "16:00:00"
+  StartTime >= "10:35",
+  StartTime < "16:00"
   )) |> k()
 ```
 
@@ -206,7 +206,7 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-02-28",
-  StartTime >= "16:00:00",
+  StartTime >= "16:00",
   )) |> k()
 ```
 
@@ -220,7 +220,7 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-03-01",
-  EndTime <= "10:40:00"
+  EndTime <= "10:40"
   )) |> k()
 ```
 
@@ -232,8 +232,8 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-03-01",
-  StartTime >= "10:40:00",
-  EndTime <= "11:59:00"
+  StartTime >= "10:40",
+  EndTime <= "11:59"
   )) |> k()
 ```
 
@@ -243,7 +243,7 @@ subset_M(filter(
 subset_M(filter(
   M,
   Day == "2026-03-01",
-  EndTime > "11:59:00"
+  EndTime > "11:59"
   )) |> k()
 ```
 
